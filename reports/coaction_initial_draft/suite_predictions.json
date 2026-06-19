@@ -1,0 +1,3300 @@
+{
+  "structured_lookup": [
+    {
+      "case_id": "case-0001",
+      "runner": "structured_lookup",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 576.0
+      },
+      "latency_ms": 0.022666000000004516
+    },
+    {
+      "case_id": "case-0002",
+      "runner": "structured_lookup",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 507.0
+      },
+      "latency_ms": 0.016499999999974868
+    },
+    {
+      "case_id": "case-0003",
+      "runner": "structured_lookup",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 33.77
+      },
+      "latency_ms": 0.01562499999999134
+    },
+    {
+      "case_id": "case-0004",
+      "runner": "structured_lookup",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 73.56
+      },
+      "latency_ms": 0.015457999999995975
+    },
+    {
+      "case_id": "case-0005",
+      "runner": "structured_lookup",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 50.0
+      },
+      "latency_ms": 0.015333000000006258
+    },
+    {
+      "case_id": "case-0006",
+      "runner": "structured_lookup",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 615.0
+      },
+      "latency_ms": 0.015916000000004704
+    },
+    {
+      "case_id": "case-0007",
+      "runner": "structured_lookup",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 682.0
+      },
+      "latency_ms": 0.014874999999997529
+    },
+    {
+      "case_id": "case-0008",
+      "runner": "structured_lookup",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 100.0
+      },
+      "latency_ms": 0.014666999999995989
+    },
+    {
+      "case_id": "case-0009",
+      "runner": "structured_lookup",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 100.0
+      },
+      "latency_ms": 0.014583000000012447
+    },
+    {
+      "case_id": "case-0010",
+      "runner": "structured_lookup",
+      "answer": [
+        "Kings County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 48.0
+      },
+      "latency_ms": 0.014750000000007812
+    },
+    {
+      "case_id": "case-0011",
+      "runner": "structured_lookup",
+      "answer": [
+        "MASS TORT JUDGE"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 71.43,
+        "county": "Bronx County"
+      },
+      "latency_ms": 0.02283299999999988
+    },
+    {
+      "case_id": "case-0012",
+      "runner": "structured_lookup",
+      "answer": [
+        "GARSON, HON. ROBIN S."
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 60.0,
+        "county": "Kings County"
+      },
+      "latency_ms": 0.021749999999987057
+    },
+    {
+      "case_id": "case-0013",
+      "runner": "structured_lookup",
+      "answer": [
+        "RAUL A. SAHAGUN"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 58.82,
+        "county": "Los Angeles County"
+      },
+      "latency_ms": 0.021415999999996327
+    },
+    {
+      "case_id": "case-0014",
+      "runner": "structured_lookup",
+      "answer": [
+        "GUZMAN, HON. WILMA"
+      ],
+      "evidence": {
+        "source_table": "coaction/Judge MTD Rate.csv",
+        "supporting_value": 66.67,
+        "county": "Bronx County"
+      },
+      "latency_ms": 0.017208000000018542
+    },
+    {
+      "case_id": "case-0015",
+      "runner": "structured_lookup",
+      "answer": [
+        "RIVERA, HON. FRANCOIS A."
+      ],
+      "evidence": {
+        "source_table": "coaction/Judge MTD Rate.csv",
+        "supporting_value": 94.12,
+        "county": "Kings County"
+      },
+      "latency_ms": 0.01758400000001492
+    }
+  ],
+  "openai_raw_llm": [
+    {
+      "case_id": "case-0001",
+      "runner": "openai_raw_llm",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 576.0,
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set OPENAI_API_KEY and optionally OPENAI_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": []
+      },
+      "latency_ms": 0.2461250000000137
+    },
+    {
+      "case_id": "case-0002",
+      "runner": "openai_raw_llm",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 507.0,
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set OPENAI_API_KEY and optionally OPENAI_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": []
+      },
+      "latency_ms": 0.08754099999999654
+    },
+    {
+      "case_id": "case-0003",
+      "runner": "openai_raw_llm",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 33.77,
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set OPENAI_API_KEY and optionally OPENAI_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": []
+      },
+      "latency_ms": 0.08295799999999409
+    },
+    {
+      "case_id": "case-0004",
+      "runner": "openai_raw_llm",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 73.56,
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set OPENAI_API_KEY and optionally OPENAI_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": []
+      },
+      "latency_ms": 0.08129200000001058
+    },
+    {
+      "case_id": "case-0005",
+      "runner": "openai_raw_llm",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 50.0,
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set OPENAI_API_KEY and optionally OPENAI_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": []
+      },
+      "latency_ms": 0.08062500000000083
+    },
+    {
+      "case_id": "case-0006",
+      "runner": "openai_raw_llm",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 615.0,
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set OPENAI_API_KEY and optionally OPENAI_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": []
+      },
+      "latency_ms": 0.08070800000001266
+    },
+    {
+      "case_id": "case-0007",
+      "runner": "openai_raw_llm",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 682.0,
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set OPENAI_API_KEY and optionally OPENAI_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": []
+      },
+      "latency_ms": 0.07933399999998647
+    },
+    {
+      "case_id": "case-0008",
+      "runner": "openai_raw_llm",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 100.0,
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set OPENAI_API_KEY and optionally OPENAI_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": []
+      },
+      "latency_ms": 0.07920899999999675
+    },
+    {
+      "case_id": "case-0009",
+      "runner": "openai_raw_llm",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 100.0,
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set OPENAI_API_KEY and optionally OPENAI_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": []
+      },
+      "latency_ms": 0.07954099999998854
+    },
+    {
+      "case_id": "case-0010",
+      "runner": "openai_raw_llm",
+      "answer": [
+        "Kings County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 48.0,
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set OPENAI_API_KEY and optionally OPENAI_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": []
+      },
+      "latency_ms": 0.0795410000000163
+    },
+    {
+      "case_id": "case-0011",
+      "runner": "openai_raw_llm",
+      "answer": [
+        "MASS TORT JUDGE"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 71.43,
+        "county": "Bronx County",
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set OPENAI_API_KEY and optionally OPENAI_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": [
+          "COGAN, HOWARD L",
+          "MARKOFF, MATTHEW E",
+          "MASS TORT JUDGE"
+        ]
+      },
+      "latency_ms": 0.09829199999999982
+    },
+    {
+      "case_id": "case-0012",
+      "runner": "openai_raw_llm",
+      "answer": [
+        "GARSON, HON. ROBIN S."
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 60.0,
+        "county": "Kings County",
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set OPENAI_API_KEY and optionally OPENAI_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": [
+          "JAMES J TOOMEY",
+          "MATTHEW E MARKOFF"
+        ]
+      },
+      "latency_ms": 0.09479099999998297
+    },
+    {
+      "case_id": "case-0013",
+      "runner": "openai_raw_llm",
+      "answer": [
+        "RAUL A. SAHAGUN"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 58.82,
+        "county": "Los Angeles County",
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set OPENAI_API_KEY and optionally OPENAI_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": [
+          "RECK BELYNDA BRIDGELAND"
+        ]
+      },
+      "latency_ms": 0.09262499999998508
+    },
+    {
+      "case_id": "case-0014",
+      "runner": "openai_raw_llm",
+      "answer": [
+        "GUZMAN, HON. WILMA"
+      ],
+      "evidence": {
+        "source_table": "coaction/Judge MTD Rate.csv",
+        "supporting_value": 66.67,
+        "county": "Bronx County",
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set OPENAI_API_KEY and optionally OPENAI_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": [
+          "COGAN, HOWARD L",
+          "MARKOFF, MATTHEW E",
+          "MASS TORT JUDGE"
+        ]
+      },
+      "latency_ms": 0.08995900000000057
+    },
+    {
+      "case_id": "case-0015",
+      "runner": "openai_raw_llm",
+      "answer": [
+        "RIVERA, HON. FRANCOIS A."
+      ],
+      "evidence": {
+        "source_table": "coaction/Judge MTD Rate.csv",
+        "supporting_value": 94.12,
+        "county": "Kings County",
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set OPENAI_API_KEY and optionally OPENAI_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": [
+          "JAMES J TOOMEY",
+          "MATTHEW E MARKOFF"
+        ]
+      },
+      "latency_ms": 0.0891670000000011
+    }
+  ],
+  "anthropic_raw_llm": [
+    {
+      "case_id": "case-0001",
+      "runner": "anthropic_raw_llm",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 576.0,
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set ANTHROPIC_API_KEY and optionally ANTHROPIC_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": []
+      },
+      "latency_ms": 0.08129200000001058
+    },
+    {
+      "case_id": "case-0002",
+      "runner": "anthropic_raw_llm",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 507.0,
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set ANTHROPIC_API_KEY and optionally ANTHROPIC_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": []
+      },
+      "latency_ms": 0.08045900000000494
+    },
+    {
+      "case_id": "case-0003",
+      "runner": "anthropic_raw_llm",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 33.77,
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set ANTHROPIC_API_KEY and optionally ANTHROPIC_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": []
+      },
+      "latency_ms": 0.07995900000001832
+    },
+    {
+      "case_id": "case-0004",
+      "runner": "anthropic_raw_llm",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 73.56,
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set ANTHROPIC_API_KEY and optionally ANTHROPIC_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": []
+      },
+      "latency_ms": 0.09208399999999228
+    },
+    {
+      "case_id": "case-0005",
+      "runner": "anthropic_raw_llm",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 50.0,
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set ANTHROPIC_API_KEY and optionally ANTHROPIC_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": []
+      },
+      "latency_ms": 0.18424999999999692
+    },
+    {
+      "case_id": "case-0006",
+      "runner": "anthropic_raw_llm",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 615.0,
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set ANTHROPIC_API_KEY and optionally ANTHROPIC_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": []
+      },
+      "latency_ms": 0.11466699999998498
+    },
+    {
+      "case_id": "case-0007",
+      "runner": "anthropic_raw_llm",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 682.0,
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set ANTHROPIC_API_KEY and optionally ANTHROPIC_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": []
+      },
+      "latency_ms": 0.09816600000001063
+    },
+    {
+      "case_id": "case-0008",
+      "runner": "anthropic_raw_llm",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 100.0,
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set ANTHROPIC_API_KEY and optionally ANTHROPIC_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": []
+      },
+      "latency_ms": 0.09279100000000873
+    },
+    {
+      "case_id": "case-0009",
+      "runner": "anthropic_raw_llm",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 100.0,
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set ANTHROPIC_API_KEY and optionally ANTHROPIC_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": []
+      },
+      "latency_ms": 0.09149999999999436
+    },
+    {
+      "case_id": "case-0010",
+      "runner": "anthropic_raw_llm",
+      "answer": [
+        "Kings County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 48.0,
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set ANTHROPIC_API_KEY and optionally ANTHROPIC_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": []
+      },
+      "latency_ms": 0.08879100000000473
+    },
+    {
+      "case_id": "case-0011",
+      "runner": "anthropic_raw_llm",
+      "answer": [
+        "MASS TORT JUDGE"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 71.43,
+        "county": "Bronx County",
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set ANTHROPIC_API_KEY and optionally ANTHROPIC_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": [
+          "COGAN, HOWARD L",
+          "MARKOFF, MATTHEW E",
+          "MASS TORT JUDGE"
+        ]
+      },
+      "latency_ms": 0.1107499999999928
+    },
+    {
+      "case_id": "case-0012",
+      "runner": "anthropic_raw_llm",
+      "answer": [
+        "GARSON, HON. ROBIN S."
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 60.0,
+        "county": "Kings County",
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set ANTHROPIC_API_KEY and optionally ANTHROPIC_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": [
+          "JAMES J TOOMEY",
+          "MATTHEW E MARKOFF"
+        ]
+      },
+      "latency_ms": 0.10741599999999907
+    },
+    {
+      "case_id": "case-0013",
+      "runner": "anthropic_raw_llm",
+      "answer": [
+        "RAUL A. SAHAGUN"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 58.82,
+        "county": "Los Angeles County",
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set ANTHROPIC_API_KEY and optionally ANTHROPIC_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": [
+          "RECK BELYNDA BRIDGELAND"
+        ]
+      },
+      "latency_ms": 0.09791700000000292
+    },
+    {
+      "case_id": "case-0014",
+      "runner": "anthropic_raw_llm",
+      "answer": [
+        "GUZMAN, HON. WILMA"
+      ],
+      "evidence": {
+        "source_table": "coaction/Judge MTD Rate.csv",
+        "supporting_value": 66.67,
+        "county": "Bronx County",
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set ANTHROPIC_API_KEY and optionally ANTHROPIC_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": [
+          "COGAN, HOWARD L",
+          "MARKOFF, MATTHEW E",
+          "MASS TORT JUDGE"
+        ]
+      },
+      "latency_ms": 0.08725000000001093
+    },
+    {
+      "case_id": "case-0015",
+      "runner": "anthropic_raw_llm",
+      "answer": [
+        "RIVERA, HON. FRANCOIS A."
+      ],
+      "evidence": {
+        "source_table": "coaction/Judge MTD Rate.csv",
+        "supporting_value": 94.12,
+        "county": "Kings County",
+        "mode": "offline",
+        "repo_path": null,
+        "notes": [
+          "Set ANTHROPIC_API_KEY and optionally ANTHROPIC_MODEL before running.",
+          "No tools or retrieval beyond the benchmark prompt."
+        ],
+        "summary_context_used": true,
+        "summary_name_hints": [
+          "JAMES J TOOMEY",
+          "MATTHEW E MARKOFF"
+        ]
+      },
+      "latency_ms": 0.08600000000000274
+    }
+  ],
+  "react_agent": [
+    {
+      "case_id": "case-0001",
+      "runner": "react_agent",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 576.0,
+        "mode": "offline",
+        "trace": [
+          {
+            "thought": "I should identify which local artifact contains the answer."
+          },
+          {
+            "action": "select_source",
+            "observation": "unicourt/Court Analysis Stats.csv"
+          },
+          {
+            "thought": "Now I can inspect the relevant metric or county slice."
+          },
+          {
+            "action": "derive_answer",
+            "observation": [
+              "Bronx County"
+            ]
+          }
+        ],
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+      },
+      "latency_ms": 0.06412500000002597
+    },
+    {
+      "case_id": "case-0002",
+      "runner": "react_agent",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 507.0,
+        "mode": "offline",
+        "trace": [
+          {
+            "thought": "I should identify which local artifact contains the answer."
+          },
+          {
+            "action": "select_source",
+            "observation": "unicourt/Court Analysis Stats.csv"
+          },
+          {
+            "thought": "Now I can inspect the relevant metric or county slice."
+          },
+          {
+            "action": "derive_answer",
+            "observation": [
+              "Los Angeles County"
+            ]
+          }
+        ],
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+      },
+      "latency_ms": 0.0627500000000003
+    },
+    {
+      "case_id": "case-0003",
+      "runner": "react_agent",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 33.77,
+        "mode": "offline",
+        "trace": [
+          {
+            "thought": "I should identify which local artifact contains the answer."
+          },
+          {
+            "action": "select_source",
+            "observation": "unicourt/Court Analysis Stats.csv"
+          },
+          {
+            "thought": "Now I can inspect the relevant metric or county slice."
+          },
+          {
+            "action": "derive_answer",
+            "observation": [
+              "Bronx County"
+            ]
+          }
+        ],
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+      },
+      "latency_ms": 0.06249999999999312
+    },
+    {
+      "case_id": "case-0004",
+      "runner": "react_agent",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 73.56,
+        "mode": "offline",
+        "trace": [
+          {
+            "thought": "I should identify which local artifact contains the answer."
+          },
+          {
+            "action": "select_source",
+            "observation": "unicourt/Court Analysis Stats.csv"
+          },
+          {
+            "thought": "Now I can inspect the relevant metric or county slice."
+          },
+          {
+            "action": "derive_answer",
+            "observation": [
+              "Los Angeles County"
+            ]
+          }
+        ],
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+      },
+      "latency_ms": 0.062208000000008035
+    },
+    {
+      "case_id": "case-0005",
+      "runner": "react_agent",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 50.0,
+        "mode": "offline",
+        "trace": [
+          {
+            "thought": "I should identify which local artifact contains the answer."
+          },
+          {
+            "action": "select_source",
+            "observation": "unicourt/Court Analysis Stats.csv"
+          },
+          {
+            "thought": "Now I can inspect the relevant metric or county slice."
+          },
+          {
+            "action": "derive_answer",
+            "observation": [
+              "Bronx County"
+            ]
+          }
+        ],
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+      },
+      "latency_ms": 0.06212499999999621
+    },
+    {
+      "case_id": "case-0006",
+      "runner": "react_agent",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 615.0,
+        "mode": "offline",
+        "trace": [
+          {
+            "thought": "I should identify which local artifact contains the answer."
+          },
+          {
+            "action": "select_source",
+            "observation": "coaction/Court Analysis Stats.csv"
+          },
+          {
+            "thought": "Now I can inspect the relevant metric or county slice."
+          },
+          {
+            "action": "derive_answer",
+            "observation": [
+              "Bronx County"
+            ]
+          }
+        ],
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+      },
+      "latency_ms": 0.061208000000007035
+    },
+    {
+      "case_id": "case-0007",
+      "runner": "react_agent",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 682.0,
+        "mode": "offline",
+        "trace": [
+          {
+            "thought": "I should identify which local artifact contains the answer."
+          },
+          {
+            "action": "select_source",
+            "observation": "coaction/Court Analysis Stats.csv"
+          },
+          {
+            "thought": "Now I can inspect the relevant metric or county slice."
+          },
+          {
+            "action": "derive_answer",
+            "observation": [
+              "Bronx County"
+            ]
+          }
+        ],
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+      },
+      "latency_ms": 0.06325000000001468
+    },
+    {
+      "case_id": "case-0008",
+      "runner": "react_agent",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 100.0,
+        "mode": "offline",
+        "trace": [
+          {
+            "thought": "I should identify which local artifact contains the answer."
+          },
+          {
+            "action": "select_source",
+            "observation": "coaction/Court Analysis Stats.csv"
+          },
+          {
+            "thought": "Now I can inspect the relevant metric or county slice."
+          },
+          {
+            "action": "derive_answer",
+            "observation": [
+              "Bronx County"
+            ]
+          }
+        ],
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+      },
+      "latency_ms": 0.06062500000000859
+    },
+    {
+      "case_id": "case-0009",
+      "runner": "react_agent",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 100.0,
+        "mode": "offline",
+        "trace": [
+          {
+            "thought": "I should identify which local artifact contains the answer."
+          },
+          {
+            "action": "select_source",
+            "observation": "coaction/Court Analysis Stats.csv"
+          },
+          {
+            "thought": "Now I can inspect the relevant metric or county slice."
+          },
+          {
+            "action": "derive_answer",
+            "observation": [
+              "Los Angeles County"
+            ]
+          }
+        ],
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+      },
+      "latency_ms": 0.05987499999998702
+    },
+    {
+      "case_id": "case-0010",
+      "runner": "react_agent",
+      "answer": [
+        "Kings County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 48.0,
+        "mode": "offline",
+        "trace": [
+          {
+            "thought": "I should identify which local artifact contains the answer."
+          },
+          {
+            "action": "select_source",
+            "observation": "coaction/Court Analysis Stats.csv"
+          },
+          {
+            "thought": "Now I can inspect the relevant metric or county slice."
+          },
+          {
+            "action": "derive_answer",
+            "observation": [
+              "Kings County"
+            ]
+          }
+        ],
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+      },
+      "latency_ms": 0.06025000000001168
+    },
+    {
+      "case_id": "case-0011",
+      "runner": "react_agent",
+      "answer": [
+        "MASS TORT JUDGE"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 71.43,
+        "county": "Bronx County",
+        "mode": "offline",
+        "trace": [
+          {
+            "thought": "I should identify which local artifact contains the answer."
+          },
+          {
+            "action": "select_source",
+            "observation": "unicourt/Judge MTD Rate.csv"
+          },
+          {
+            "thought": "Now I can inspect the relevant metric or county slice."
+          },
+          {
+            "action": "derive_answer",
+            "observation": [
+              "MASS TORT JUDGE"
+            ]
+          }
+        ],
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+      },
+      "latency_ms": 0.07054100000000729
+    },
+    {
+      "case_id": "case-0012",
+      "runner": "react_agent",
+      "answer": [
+        "GARSON, HON. ROBIN S."
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 60.0,
+        "county": "Kings County",
+        "mode": "offline",
+        "trace": [
+          {
+            "thought": "I should identify which local artifact contains the answer."
+          },
+          {
+            "action": "select_source",
+            "observation": "unicourt/Judge MTD Rate.csv"
+          },
+          {
+            "thought": "Now I can inspect the relevant metric or county slice."
+          },
+          {
+            "action": "derive_answer",
+            "observation": [
+              "GARSON, HON. ROBIN S."
+            ]
+          }
+        ],
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+      },
+      "latency_ms": 0.06762499999998783
+    },
+    {
+      "case_id": "case-0013",
+      "runner": "react_agent",
+      "answer": [
+        "RAUL A. SAHAGUN"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 58.82,
+        "county": "Los Angeles County",
+        "mode": "offline",
+        "trace": [
+          {
+            "thought": "I should identify which local artifact contains the answer."
+          },
+          {
+            "action": "select_source",
+            "observation": "unicourt/Judge MTD Rate.csv"
+          },
+          {
+            "thought": "Now I can inspect the relevant metric or county slice."
+          },
+          {
+            "action": "derive_answer",
+            "observation": [
+              "RAUL A. SAHAGUN"
+            ]
+          }
+        ],
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+      },
+      "latency_ms": 0.06741700000001405
+    },
+    {
+      "case_id": "case-0014",
+      "runner": "react_agent",
+      "answer": [
+        "GUZMAN, HON. WILMA"
+      ],
+      "evidence": {
+        "source_table": "coaction/Judge MTD Rate.csv",
+        "supporting_value": 66.67,
+        "county": "Bronx County",
+        "mode": "offline",
+        "trace": [
+          {
+            "thought": "I should identify which local artifact contains the answer."
+          },
+          {
+            "action": "select_source",
+            "observation": "coaction/Judge MTD Rate.csv"
+          },
+          {
+            "thought": "Now I can inspect the relevant metric or county slice."
+          },
+          {
+            "action": "derive_answer",
+            "observation": [
+              "GUZMAN, HON. WILMA"
+            ]
+          }
+        ],
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+      },
+      "latency_ms": 0.06287499999999002
+    },
+    {
+      "case_id": "case-0015",
+      "runner": "react_agent",
+      "answer": [
+        "RIVERA, HON. FRANCOIS A."
+      ],
+      "evidence": {
+        "source_table": "coaction/Judge MTD Rate.csv",
+        "supporting_value": 94.12,
+        "county": "Kings County",
+        "mode": "offline",
+        "trace": [
+          {
+            "thought": "I should identify which local artifact contains the answer."
+          },
+          {
+            "action": "select_source",
+            "observation": "coaction/Judge MTD Rate.csv"
+          },
+          {
+            "thought": "Now I can inspect the relevant metric or county slice."
+          },
+          {
+            "action": "derive_answer",
+            "observation": [
+              "RIVERA, HON. FRANCOIS A."
+            ]
+          }
+        ],
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+      },
+      "latency_ms": 0.06370800000002341
+    }
+  ],
+  "multi_agent_analyst_coder_critic": [
+    {
+      "case_id": "case-0001",
+      "runner": "multi_agent_analyst_coder_critic",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 576.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "coder",
+            "message": "Support the extraction flow for case-0001."
+          },
+          {
+            "role": "critic",
+            "message": "Verify the proposed answer against supporting value 576.0."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Bronx County"
+          }
+        ]
+      },
+      "latency_ms": 0.0660000000000105
+    },
+    {
+      "case_id": "case-0002",
+      "runner": "multi_agent_analyst_coder_critic",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 507.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "coder",
+            "message": "Support the extraction flow for case-0002."
+          },
+          {
+            "role": "critic",
+            "message": "Verify the proposed answer against supporting value 507.0."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Los Angeles County"
+          }
+        ]
+      },
+      "latency_ms": 0.06287499999999002
+    },
+    {
+      "case_id": "case-0003",
+      "runner": "multi_agent_analyst_coder_critic",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 33.77,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "coder",
+            "message": "Support the extraction flow for case-0003."
+          },
+          {
+            "role": "critic",
+            "message": "Verify the proposed answer against supporting value 33.77."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Bronx County"
+          }
+        ]
+      },
+      "latency_ms": 0.06266699999998848
+    },
+    {
+      "case_id": "case-0004",
+      "runner": "multi_agent_analyst_coder_critic",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 73.56,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "coder",
+            "message": "Support the extraction flow for case-0004."
+          },
+          {
+            "role": "critic",
+            "message": "Verify the proposed answer against supporting value 73.56."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Los Angeles County"
+          }
+        ]
+      },
+      "latency_ms": 0.06362500000001159
+    },
+    {
+      "case_id": "case-0005",
+      "runner": "multi_agent_analyst_coder_critic",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 50.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "coder",
+            "message": "Support the extraction flow for case-0005."
+          },
+          {
+            "role": "critic",
+            "message": "Verify the proposed answer against supporting value 50.0."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Bronx County"
+          }
+        ]
+      },
+      "latency_ms": 0.06520900000001051
+    },
+    {
+      "case_id": "case-0006",
+      "runner": "multi_agent_analyst_coder_critic",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 615.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "analyst",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "coder",
+            "message": "Support the extraction flow for case-0006."
+          },
+          {
+            "role": "critic",
+            "message": "Verify the proposed answer against supporting value 615.0."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Bronx County"
+          }
+        ]
+      },
+      "latency_ms": 0.06224999999998593
+    },
+    {
+      "case_id": "case-0007",
+      "runner": "multi_agent_analyst_coder_critic",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 682.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "analyst",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "coder",
+            "message": "Support the extraction flow for case-0007."
+          },
+          {
+            "role": "critic",
+            "message": "Verify the proposed answer against supporting value 682.0."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Bronx County"
+          }
+        ]
+      },
+      "latency_ms": 0.06212500000002397
+    },
+    {
+      "case_id": "case-0008",
+      "runner": "multi_agent_analyst_coder_critic",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 100.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "analyst",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "coder",
+            "message": "Support the extraction flow for case-0008."
+          },
+          {
+            "role": "critic",
+            "message": "Verify the proposed answer against supporting value 100.0."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Bronx County"
+          }
+        ]
+      },
+      "latency_ms": 0.06162499999998183
+    },
+    {
+      "case_id": "case-0009",
+      "runner": "multi_agent_analyst_coder_critic",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 100.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "analyst",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "coder",
+            "message": "Support the extraction flow for case-0009."
+          },
+          {
+            "role": "critic",
+            "message": "Verify the proposed answer against supporting value 100.0."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Los Angeles County"
+          }
+        ]
+      },
+      "latency_ms": 0.061125000000022967
+    },
+    {
+      "case_id": "case-0010",
+      "runner": "multi_agent_analyst_coder_critic",
+      "answer": [
+        "Kings County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 48.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "analyst",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "coder",
+            "message": "Support the extraction flow for case-0010."
+          },
+          {
+            "role": "critic",
+            "message": "Verify the proposed answer against supporting value 48.0."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Kings County"
+          }
+        ]
+      },
+      "latency_ms": 0.061499999999992117
+    },
+    {
+      "case_id": "case-0011",
+      "runner": "multi_agent_analyst_coder_critic",
+      "answer": [
+        "MASS TORT JUDGE"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 71.43,
+        "county": "Bronx County",
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "coder",
+            "message": "Support the extraction flow for case-0011."
+          },
+          {
+            "role": "critic",
+            "message": "Verify the proposed answer against supporting value 71.43."
+          },
+          {
+            "role": "final",
+            "message": "Answer: MASS TORT JUDGE"
+          }
+        ]
+      },
+      "latency_ms": 0.07279099999998873
+    },
+    {
+      "case_id": "case-0012",
+      "runner": "multi_agent_analyst_coder_critic",
+      "answer": [
+        "GARSON, HON. ROBIN S."
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 60.0,
+        "county": "Kings County",
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "coder",
+            "message": "Support the extraction flow for case-0012."
+          },
+          {
+            "role": "critic",
+            "message": "Verify the proposed answer against supporting value 60.0."
+          },
+          {
+            "role": "final",
+            "message": "Answer: GARSON, HON. ROBIN S."
+          }
+        ]
+      },
+      "latency_ms": 0.06887499999999602
+    },
+    {
+      "case_id": "case-0013",
+      "runner": "multi_agent_analyst_coder_critic",
+      "answer": [
+        "RAUL A. SAHAGUN"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 58.82,
+        "county": "Los Angeles County",
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "coder",
+            "message": "Support the extraction flow for case-0013."
+          },
+          {
+            "role": "critic",
+            "message": "Verify the proposed answer against supporting value 58.82."
+          },
+          {
+            "role": "final",
+            "message": "Answer: RAUL A. SAHAGUN"
+          }
+        ]
+      },
+      "latency_ms": 0.06849999999999912
+    },
+    {
+      "case_id": "case-0014",
+      "runner": "multi_agent_analyst_coder_critic",
+      "answer": [
+        "GUZMAN, HON. WILMA"
+      ],
+      "evidence": {
+        "source_table": "coaction/Judge MTD Rate.csv",
+        "supporting_value": 66.67,
+        "county": "Bronx County",
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "analyst",
+            "message": "Route the task to coaction/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "coder",
+            "message": "Support the extraction flow for case-0014."
+          },
+          {
+            "role": "critic",
+            "message": "Verify the proposed answer against supporting value 66.67."
+          },
+          {
+            "role": "final",
+            "message": "Answer: GUZMAN, HON. WILMA"
+          }
+        ]
+      },
+      "latency_ms": 0.06324999999998693
+    },
+    {
+      "case_id": "case-0015",
+      "runner": "multi_agent_analyst_coder_critic",
+      "answer": [
+        "RIVERA, HON. FRANCOIS A."
+      ],
+      "evidence": {
+        "source_table": "coaction/Judge MTD Rate.csv",
+        "supporting_value": 94.12,
+        "county": "Kings County",
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "analyst",
+            "message": "Route the task to coaction/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "coder",
+            "message": "Support the extraction flow for case-0015."
+          },
+          {
+            "role": "critic",
+            "message": "Verify the proposed answer against supporting value 94.12."
+          },
+          {
+            "role": "final",
+            "message": "Answer: RIVERA, HON. FRANCOIS A."
+          }
+        ]
+      },
+      "latency_ms": 0.06379200000000695
+    }
+  ],
+  "autogen_multi_agent": [
+    {
+      "case_id": "case-0001",
+      "runner": "autogen_multi_agent",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 576.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "transcript": [
+          {
+            "role": "planner",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "verifier",
+            "message": "Verify the proposed answer against supporting value 576.0."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Bronx County"
+          }
+        ]
+      },
+      "latency_ms": 0.06241699999998129
+    },
+    {
+      "case_id": "case-0002",
+      "runner": "autogen_multi_agent",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 507.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "transcript": [
+          {
+            "role": "planner",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "verifier",
+            "message": "Verify the proposed answer against supporting value 507.0."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Los Angeles County"
+          }
+        ]
+      },
+      "latency_ms": 0.06774999999997755
+    },
+    {
+      "case_id": "case-0003",
+      "runner": "autogen_multi_agent",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 33.77,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "transcript": [
+          {
+            "role": "planner",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "verifier",
+            "message": "Verify the proposed answer against supporting value 33.77."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Bronx County"
+          }
+        ]
+      },
+      "latency_ms": 0.0633750000000044
+    },
+    {
+      "case_id": "case-0004",
+      "runner": "autogen_multi_agent",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 73.56,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "transcript": [
+          {
+            "role": "planner",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "verifier",
+            "message": "Verify the proposed answer against supporting value 73.56."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Los Angeles County"
+          }
+        ]
+      },
+      "latency_ms": 0.06333399999999823
+    },
+    {
+      "case_id": "case-0005",
+      "runner": "autogen_multi_agent",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 50.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "transcript": [
+          {
+            "role": "planner",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "verifier",
+            "message": "Verify the proposed answer against supporting value 50.0."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Bronx County"
+          }
+        ]
+      },
+      "latency_ms": 0.06308399999999104
+    },
+    {
+      "case_id": "case-0006",
+      "runner": "autogen_multi_agent",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 615.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "transcript": [
+          {
+            "role": "planner",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "verifier",
+            "message": "Verify the proposed answer against supporting value 615.0."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Bronx County"
+          }
+        ]
+      },
+      "latency_ms": 0.06312500000002497
+    },
+    {
+      "case_id": "case-0007",
+      "runner": "autogen_multi_agent",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 682.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "transcript": [
+          {
+            "role": "planner",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "verifier",
+            "message": "Verify the proposed answer against supporting value 682.0."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Bronx County"
+          }
+        ]
+      },
+      "latency_ms": 0.06270799999999466
+    },
+    {
+      "case_id": "case-0008",
+      "runner": "autogen_multi_agent",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 100.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "transcript": [
+          {
+            "role": "planner",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "verifier",
+            "message": "Verify the proposed answer against supporting value 100.0."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Bronx County"
+          }
+        ]
+      },
+      "latency_ms": 0.0627500000000003
+    },
+    {
+      "case_id": "case-0009",
+      "runner": "autogen_multi_agent",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 100.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "transcript": [
+          {
+            "role": "planner",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "verifier",
+            "message": "Verify the proposed answer against supporting value 100.0."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Los Angeles County"
+          }
+        ]
+      },
+      "latency_ms": 0.062291999999991576
+    },
+    {
+      "case_id": "case-0010",
+      "runner": "autogen_multi_agent",
+      "answer": [
+        "Kings County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 48.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "transcript": [
+          {
+            "role": "planner",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "verifier",
+            "message": "Verify the proposed answer against supporting value 48.0."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Kings County"
+          }
+        ]
+      },
+      "latency_ms": 0.06429199999999358
+    },
+    {
+      "case_id": "case-0011",
+      "runner": "autogen_multi_agent",
+      "answer": [
+        "MASS TORT JUDGE"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 71.43,
+        "county": "Bronx County",
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "transcript": [
+          {
+            "role": "planner",
+            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "verifier",
+            "message": "Verify the proposed answer against supporting value 71.43."
+          },
+          {
+            "role": "final",
+            "message": "Answer: MASS TORT JUDGE"
+          }
+        ]
+      },
+      "latency_ms": 0.07004099999999291
+    },
+    {
+      "case_id": "case-0012",
+      "runner": "autogen_multi_agent",
+      "answer": [
+        "GARSON, HON. ROBIN S."
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 60.0,
+        "county": "Kings County",
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "transcript": [
+          {
+            "role": "planner",
+            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "verifier",
+            "message": "Verify the proposed answer against supporting value 60.0."
+          },
+          {
+            "role": "final",
+            "message": "Answer: GARSON, HON. ROBIN S."
+          }
+        ]
+      },
+      "latency_ms": 0.07012499999997646
+    },
+    {
+      "case_id": "case-0013",
+      "runner": "autogen_multi_agent",
+      "answer": [
+        "RAUL A. SAHAGUN"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 58.82,
+        "county": "Los Angeles County",
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "transcript": [
+          {
+            "role": "planner",
+            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "verifier",
+            "message": "Verify the proposed answer against supporting value 58.82."
+          },
+          {
+            "role": "final",
+            "message": "Answer: RAUL A. SAHAGUN"
+          }
+        ]
+      },
+      "latency_ms": 0.06945899999999394
+    },
+    {
+      "case_id": "case-0014",
+      "runner": "autogen_multi_agent",
+      "answer": [
+        "GUZMAN, HON. WILMA"
+      ],
+      "evidence": {
+        "source_table": "coaction/Judge MTD Rate.csv",
+        "supporting_value": 66.67,
+        "county": "Bronx County",
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "transcript": [
+          {
+            "role": "planner",
+            "message": "Route the task to coaction/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to coaction/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "verifier",
+            "message": "Verify the proposed answer against supporting value 66.67."
+          },
+          {
+            "role": "final",
+            "message": "Answer: GUZMAN, HON. WILMA"
+          }
+        ]
+      },
+      "latency_ms": 0.06462500000001259
+    },
+    {
+      "case_id": "case-0015",
+      "runner": "autogen_multi_agent",
+      "answer": [
+        "RIVERA, HON. FRANCOIS A."
+      ],
+      "evidence": {
+        "source_table": "coaction/Judge MTD Rate.csv",
+        "supporting_value": 94.12,
+        "county": "Kings County",
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "transcript": [
+          {
+            "role": "planner",
+            "message": "Route the task to coaction/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to coaction/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "verifier",
+            "message": "Verify the proposed answer against supporting value 94.12."
+          },
+          {
+            "role": "final",
+            "message": "Answer: RIVERA, HON. FRANCOIS A."
+          }
+        ]
+      },
+      "latency_ms": 0.06670899999999813
+    }
+  ],
+  "metagpt_sop_agent": [
+    {
+      "case_id": "case-0001",
+      "runner": "metagpt_sop_agent",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 576.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "lead",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "architect",
+            "message": "Support the extraction flow for case-0001."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "reviewer",
+            "message": "Support the extraction flow for case-0001."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Bronx County"
+          }
+        ]
+      },
+      "latency_ms": 0.0639159999999972
+    },
+    {
+      "case_id": "case-0002",
+      "runner": "metagpt_sop_agent",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 507.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "lead",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "architect",
+            "message": "Support the extraction flow for case-0002."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "reviewer",
+            "message": "Support the extraction flow for case-0002."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Los Angeles County"
+          }
+        ]
+      },
+      "latency_ms": 0.06283300000001213
+    },
+    {
+      "case_id": "case-0003",
+      "runner": "metagpt_sop_agent",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 33.77,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "lead",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "architect",
+            "message": "Support the extraction flow for case-0003."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "reviewer",
+            "message": "Support the extraction flow for case-0003."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Bronx County"
+          }
+        ]
+      },
+      "latency_ms": 0.061792000000004954
+    },
+    {
+      "case_id": "case-0004",
+      "runner": "metagpt_sop_agent",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 73.56,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "lead",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "architect",
+            "message": "Support the extraction flow for case-0004."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "reviewer",
+            "message": "Support the extraction flow for case-0004."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Los Angeles County"
+          }
+        ]
+      },
+      "latency_ms": 0.061499999999992117
+    },
+    {
+      "case_id": "case-0005",
+      "runner": "metagpt_sop_agent",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 50.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "lead",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "architect",
+            "message": "Support the extraction flow for case-0005."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "reviewer",
+            "message": "Support the extraction flow for case-0005."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Bronx County"
+          }
+        ]
+      },
+      "latency_ms": 0.06087499999998802
+    },
+    {
+      "case_id": "case-0006",
+      "runner": "metagpt_sop_agent",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 615.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "lead",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "architect",
+            "message": "Support the extraction flow for case-0006."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "reviewer",
+            "message": "Support the extraction flow for case-0006."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Bronx County"
+          }
+        ]
+      },
+      "latency_ms": 0.06091699999999367
+    },
+    {
+      "case_id": "case-0007",
+      "runner": "metagpt_sop_agent",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 682.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "lead",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "architect",
+            "message": "Support the extraction flow for case-0007."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "reviewer",
+            "message": "Support the extraction flow for case-0007."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Bronx County"
+          }
+        ]
+      },
+      "latency_ms": 0.060957999999999846
+    },
+    {
+      "case_id": "case-0008",
+      "runner": "metagpt_sop_agent",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 100.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "lead",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "architect",
+            "message": "Support the extraction flow for case-0008."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "reviewer",
+            "message": "Support the extraction flow for case-0008."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Bronx County"
+          }
+        ]
+      },
+      "latency_ms": 0.060709000000019886
+    },
+    {
+      "case_id": "case-0009",
+      "runner": "metagpt_sop_agent",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 100.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "lead",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "architect",
+            "message": "Support the extraction flow for case-0009."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "reviewer",
+            "message": "Support the extraction flow for case-0009."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Los Angeles County"
+          }
+        ]
+      },
+      "latency_ms": 0.06220900000000751
+    },
+    {
+      "case_id": "case-0010",
+      "runner": "metagpt_sop_agent",
+      "answer": [
+        "Kings County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 48.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "lead",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "architect",
+            "message": "Support the extraction flow for case-0010."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+          },
+          {
+            "role": "reviewer",
+            "message": "Support the extraction flow for case-0010."
+          },
+          {
+            "role": "final",
+            "message": "Answer: Kings County"
+          }
+        ]
+      },
+      "latency_ms": 0.06120799999997928
+    },
+    {
+      "case_id": "case-0011",
+      "runner": "metagpt_sop_agent",
+      "answer": [
+        "MASS TORT JUDGE"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 71.43,
+        "county": "Bronx County",
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "lead",
+            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "architect",
+            "message": "Support the extraction flow for case-0011."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "reviewer",
+            "message": "Support the extraction flow for case-0011."
+          },
+          {
+            "role": "final",
+            "message": "Answer: MASS TORT JUDGE"
+          }
+        ]
+      },
+      "latency_ms": 0.06845799999999347
+    },
+    {
+      "case_id": "case-0012",
+      "runner": "metagpt_sop_agent",
+      "answer": [
+        "GARSON, HON. ROBIN S."
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 60.0,
+        "county": "Kings County",
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "lead",
+            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "architect",
+            "message": "Support the extraction flow for case-0012."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "reviewer",
+            "message": "Support the extraction flow for case-0012."
+          },
+          {
+            "role": "final",
+            "message": "Answer: GARSON, HON. ROBIN S."
+          }
+        ]
+      },
+      "latency_ms": 0.0677500000000053
+    },
+    {
+      "case_id": "case-0013",
+      "runner": "metagpt_sop_agent",
+      "answer": [
+        "RAUL A. SAHAGUN"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 58.82,
+        "county": "Los Angeles County",
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "lead",
+            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "architect",
+            "message": "Support the extraction flow for case-0013."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "reviewer",
+            "message": "Support the extraction flow for case-0013."
+          },
+          {
+            "role": "final",
+            "message": "Answer: RAUL A. SAHAGUN"
+          }
+        ]
+      },
+      "latency_ms": 0.06787499999999502
+    },
+    {
+      "case_id": "case-0014",
+      "runner": "metagpt_sop_agent",
+      "answer": [
+        "GUZMAN, HON. WILMA"
+      ],
+      "evidence": {
+        "source_table": "coaction/Judge MTD Rate.csv",
+        "supporting_value": 66.67,
+        "county": "Bronx County",
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "lead",
+            "message": "Route the task to coaction/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "architect",
+            "message": "Support the extraction flow for case-0014."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to coaction/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "reviewer",
+            "message": "Support the extraction flow for case-0014."
+          },
+          {
+            "role": "final",
+            "message": "Answer: GUZMAN, HON. WILMA"
+          }
+        ]
+      },
+      "latency_ms": 0.06337499999997664
+    },
+    {
+      "case_id": "case-0015",
+      "runner": "metagpt_sop_agent",
+      "answer": [
+        "RIVERA, HON. FRANCOIS A."
+      ],
+      "evidence": {
+        "source_table": "coaction/Judge MTD Rate.csv",
+        "supporting_value": 94.12,
+        "county": "Kings County",
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "transcript": [
+          {
+            "role": "lead",
+            "message": "Route the task to coaction/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "architect",
+            "message": "Support the extraction flow for case-0015."
+          },
+          {
+            "role": "analyst",
+            "message": "Route the task to coaction/Judge MTD Rate.csv and identify the relevant metric."
+          },
+          {
+            "role": "reviewer",
+            "message": "Support the extraction flow for case-0015."
+          },
+          {
+            "role": "final",
+            "message": "Answer: RIVERA, HON. FRANCOIS A."
+          }
+        ]
+      },
+      "latency_ms": 0.06570799999999766
+    }
+  ],
+  "single_agent_data_analyst": [
+    {
+      "case_id": "case-0001",
+      "runner": "single_agent_data_analyst",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 576.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "graph_steps": [
+          {
+            "node": "load_data",
+            "detail": "unicourt/Court Analysis Stats.csv"
+          },
+          {
+            "node": "analyze",
+            "detail": "metric=AVG_CASE_DURATION"
+          },
+          {
+            "node": "format_output",
+            "detail": [
+              "Bronx County"
+            ]
+          }
+        ]
+      },
+      "latency_ms": 0.06283299999998437
+    },
+    {
+      "case_id": "case-0002",
+      "runner": "single_agent_data_analyst",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 507.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "graph_steps": [
+          {
+            "node": "load_data",
+            "detail": "unicourt/Court Analysis Stats.csv"
+          },
+          {
+            "node": "analyze",
+            "detail": "metric=AVG_TIME_TO_RESOLUTION"
+          },
+          {
+            "node": "format_output",
+            "detail": [
+              "Los Angeles County"
+            ]
+          }
+        ]
+      },
+      "latency_ms": 0.06208299999999056
+    },
+    {
+      "case_id": "case-0003",
+      "runner": "single_agent_data_analyst",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 33.77,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "graph_steps": [
+          {
+            "node": "load_data",
+            "detail": "unicourt/Court Analysis Stats.csv"
+          },
+          {
+            "node": "analyze",
+            "detail": "metric=MTD_SUCCESS_RATE"
+          },
+          {
+            "node": "format_output",
+            "detail": [
+              "Bronx County"
+            ]
+          }
+        ]
+      },
+      "latency_ms": 0.06150000000001987
+    },
+    {
+      "case_id": "case-0004",
+      "runner": "single_agent_data_analyst",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 73.56,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "graph_steps": [
+          {
+            "node": "load_data",
+            "detail": "unicourt/Court Analysis Stats.csv"
+          },
+          {
+            "node": "analyze",
+            "detail": "metric=SJ_SUCCESS_RATE"
+          },
+          {
+            "node": "format_output",
+            "detail": [
+              "Los Angeles County"
+            ]
+          }
+        ]
+      },
+      "latency_ms": 0.06083300000001013
+    },
+    {
+      "case_id": "case-0005",
+      "runner": "single_agent_data_analyst",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Court Analysis Stats.csv",
+        "supporting_value": 50.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "graph_steps": [
+          {
+            "node": "load_data",
+            "detail": "unicourt/Court Analysis Stats.csv"
+          },
+          {
+            "node": "analyze",
+            "detail": "metric=AVG_DURATION_NO_TRIAL"
+          },
+          {
+            "node": "format_output",
+            "detail": [
+              "Bronx County"
+            ]
+          }
+        ]
+      },
+      "latency_ms": 0.06108299999998956
+    },
+    {
+      "case_id": "case-0006",
+      "runner": "single_agent_data_analyst",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 615.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "graph_steps": [
+          {
+            "node": "load_data",
+            "detail": "coaction/Court Analysis Stats.csv"
+          },
+          {
+            "node": "analyze",
+            "detail": "metric=AVG_CASE_DURATION"
+          },
+          {
+            "node": "format_output",
+            "detail": [
+              "Bronx County"
+            ]
+          }
+        ]
+      },
+      "latency_ms": 0.060749999999998305
+    },
+    {
+      "case_id": "case-0007",
+      "runner": "single_agent_data_analyst",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 682.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "graph_steps": [
+          {
+            "node": "load_data",
+            "detail": "coaction/Court Analysis Stats.csv"
+          },
+          {
+            "node": "analyze",
+            "detail": "metric=AVG_TIME_TO_RESOLUTION"
+          },
+          {
+            "node": "format_output",
+            "detail": [
+              "Bronx County"
+            ]
+          }
+        ]
+      },
+      "latency_ms": 0.0608340000000096
+    },
+    {
+      "case_id": "case-0008",
+      "runner": "single_agent_data_analyst",
+      "answer": [
+        "Bronx County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 100.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "graph_steps": [
+          {
+            "node": "load_data",
+            "detail": "coaction/Court Analysis Stats.csv"
+          },
+          {
+            "node": "analyze",
+            "detail": "metric=MTD_SUCCESS_RATE"
+          },
+          {
+            "node": "format_output",
+            "detail": [
+              "Bronx County"
+            ]
+          }
+        ]
+      },
+      "latency_ms": 0.07725000000000093
+    },
+    {
+      "case_id": "case-0009",
+      "runner": "single_agent_data_analyst",
+      "answer": [
+        "Los Angeles County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 100.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "graph_steps": [
+          {
+            "node": "load_data",
+            "detail": "coaction/Court Analysis Stats.csv"
+          },
+          {
+            "node": "analyze",
+            "detail": "metric=SJ_SUCCESS_RATE"
+          },
+          {
+            "node": "format_output",
+            "detail": [
+              "Los Angeles County"
+            ]
+          }
+        ]
+      },
+      "latency_ms": 0.061000000000005494
+    },
+    {
+      "case_id": "case-0010",
+      "runner": "single_agent_data_analyst",
+      "answer": [
+        "Kings County"
+      ],
+      "evidence": {
+        "source_table": "coaction/Court Analysis Stats.csv",
+        "supporting_value": 48.0,
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "graph_steps": [
+          {
+            "node": "load_data",
+            "detail": "coaction/Court Analysis Stats.csv"
+          },
+          {
+            "node": "analyze",
+            "detail": "metric=AVG_DURATION_NO_TRIAL"
+          },
+          {
+            "node": "format_output",
+            "detail": [
+              "Kings County"
+            ]
+          }
+        ]
+      },
+      "latency_ms": 0.0613750000000024
+    },
+    {
+      "case_id": "case-0011",
+      "runner": "single_agent_data_analyst",
+      "answer": [
+        "MASS TORT JUDGE"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 71.43,
+        "county": "Bronx County",
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "graph_steps": [
+          {
+            "node": "load_data",
+            "detail": "unicourt/Judge MTD Rate.csv"
+          },
+          {
+            "node": "analyze",
+            "detail": "metric=DISMISSAL_RATE_PCT"
+          },
+          {
+            "node": "format_output",
+            "detail": [
+              "MASS TORT JUDGE"
+            ]
+          }
+        ]
+      },
+      "latency_ms": 0.0683750000000094
+    },
+    {
+      "case_id": "case-0012",
+      "runner": "single_agent_data_analyst",
+      "answer": [
+        "GARSON, HON. ROBIN S."
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 60.0,
+        "county": "Kings County",
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "graph_steps": [
+          {
+            "node": "load_data",
+            "detail": "unicourt/Judge MTD Rate.csv"
+          },
+          {
+            "node": "analyze",
+            "detail": "metric=DISMISSAL_RATE_PCT"
+          },
+          {
+            "node": "format_output",
+            "detail": [
+              "GARSON, HON. ROBIN S."
+            ]
+          }
+        ]
+      },
+      "latency_ms": 0.0694590000000217
+    },
+    {
+      "case_id": "case-0013",
+      "runner": "single_agent_data_analyst",
+      "answer": [
+        "RAUL A. SAHAGUN"
+      ],
+      "evidence": {
+        "source_table": "unicourt/Judge MTD Rate.csv",
+        "supporting_value": 58.82,
+        "county": "Los Angeles County",
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "graph_steps": [
+          {
+            "node": "load_data",
+            "detail": "unicourt/Judge MTD Rate.csv"
+          },
+          {
+            "node": "analyze",
+            "detail": "metric=DISMISSAL_RATE_PCT"
+          },
+          {
+            "node": "format_output",
+            "detail": [
+              "RAUL A. SAHAGUN"
+            ]
+          }
+        ]
+      },
+      "latency_ms": 0.06779200000001095
+    },
+    {
+      "case_id": "case-0014",
+      "runner": "single_agent_data_analyst",
+      "answer": [
+        "GUZMAN, HON. WILMA"
+      ],
+      "evidence": {
+        "source_table": "coaction/Judge MTD Rate.csv",
+        "supporting_value": 66.67,
+        "county": "Bronx County",
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "graph_steps": [
+          {
+            "node": "load_data",
+            "detail": "coaction/Judge MTD Rate.csv"
+          },
+          {
+            "node": "analyze",
+            "detail": "metric=DISMISSAL_RATE_PCT"
+          },
+          {
+            "node": "format_output",
+            "detail": [
+              "GUZMAN, HON. WILMA"
+            ]
+          }
+        ]
+      },
+      "latency_ms": 0.06308299999999156
+    },
+    {
+      "case_id": "case-0015",
+      "runner": "single_agent_data_analyst",
+      "answer": [
+        "RIVERA, HON. FRANCOIS A."
+      ],
+      "evidence": {
+        "source_table": "coaction/Judge MTD Rate.csv",
+        "supporting_value": 94.12,
+        "county": "Kings County",
+        "mode": "offline",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "graph_steps": [
+          {
+            "node": "load_data",
+            "detail": "coaction/Judge MTD Rate.csv"
+          },
+          {
+            "node": "analyze",
+            "detail": "metric=DISMISSAL_RATE_PCT"
+          },
+          {
+            "node": "format_output",
+            "detail": [
+              "RIVERA, HON. FRANCOIS A."
+            ]
+          }
+        ]
+      },
+      "latency_ms": 0.06349999999999412
+    }
+  ]
+}

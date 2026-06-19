@@ -8,7 +8,7 @@ Coaction and UniCourt venue-risk tables already present in `submodules/zeus-serv
 - Runner: `structured_lookup`
 - Cases: `15`
 - Overall accuracy: `100.0%`
-- Average latency: `0.02 ms`
+- Average latency: `0.04 ms`
 
 ## Accuracy By Dataset
 

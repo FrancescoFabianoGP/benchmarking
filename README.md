@@ -46,28 +46,6 @@ This repo is configured to recurse into submodules on pull. After pulling, it is
 git submodule update --init --recursive
 ```
 
-## SSH Setup
-
-This workspace is easiest to use if GP repos point at the GP SSH host alias.
-
-Example `~/.ssh/config`:
-
-```sshconfig
-Host github-gp
-  HostName github.com
-  User git
-  IdentityFile ~/.ssh/id_ed25519_GPkey
-  IdentitiesOnly yes
-  AddKeysToAgent yes
-  UseKeychain yes
-```
-
-Then GP remotes should look like:
-
-```bash
-git@github-gp:growth-protocol-ai/reasoning-engine.git
-git@github-gp:growth-protocol-ai/zeus-service.git
-```
 
 ## Environment Model
 
@@ -121,10 +99,9 @@ Read the submodule README for the full setup:
 
 1. Clone `benchmarking` with submodules.
 2. Run `git submodule update --init --recursive`.
-3. Verify both submodules use the GP SSH alias if they are GP-owned repos.
-4. Set up `submodules/reasoning-engine` with `uv sync`.
-5. Set up `submodules/zeus-service` with `uv sync` and its required `.env`, database, and cloud credentials.
-6. Read the materials in `documentation/` before building the harness.
+3. Set up `submodules/reasoning-engine` with `uv sync`.
+4. Set up `submodules/zeus-service` with `uv sync` and its required `.env`, database, and cloud credentials.
+5. Read the materials in `documentation/` before building the harness.
 
 ## Daily Use
 
@@ -151,6 +128,8 @@ Useful starting points:
 
 - [`documentation/README.md`](documentation/README.md)
 - [`documentation/BENCHMARK_DESIGN.md`](documentation/BENCHMARK_DESIGN.md)
+- [`documentation/BASELINES.md`](documentation/BASELINES.md)
+- [`documentation/EXTERNAL_BASELINE_REPOS.md`](documentation/EXTERNAL_BASELINE_REPOS.md)
 - [`documentation/IMPLEMENTATION_PLAN.md`](documentation/IMPLEMENTATION_PLAN.md)
 - [`documentation/API_CONTRACT.md`](documentation/API_CONTRACT.md)
 - [`documentation/PUBLIC_BENCHMARKS.md`](documentation/PUBLIC_BENCHMARKS.md)
@@ -182,7 +161,8 @@ It currently:
 
 - loads the existing UniCourt and Coaction local CSV tables
 - generates a small factual benchmark case pack
-- runs a deterministic baseline runner
+- writes a baseline catalog covering deterministic, raw-LLM, and open-tooling comparator arms
+- runs deterministic, raw-LLM, and agentic-wrapper baselines locally
 - scores exact-match accuracy
 - writes Markdown and JSON reports under `reports/`
 
@@ -192,11 +172,35 @@ Run it from the repo root with:
 python3 scripts/run_initial_coaction_benchmark.py
 ```
 
+Inspect the configured baseline ladder:
+
+```bash
+python3 scripts/run_initial_coaction_benchmark.py --list-baselines
+```
+
+Run the whole local suite:
+
+```bash
+python3 scripts/run_initial_coaction_benchmark.py --baseline all
+```
+
+Run the very basic benchmark entrypoint:
+
+```bash
+python3 scripts/run_basic_benchmark.py
+```
+
 Default outputs:
 
 - `cases/coaction_venue_risk/initial_case_pack.json`
+- `cases/coaction_venue_risk/baseline_catalog.json`
+- `cases/coaction_venue_risk/external_repo_catalog.json`
+- `cases/coaction_venue_risk/external_wrapper_manifest.json`
 - `reports/coaction_initial_draft/scorecard.md`
+- `reports/coaction_initial_draft/suite_scorecard.md`
+- `reports/basic_benchmark/basic_benchmark.md`
 - `reports/coaction_initial_draft/predictions.json`
+- `reports/coaction_initial_draft/suite_predictions.json`
 - `reports/coaction_initial_draft/scores.json`
 
-This is intentionally a thin slice so we can validate the benchmark loop on real data first. The next step is to expand from factual venue-risk questions into richer insurance decision cases, scoring, and workflow arms.
+This is intentionally still a thin slice on real local data. The next step is to replace offline wrappers and fallback modes with live provider APIs and real external-framework integrations where helpful.

@@ -1,0 +1,64 @@
+[
+  {
+    "repo_id": "metagpt",
+    "label": "MetaGPT",
+    "local_path": "baselines/metagpt",
+    "upstream_url": "https://github.com/FoundationAgents/MetaGPT.git",
+    "baseline_ids": [
+      "metagpt_sop_agent",
+      "multi_agent_analyst_coder_critic"
+    ],
+    "recommended_role": "SOP-style multi-agent baseline",
+    "wrapper_strategy": "library_or_cli_wrapper",
+    "install_hint": "Install the package in its own environment, then call either the CLI or a narrow library entrypoint.",
+    "entrypoint_hint": "Prefer the Data Interpreter path for benchmark tasks instead of the full software-company workflow.",
+    "notes": [
+      "Best fit for SOP-style orchestration.",
+      "Likely heavier than the other repos because it expects its own config and wider dependencies."
+    ],
+    "exists_locally": true,
+    "absolute_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+    "readme_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt/README.md"
+  },
+  {
+    "repo_id": "autogen",
+    "label": "AutoGen",
+    "local_path": "baselines/autogen",
+    "upstream_url": "https://github.com/microsoft/autogen.git",
+    "baseline_ids": [
+      "autogen_multi_agent",
+      "react_agent"
+    ],
+    "recommended_role": "named multi-agent architecture baseline",
+    "wrapper_strategy": "custom_team_wrapper",
+    "install_hint": "Install the AgentChat and OpenAI extension packages in a dedicated environment, then run a small custom team script.",
+    "entrypoint_hint": "Wrap AssistantAgent plus SelectorGroupChat or MagenticOneGroupChat in a benchmark adapter.",
+    "notes": [
+      "Good for a thin custom benchmark team.",
+      "Repo is useful as a reference and package source even if we do not adopt every built-in pattern."
+    ],
+    "exists_locally": true,
+    "absolute_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+    "readme_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen/README.md"
+  },
+  {
+    "repo_id": "langgraph",
+    "label": "LangGraph",
+    "local_path": "baselines/langgraph",
+    "upstream_url": "https://github.com/langchain-ai/langgraph.git",
+    "baseline_ids": [
+      "single_agent_data_analyst"
+    ],
+    "recommended_role": "single-agent data-analysis architecture baseline",
+    "wrapper_strategy": "graph_adapter_wrapper",
+    "install_hint": "Install langgraph in a dedicated environment and construct a small benchmark graph around local file loading and answer formatting.",
+    "entrypoint_hint": "Use a compact StateGraph-based wrapper rather than depending on archived examples.",
+    "notes": [
+      "Probably the lightest architecture baseline to operationalize first.",
+      "Good match for our current file-backed benchmark cases."
+    ],
+    "exists_locally": true,
+    "absolute_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+    "readme_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph/README.md"
+  }
+]

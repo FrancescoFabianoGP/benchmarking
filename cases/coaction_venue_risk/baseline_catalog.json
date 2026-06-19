@@ -1,0 +1,142 @@
+[
+  {
+    "baseline_id": "structured_lookup",
+    "label": "Structured Lookup",
+    "category": "deterministic_reference",
+    "runner_kind": "structured_lookup",
+    "provider": null,
+    "model_env_var": null,
+    "default_model": null,
+    "spreadsheet_basis": "Internal reference baseline",
+    "description": "Reads the local benchmark tables directly and returns exact answers.",
+    "implementation_status": "ready",
+    "required_env_vars": [],
+    "notes": [
+      "Ground-truth sanity check for the thin draft.",
+      "Useful as a regression guard while richer baselines are added."
+    ]
+  },
+  {
+    "baseline_id": "openai_raw_llm",
+    "label": "OpenAI Raw LLM",
+    "category": "llm_only",
+    "runner_kind": "openai_raw_llm",
+    "provider": "openai",
+    "model_env_var": "OPENAI_MODEL",
+    "default_model": "gpt-5",
+    "spreadsheet_basis": "Approach / baseline: LLM-only analyst",
+    "description": "Prompt-only GPT baseline over the same case question and output schema.",
+    "implementation_status": "offline_ready_live_if_configured",
+    "required_env_vars": [
+      "OPENAI_API_KEY"
+    ],
+    "notes": [
+      "Set OPENAI_API_KEY and optionally OPENAI_MODEL before running.",
+      "No tools or retrieval beyond the benchmark prompt."
+    ]
+  },
+  {
+    "baseline_id": "anthropic_raw_llm",
+    "label": "Anthropic Raw LLM",
+    "category": "llm_only",
+    "runner_kind": "anthropic_raw_llm",
+    "provider": "anthropic",
+    "model_env_var": "ANTHROPIC_MODEL",
+    "default_model": "claude-sonnet-4-0",
+    "spreadsheet_basis": "Approach / baseline: LLM-only analyst",
+    "description": "Prompt-only Claude baseline over the same case question and output schema.",
+    "implementation_status": "offline_ready_live_if_configured",
+    "required_env_vars": [
+      "ANTHROPIC_API_KEY"
+    ],
+    "notes": [
+      "Set ANTHROPIC_API_KEY and optionally ANTHROPIC_MODEL before running.",
+      "No tools or retrieval beyond the benchmark prompt."
+    ]
+  },
+  {
+    "baseline_id": "react_agent",
+    "label": "ReAct Agent",
+    "category": "open_tooling",
+    "runner_kind": "react_agent",
+    "provider": null,
+    "model_env_var": null,
+    "default_model": null,
+    "spreadsheet_basis": "Approach / baseline: ReAct agent; Paper to read: ReAct",
+    "description": "Open agent baseline with thought-action-observation loops and tool calls.",
+    "implementation_status": "offline_ready",
+    "required_env_vars": [],
+    "notes": [
+      "Good open baseline for agentic tool-use.",
+      "Runs today in a local offline wrapper mode; can later be replaced with a real framework-backed implementation."
+    ]
+  },
+  {
+    "baseline_id": "multi_agent_analyst_coder_critic",
+    "label": "Multi-Agent Analyst/Coder/Critic",
+    "category": "open_tooling",
+    "runner_kind": "multi_agent_analyst_coder_critic",
+    "provider": null,
+    "model_env_var": null,
+    "default_model": null,
+    "spreadsheet_basis": "Approach / baseline: Multi-agent analyst/coder/critic workflow; Paper to read: AutoGen",
+    "description": "Specialized multi-agent workflow baseline for analysis and self-critique.",
+    "implementation_status": "offline_ready",
+    "required_env_vars": [],
+    "notes": [
+      "Good comparator for orchestration-heavy open tooling.",
+      "Runs today in a local offline wrapper mode and can later be swapped for a real multi-agent implementation."
+    ]
+  },
+  {
+    "baseline_id": "autogen_multi_agent",
+    "label": "AutoGen Multi-Agent",
+    "category": "agentic_architecture",
+    "runner_kind": "autogen_multi_agent",
+    "provider": null,
+    "model_env_var": null,
+    "default_model": null,
+    "spreadsheet_basis": "Paper to read: AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+    "description": "Conversational multi-agent architecture baseline for collaborative data-analysis workflows.",
+    "implementation_status": "offline_ready",
+    "required_env_vars": [],
+    "notes": [
+      "Strong agentic architecture comparator for orchestration-heavy tasks.",
+      "Good fit if we want a named open framework baseline rather than only a generic multi-agent pattern."
+    ]
+  },
+  {
+    "baseline_id": "metagpt_sop_agent",
+    "label": "MetaGPT SOP Agent",
+    "category": "agentic_architecture",
+    "runner_kind": "metagpt_sop_agent",
+    "provider": null,
+    "model_env_var": null,
+    "default_model": null,
+    "spreadsheet_basis": "Paper to read: MetaGPT: Meta Programming for a Multi-Agent Collaborative Framework",
+    "description": "Multi-agent SOP-style architecture baseline emphasizing role separation and staged execution.",
+    "implementation_status": "offline_ready",
+    "required_env_vars": [],
+    "notes": [
+      "Interesting comparator if we want to benchmark GP as an orchestrator.",
+      "Heavier than ReAct, but a useful architecture-level baseline."
+    ]
+  },
+  {
+    "baseline_id": "single_agent_data_analyst",
+    "label": "Single-Agent Data Analyst",
+    "category": "agentic_architecture",
+    "runner_kind": "single_agent_data_analyst",
+    "provider": null,
+    "model_env_var": null,
+    "default_model": null,
+    "spreadsheet_basis": "Benchmarks: DABStep / InfiAgent-DABench / FDABench",
+    "description": "Single open data agent baseline over heterogeneous files and analytical questions.",
+    "implementation_status": "offline_ready",
+    "required_env_vars": [],
+    "notes": [
+      "Good basecase for realistic analytical querying without the full GP stack.",
+      "Natural bridge between raw LLM baselines and multi-agent orchestration baselines."
+    ]
+  }
+]

@@ -8,13 +8,16 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 from statistics import mean
 from time import perf_counter
-from typing import Any, Callable
+from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_ROOT = ROOT / "submodules" / "zeus-service" / "app" / "workflow" / "local_db" / "coaction"
 DEFAULT_CASE_PACK_PATH = ROOT / "cases" / "coaction_venue_risk" / "initial_case_pack.json"
 DEFAULT_REPORT_DIR = ROOT / "reports" / "coaction_initial_draft"
+DEFAULT_BASELINE_CATALOG_PATH = ROOT / "cases" / "coaction_venue_risk" / "baseline_catalog.json"
+DEFAULT_EXTERNAL_REPO_CATALOG_PATH = ROOT / "cases" / "coaction_venue_risk" / "external_repo_catalog.json"
+DEFAULT_EXTERNAL_WRAPPER_MANIFEST_PATH = ROOT / "cases" / "coaction_venue_risk" / "external_wrapper_manifest.json"
 
 
 @dataclass
@@ -297,6 +300,20 @@ def run_structured_lookup(
     )
 
 
+def run_baseline_prediction(
+    case: BenchmarkCase,
+    reference_data: dict[str, Any],
+    baseline_id: str,
+) -> Prediction:
+    from harness.baseline_runners import run_baseline_prediction as run_prediction_impl
+
+    started = perf_counter()
+    prediction = run_prediction_impl(case, reference_data, baseline_id)
+    if prediction.latency_ms == 0.0:
+        prediction.latency_ms = (perf_counter() - started) * 1000
+    return prediction
+
+
 def score_predictions(
     cases: list[BenchmarkCase],
     predictions: list[Prediction],
@@ -352,6 +369,17 @@ def score_predictions(
     }
 
 
+def summarize_suite(
+    cases: list[BenchmarkCase],
+    predictions_by_baseline: dict[str, list[Prediction]],
+) -> dict[str, Any]:
+    suite = {}
+    for baseline_id, predictions in predictions_by_baseline.items():
+        _, summary = score_predictions(cases, predictions)
+        suite[baseline_id] = summary
+    return suite
+
+
 def _json_ready_case(case: BenchmarkCase) -> dict[str, Any]:
     return asdict(case)
 
@@ -371,12 +399,36 @@ def write_outputs(
     summary: dict[str, Any],
     case_pack_path: Path,
     report_dir: Path,
+    baseline_catalog_path: Path,
+    suite_summary: dict[str, Any] | None = None,
+    predictions_by_baseline: dict[str, list[Prediction]] | None = None,
+    external_repo_catalog_path: Path | None = None,
+    external_wrapper_manifest_path: Path | None = None,
 ) -> None:
+    from harness.baseline_registry import baseline_catalog_as_json
+    from harness.external_baseline_repos import write_external_repo_catalog
+    from harness.external_baseline_wrappers import wrapper_manifest
+
+    baseline_catalog = baseline_catalog_as_json()
+    baseline_by_id = {item["baseline_id"]: item for item in baseline_catalog}
+
     case_pack_path.parent.mkdir(parents=True, exist_ok=True)
     report_dir.mkdir(parents=True, exist_ok=True)
+    baseline_catalog_path.parent.mkdir(parents=True, exist_ok=True)
 
     with case_pack_path.open("w", encoding="utf-8") as handle:
         json.dump([_json_ready_case(case) for case in case_pack], handle, indent=2)
+
+    with baseline_catalog_path.open("w", encoding="utf-8") as handle:
+        json.dump(baseline_catalog, handle, indent=2)
+
+    if external_repo_catalog_path is not None:
+        write_external_repo_catalog(external_repo_catalog_path)
+
+    if external_wrapper_manifest_path is not None:
+        external_wrapper_manifest_path.parent.mkdir(parents=True, exist_ok=True)
+        with external_wrapper_manifest_path.open("w", encoding="utf-8") as handle:
+            json.dump(wrapper_manifest(), handle, indent=2)
 
     with (report_dir / "predictions.json").open("w", encoding="utf-8") as handle:
         json.dump([_json_ready_prediction(pred) for pred in predictions], handle, indent=2)
@@ -386,10 +438,22 @@ def write_outputs(
             {
                 "summary": summary,
                 "scores": [_json_ready_score(score) for score in scores],
+                "suite_summary": suite_summary,
             },
             handle,
             indent=2,
         )
+
+    if predictions_by_baseline is not None:
+        with (report_dir / "suite_predictions.json").open("w", encoding="utf-8") as handle:
+            json.dump(
+                {
+                    baseline_id: [_json_ready_prediction(pred) for pred in baseline_predictions]
+                    for baseline_id, baseline_predictions in predictions_by_baseline.items()
+                },
+                handle,
+                indent=2,
+            )
 
     lines = [
         "# Coaction Initial Benchmark Draft",
@@ -456,26 +520,136 @@ def write_outputs(
     with (report_dir / "scorecard.md").open("w", encoding="utf-8") as handle:
         handle.write("\n".join(lines) + "\n")
 
+    if suite_summary:
+        suite_lines = [
+            "# Coaction Baseline Suite",
+            "",
+            "| Baseline | Accuracy | Cases | Avg Latency (ms) |",
+            "|---|---:|---:|---:|",
+        ]
+        for baseline_id, baseline_summary in suite_summary.items():
+            suite_lines.append(
+                f"| {baseline_id} | {baseline_summary['overall_accuracy']:.1%} | {baseline_summary['case_count']} | {baseline_summary['average_latency_ms']:.2f} |"
+            )
+        with (report_dir / "suite_scorecard.md").open("w", encoding="utf-8") as handle:
+            handle.write("\n".join(suite_lines) + "\n")
+
+        basic_lines = [
+            "# Very Basic Benchmark",
+            "",
+            "This is the simplest benchmark pass across all currently registered approaches.",
+            "",
+            f"- Cases: `{len(case_pack)}`",
+            f"- Data root: `{DATA_ROOT}`",
+            "",
+            "## Approaches",
+            "",
+            "| Baseline | Category | Status | Description |",
+            "|---|---|---|---|",
+        ]
+        for baseline_id in suite_summary:
+            baseline_meta = baseline_by_id.get(baseline_id, {})
+            basic_lines.append(
+                "| {baseline_id} | {category} | {status} | {description} |".format(
+                    baseline_id=baseline_id,
+                    category=baseline_meta.get("category", ""),
+                    status=baseline_meta.get("implementation_status", ""),
+                    description=str(baseline_meta.get("description", "")).replace("|", "/"),
+                )
+            )
+
+        basic_lines.extend(
+            [
+                "",
+                "## Results",
+                "",
+                "| Baseline | Accuracy | Avg Latency (ms) |",
+                "|---|---:|---:|",
+            ]
+        )
+        for baseline_id, baseline_summary in suite_summary.items():
+            basic_lines.append(
+                f"| {baseline_id} | {baseline_summary['overall_accuracy']:.1%} | {baseline_summary['average_latency_ms']:.2f} |"
+            )
+
+        basic_lines.extend(
+            [
+                "",
+                "## Notes",
+                "",
+                "- This is still a thin factual benchmark over local venue-risk data.",
+                "- GPT and Claude baselines use offline fallback behavior until API keys are configured.",
+                "- Agentic baselines currently run through local wrapper logic, not full upstream framework execution.",
+            ]
+        )
+        with (report_dir / "basic_benchmark.md").open("w", encoding="utf-8") as handle:
+            handle.write("\n".join(basic_lines) + "\n")
+
 
 def run_initial_benchmark(
+    baseline_id: str = "structured_lookup",
     case_pack_path: Path = DEFAULT_CASE_PACK_PATH,
     report_dir: Path = DEFAULT_REPORT_DIR,
+    baseline_catalog_path: Path = DEFAULT_BASELINE_CATALOG_PATH,
+    external_repo_catalog_path: Path = DEFAULT_EXTERNAL_REPO_CATALOG_PATH,
+    external_wrapper_manifest_path: Path = DEFAULT_EXTERNAL_WRAPPER_MANIFEST_PATH,
 ) -> dict[str, Any]:
+    from harness.baseline_registry import get_baseline_catalog
+
     reference_data = load_reference_data()
     case_pack = build_initial_case_pack(reference_data)
-    predictions = [run_structured_lookup(case, reference_data) for case in case_pack]
-    scores, summary = score_predictions(case_pack, predictions)
-    write_outputs(case_pack, predictions, scores, summary, case_pack_path, report_dir)
+    if baseline_id == "all":
+        baseline_ids = [spec.baseline_id for spec in get_baseline_catalog()]
+    else:
+        baseline_ids = [baseline_id]
+
+    predictions_by_baseline = {
+        current_baseline: [
+            run_baseline_prediction(case, reference_data, current_baseline)
+            for case in case_pack
+        ]
+        for current_baseline in baseline_ids
+    }
+
+    active_predictions = predictions_by_baseline[baseline_ids[0]]
+    scores, summary = score_predictions(case_pack, active_predictions)
+    suite_summary = summarize_suite(case_pack, predictions_by_baseline)
+    write_outputs(
+        case_pack,
+        active_predictions,
+        scores,
+        summary,
+        case_pack_path,
+        report_dir,
+        baseline_catalog_path,
+        suite_summary=suite_summary,
+        predictions_by_baseline=predictions_by_baseline,
+        external_repo_catalog_path=external_repo_catalog_path,
+        external_wrapper_manifest_path=external_wrapper_manifest_path,
+    )
     return {
+        "baseline_id": baseline_id,
+        "executed_baselines": baseline_ids,
         "case_pack_path": str(case_pack_path),
+        "baseline_catalog_path": str(baseline_catalog_path),
+        "external_repo_catalog_path": str(external_repo_catalog_path),
+        "external_wrapper_manifest_path": str(external_wrapper_manifest_path),
         "report_dir": str(report_dir),
         "summary": summary,
+        "suite_summary": suite_summary,
     }
 
 
 def main() -> None:
+    from harness.baseline_registry import baseline_catalog_as_json
+
     parser = argparse.ArgumentParser(
         description="Run the initial benchmark draft on existing Coaction venue-risk data."
+    )
+    parser.add_argument(
+        "--baseline",
+        default="structured_lookup",
+        help="Baseline ID to run, or 'all' for the full suite. Use --list-baselines to inspect choices.",
     )
     parser.add_argument(
         "--case-pack-path",
@@ -489,11 +663,30 @@ def main() -> None:
         default=DEFAULT_REPORT_DIR,
         help="Where to write the benchmark report artifacts.",
     )
-    args = parser.parse_args()
-    result = run_initial_benchmark(
-        case_pack_path=args.case_pack_path,
-        report_dir=args.report_dir,
+    parser.add_argument(
+        "--baseline-catalog-path",
+        type=Path,
+        default=DEFAULT_BASELINE_CATALOG_PATH,
+        help="Where to write the baseline catalog JSON.",
     )
+    parser.add_argument(
+        "--list-baselines",
+        action="store_true",
+        help="Print the currently configured baseline catalog and exit.",
+    )
+    args = parser.parse_args()
+    if args.list_baselines:
+        print(json.dumps(baseline_catalog_as_json(), indent=2))
+        return
+    try:
+        result = run_initial_benchmark(
+            baseline_id=args.baseline,
+            case_pack_path=args.case_pack_path,
+            report_dir=args.report_dir,
+            baseline_catalog_path=args.baseline_catalog_path,
+        )
+    except RuntimeError as exc:
+        raise SystemExit(str(exc))
     print(json.dumps(result, indent=2))
 
 

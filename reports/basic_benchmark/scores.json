@@ -23,7 +23,7 @@
         "case_count": 5
       }
     },
-    "average_latency_ms": 0.017410933333333878
+    "average_latency_ms": 0.03736386666666203
   },
   "scores": [
     {
@@ -217,7 +217,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.017410933333333878
+      "average_latency_ms": 0.03736386666666203
     },
     "openai_raw_llm": {
       "runner": "openai_raw_llm",
@@ -243,7 +243,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.09611386666666573
+      "average_latency_ms": 0.1855638666666659
     },
     "anthropic_raw_llm": {
       "runner": "anthropic_raw_llm",
@@ -269,7 +269,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.09955280000000233
+      "average_latency_ms": 0.1580306666666679
     },
     "react_agent": {
       "runner": "react_agent",
@@ -295,7 +295,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.06340546666667168
+      "average_latency_ms": 0.11858893333332639
     },
     "multi_agent_analyst_coder_critic": {
       "runner": "multi_agent_analyst_coder_critic",
@@ -321,7 +321,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.06441393333333305
+      "average_latency_ms": 0.11306380000000171
     },
     "autogen_multi_agent": {
       "runner": "autogen_multi_agent",
@@ -347,7 +347,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.06507239999999544
+      "average_latency_ms": 0.1198944666666683
     },
     "metagpt_sop_agent": {
       "runner": "metagpt_sop_agent",
@@ -373,7 +373,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.06333886666666418
+      "average_latency_ms": 0.11106946666666524
     },
     "single_agent_data_analyst": {
       "runner": "single_agent_data_analyst",
@@ -399,7 +399,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.06411666666666926
+      "average_latency_ms": 0.11096933333333281
     }
   }
 }
