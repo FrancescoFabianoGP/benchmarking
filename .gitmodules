@@ -1,6 +1,6 @@
 [submodule "reasoning-engine"]
-	path = reasoning-engine
+	path = submodules/reasoning-engine
 	url = git@github-gp:growth-protocol-ai/reasoning-engine.git
 [submodule "zeus-service"]
-	path = zeus-service
+	path = submodules/zeus-service
 	url = git@github-gp:growth-protocol-ai/zeus-service.git

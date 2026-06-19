@@ -1,0 +1,195 @@
+{
+  "summary": {
+    "runner": "structured_lookup",
+    "overall_accuracy": 1,
+    "case_count": 15,
+    "by_dataset": {
+      "coaction": {
+        "accuracy": 1,
+        "case_count": 7
+      },
+      "unicourt": {
+        "accuracy": 1,
+        "case_count": 8
+      }
+    },
+    "by_query_type": {
+      "county_metric_extreme": {
+        "accuracy": 1,
+        "case_count": 10
+      },
+      "county_top_judge_dismissal_rate": {
+        "accuracy": 1,
+        "case_count": 5
+      }
+    },
+    "average_latency_ms": 0.010616666666666644
+  },
+  "scores": [
+    {
+      "case_id": "case-0001",
+      "runner": "structured_lookup",
+      "is_correct": true,
+      "expected": [
+        "Bronx County"
+      ],
+      "predicted": [
+        "Bronx County"
+      ]
+    },
+    {
+      "case_id": "case-0002",
+      "runner": "structured_lookup",
+      "is_correct": true,
+      "expected": [
+        "Los Angeles County"
+      ],
+      "predicted": [
+        "Los Angeles County"
+      ]
+    },
+    {
+      "case_id": "case-0003",
+      "runner": "structured_lookup",
+      "is_correct": true,
+      "expected": [
+        "Bronx County"
+      ],
+      "predicted": [
+        "Bronx County"
+      ]
+    },
+    {
+      "case_id": "case-0004",
+      "runner": "structured_lookup",
+      "is_correct": true,
+      "expected": [
+        "Los Angeles County"
+      ],
+      "predicted": [
+        "Los Angeles County"
+      ]
+    },
+    {
+      "case_id": "case-0005",
+      "runner": "structured_lookup",
+      "is_correct": true,
+      "expected": [
+        "Bronx County"
+      ],
+      "predicted": [
+        "Bronx County"
+      ]
+    },
+    {
+      "case_id": "case-0006",
+      "runner": "structured_lookup",
+      "is_correct": true,
+      "expected": [
+        "Bronx County"
+      ],
+      "predicted": [
+        "Bronx County"
+      ]
+    },
+    {
+      "case_id": "case-0007",
+      "runner": "structured_lookup",
+      "is_correct": true,
+      "expected": [
+        "Bronx County"
+      ],
+      "predicted": [
+        "Bronx County"
+      ]
+    },
+    {
+      "case_id": "case-0008",
+      "runner": "structured_lookup",
+      "is_correct": true,
+      "expected": [
+        "Bronx County"
+      ],
+      "predicted": [
+        "Bronx County"
+      ]
+    },
+    {
+      "case_id": "case-0009",
+      "runner": "structured_lookup",
+      "is_correct": true,
+      "expected": [
+        "Los Angeles County"
+      ],
+      "predicted": [
+        "Los Angeles County"
+      ]
+    },
+    {
+      "case_id": "case-0010",
+      "runner": "structured_lookup",
+      "is_correct": true,
+      "expected": [
+        "Kings County"
+      ],
+      "predicted": [
+        "Kings County"
+      ]
+    },
+    {
+      "case_id": "case-0011",
+      "runner": "structured_lookup",
+      "is_correct": true,
+      "expected": [
+        "MASS TORT JUDGE"
+      ],
+      "predicted": [
+        "MASS TORT JUDGE"
+      ]
+    },
+    {
+      "case_id": "case-0012",
+      "runner": "structured_lookup",
+      "is_correct": true,
+      "expected": [
+        "GARSON, HON. ROBIN S."
+      ],
+      "predicted": [
+        "GARSON, HON. ROBIN S."
+      ]
+    },
+    {
+      "case_id": "case-0013",
+      "runner": "structured_lookup",
+      "is_correct": true,
+      "expected": [
+        "RAUL A. SAHAGUN"
+      ],
+      "predicted": [
+        "RAUL A. SAHAGUN"
+      ]
+    },
+    {
+      "case_id": "case-0014",
+      "runner": "structured_lookup",
+      "is_correct": true,
+      "expected": [
+        "GUZMAN, HON. WILMA"
+      ],
+      "predicted": [
+        "GUZMAN, HON. WILMA"
+      ]
+    },
+    {
+      "case_id": "case-0015",
+      "runner": "structured_lookup",
+      "is_correct": true,
+      "expected": [
+        "RIVERA, HON. FRANCOIS A."
+      ],
+      "predicted": [
+        "RIVERA, HON. FRANCOIS A."
+      ]
+    }
+  ]
+}

@@ -16,14 +16,14 @@ The purpose of this repo is to give us one place to:
 
 This repo is not the home of the core workflow engine or the reasoning engine itself.
 
-- `zeus-service` remains the workflow/orchestration layer
-- `reasoning-engine` remains the deterministic reasoning layer
+- `submodules/zeus-service` remains the workflow/orchestration layer
+- `submodules/reasoning-engine` remains the deterministic reasoning layer
 - `benchmarking` is the harness and evaluation workspace around them
 
 ## Repo Contents
 
-- `reasoning-engine/`: Git submodule for deterministic reasoning and ontology-adjacent logic services
-- `zeus-service/`: Git submodule for workflows, orchestration, evaluation hooks, and execution metrics
+- `submodules/reasoning-engine/`: Git submodule for deterministic reasoning and ontology-adjacent logic services
+- `submodules/zeus-service/`: Git submodule for workflows, orchestration, evaluation hooks, and execution metrics
 - `documentation/`: benchmark design pack, comparison notes, API contract sketches, and planning materials
 
 ## Clone And Setup
@@ -85,7 +85,7 @@ That means environment setup is currently done per submodule.
 
 The reasoning engine submodule is a Python project managed with `uv`.
 
-From inside `reasoning-engine/`:
+From inside `submodules/reasoning-engine/`:
 
 ```bash
 uv sync
@@ -93,13 +93,13 @@ uv sync
 
 Read the submodule README for project-specific details:
 
-- [`reasoning-engine/README.md`](reasoning-engine/README.md)
+- [`submodules/reasoning-engine/README.md`](submodules/reasoning-engine/README.md)
 
 ## Zeus Service Environment
 
 The Zeus submodule is also a Python project managed with `uv`, but it has a heavier runtime setup.
 
-From inside `zeus-service/`:
+From inside `submodules/zeus-service/`:
 
 ```bash
 uv sync
@@ -115,15 +115,15 @@ Zeus also needs local and cloud configuration such as:
 
 Read the submodule README for the full setup:
 
-- [`zeus-service/README.md`](zeus-service/README.md)
+- [`submodules/zeus-service/README.md`](submodules/zeus-service/README.md)
 
 ## Recommended First-Time Setup
 
 1. Clone `benchmarking` with submodules.
 2. Run `git submodule update --init --recursive`.
 3. Verify both submodules use the GP SSH alias if they are GP-owned repos.
-4. Set up `reasoning-engine` with `uv sync`.
-5. Set up `zeus-service` with `uv sync` and its required `.env`, database, and cloud credentials.
+4. Set up `submodules/reasoning-engine` with `uv sync`.
+5. Set up `submodules/zeus-service` with `uv sync` and its required `.env`, database, and cloud credentials.
 6. Read the materials in `documentation/` before building the harness.
 
 ## Daily Use
@@ -167,8 +167,36 @@ harness/
   scoring/
   reports/
 scripts/
-reasoning-engine/
-zeus-service/
+submodules/
+  reasoning-engine/
+  zeus-service/
 ```
 
 This keeps benchmark logic separate from the implementation repos while still making it easy to run GP components side by side.
+
+## Initial Working Draft
+
+There is now a first thin benchmark loop built on top of the existing Coaction venue-risk data already checked into `submodules/zeus-service`.
+
+It currently:
+
+- loads the existing UniCourt and Coaction local CSV tables
+- generates a small factual benchmark case pack
+- runs a deterministic baseline runner
+- scores exact-match accuracy
+- writes Markdown and JSON reports under `reports/`
+
+Run it from the repo root with:
+
+```bash
+python3 scripts/run_initial_coaction_benchmark.py
+```
+
+Default outputs:
+
+- `cases/coaction_venue_risk/initial_case_pack.json`
+- `reports/coaction_initial_draft/scorecard.md`
+- `reports/coaction_initial_draft/predictions.json`
+- `reports/coaction_initial_draft/scores.json`
+
+This is intentionally a thin slice so we can validate the benchmark loop on real data first. The next step is to expand from factual venue-risk questions into richer insurance decision cases, scoring, and workflow arms.

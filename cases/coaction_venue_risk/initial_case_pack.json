@@ -1,0 +1,262 @@
+[
+  {
+    "case_id": "case-0001",
+    "dataset": "unicourt",
+    "query_type": "county_metric_extreme",
+    "metric_key": "AVG_CASE_DURATION",
+    "prompt": "Which county has the lowest average case duration for Personal Injury and Torts? Use the unicourt overall court stats table.",
+    "gold_answer": [
+      "Bronx County"
+    ],
+    "evidence": {
+      "source_table": "unicourt/Court Analysis Stats.csv",
+      "supporting_value": 576.0
+    },
+    "metadata": {
+      "metric_slug": "lowest_avg_case_duration",
+      "extreme": "min"
+    }
+  },
+  {
+    "case_id": "case-0002",
+    "dataset": "unicourt",
+    "query_type": "county_metric_extreme",
+    "metric_key": "AVG_TIME_TO_RESOLUTION",
+    "prompt": "Which county has the lowest average time to resolution for Personal Injury and Torts? Use the unicourt overall court stats table.",
+    "gold_answer": [
+      "Los Angeles County"
+    ],
+    "evidence": {
+      "source_table": "unicourt/Court Analysis Stats.csv",
+      "supporting_value": 507.0
+    },
+    "metadata": {
+      "metric_slug": "lowest_avg_time_to_resolution",
+      "extreme": "min"
+    }
+  },
+  {
+    "case_id": "case-0003",
+    "dataset": "unicourt",
+    "query_type": "county_metric_extreme",
+    "metric_key": "MTD_SUCCESS_RATE",
+    "prompt": "Which county has the highest motion-to-dismiss success rate for Personal Injury and Torts? Use the unicourt overall court stats table.",
+    "gold_answer": [
+      "Bronx County"
+    ],
+    "evidence": {
+      "source_table": "unicourt/Court Analysis Stats.csv",
+      "supporting_value": 33.77
+    },
+    "metadata": {
+      "metric_slug": "highest_mtd_success_rate",
+      "extreme": "max"
+    }
+  },
+  {
+    "case_id": "case-0004",
+    "dataset": "unicourt",
+    "query_type": "county_metric_extreme",
+    "metric_key": "SJ_SUCCESS_RATE",
+    "prompt": "Which county has the highest summary-judgment success rate for Personal Injury and Torts? Use the unicourt overall court stats table.",
+    "gold_answer": [
+      "Los Angeles County"
+    ],
+    "evidence": {
+      "source_table": "unicourt/Court Analysis Stats.csv",
+      "supporting_value": 73.56
+    },
+    "metadata": {
+      "metric_slug": "highest_sj_success_rate",
+      "extreme": "max"
+    }
+  },
+  {
+    "case_id": "case-0005",
+    "dataset": "unicourt",
+    "query_type": "county_metric_extreme",
+    "metric_key": "AVG_DURATION_NO_TRIAL",
+    "prompt": "Which county resolves no-trial Personal Injury and Torts cases the fastest on average? Use the unicourt overall court stats table.",
+    "gold_answer": [
+      "Bronx County"
+    ],
+    "evidence": {
+      "source_table": "unicourt/Court Analysis Stats.csv",
+      "supporting_value": 50.0
+    },
+    "metadata": {
+      "metric_slug": "lowest_avg_duration_no_trial",
+      "extreme": "min"
+    }
+  },
+  {
+    "case_id": "case-0006",
+    "dataset": "coaction",
+    "query_type": "county_metric_extreme",
+    "metric_key": "AVG_CASE_DURATION",
+    "prompt": "Which county has the lowest average case duration for Personal Injury and Torts? Use the coaction overall court stats table.",
+    "gold_answer": [
+      "Bronx County"
+    ],
+    "evidence": {
+      "source_table": "coaction/Court Analysis Stats.csv",
+      "supporting_value": 615.0
+    },
+    "metadata": {
+      "metric_slug": "lowest_avg_case_duration",
+      "extreme": "min"
+    }
+  },
+  {
+    "case_id": "case-0007",
+    "dataset": "coaction",
+    "query_type": "county_metric_extreme",
+    "metric_key": "AVG_TIME_TO_RESOLUTION",
+    "prompt": "Which county has the lowest average time to resolution for Personal Injury and Torts? Use the coaction overall court stats table.",
+    "gold_answer": [
+      "Bronx County"
+    ],
+    "evidence": {
+      "source_table": "coaction/Court Analysis Stats.csv",
+      "supporting_value": 682.0
+    },
+    "metadata": {
+      "metric_slug": "lowest_avg_time_to_resolution",
+      "extreme": "min"
+    }
+  },
+  {
+    "case_id": "case-0008",
+    "dataset": "coaction",
+    "query_type": "county_metric_extreme",
+    "metric_key": "MTD_SUCCESS_RATE",
+    "prompt": "Which county has the highest motion-to-dismiss success rate for Personal Injury and Torts? Use the coaction overall court stats table.",
+    "gold_answer": [
+      "Bronx County"
+    ],
+    "evidence": {
+      "source_table": "coaction/Court Analysis Stats.csv",
+      "supporting_value": 100.0
+    },
+    "metadata": {
+      "metric_slug": "highest_mtd_success_rate",
+      "extreme": "max"
+    }
+  },
+  {
+    "case_id": "case-0009",
+    "dataset": "coaction",
+    "query_type": "county_metric_extreme",
+    "metric_key": "SJ_SUCCESS_RATE",
+    "prompt": "Which county has the highest summary-judgment success rate for Personal Injury and Torts? Use the coaction overall court stats table.",
+    "gold_answer": [
+      "Los Angeles County"
+    ],
+    "evidence": {
+      "source_table": "coaction/Court Analysis Stats.csv",
+      "supporting_value": 100.0
+    },
+    "metadata": {
+      "metric_slug": "highest_sj_success_rate",
+      "extreme": "max"
+    }
+  },
+  {
+    "case_id": "case-0010",
+    "dataset": "coaction",
+    "query_type": "county_metric_extreme",
+    "metric_key": "AVG_DURATION_NO_TRIAL",
+    "prompt": "Which county resolves no-trial Personal Injury and Torts cases the fastest on average? Use the coaction overall court stats table.",
+    "gold_answer": [
+      "Kings County"
+    ],
+    "evidence": {
+      "source_table": "coaction/Court Analysis Stats.csv",
+      "supporting_value": 48.0
+    },
+    "metadata": {
+      "metric_slug": "lowest_avg_duration_no_trial",
+      "extreme": "min"
+    }
+  },
+  {
+    "case_id": "case-0011",
+    "dataset": "unicourt",
+    "query_type": "county_top_judge_dismissal_rate",
+    "metric_key": "DISMISSAL_RATE_PCT",
+    "prompt": "For Bronx County, which judge has the highest dismissal rate in the unicourt judge table overall rows?",
+    "gold_answer": [
+      "MASS TORT JUDGE"
+    ],
+    "evidence": {
+      "source_table": "unicourt/Judge MTD Rate.csv",
+      "supporting_value": 71.43,
+      "county": "Bronx County"
+    },
+    "metadata": {}
+  },
+  {
+    "case_id": "case-0012",
+    "dataset": "unicourt",
+    "query_type": "county_top_judge_dismissal_rate",
+    "metric_key": "DISMISSAL_RATE_PCT",
+    "prompt": "For Kings County, which judge has the highest dismissal rate in the unicourt judge table overall rows?",
+    "gold_answer": [
+      "GARSON, HON. ROBIN S."
+    ],
+    "evidence": {
+      "source_table": "unicourt/Judge MTD Rate.csv",
+      "supporting_value": 60.0,
+      "county": "Kings County"
+    },
+    "metadata": {}
+  },
+  {
+    "case_id": "case-0013",
+    "dataset": "unicourt",
+    "query_type": "county_top_judge_dismissal_rate",
+    "metric_key": "DISMISSAL_RATE_PCT",
+    "prompt": "For Los Angeles County, which judge has the highest dismissal rate in the unicourt judge table overall rows?",
+    "gold_answer": [
+      "RAUL A. SAHAGUN"
+    ],
+    "evidence": {
+      "source_table": "unicourt/Judge MTD Rate.csv",
+      "supporting_value": 58.82,
+      "county": "Los Angeles County"
+    },
+    "metadata": {}
+  },
+  {
+    "case_id": "case-0014",
+    "dataset": "coaction",
+    "query_type": "county_top_judge_dismissal_rate",
+    "metric_key": "DISMISSAL_RATE_PCT",
+    "prompt": "For Bronx County, which judge has the highest dismissal rate in the coaction judge table overall rows?",
+    "gold_answer": [
+      "GUZMAN, HON. WILMA"
+    ],
+    "evidence": {
+      "source_table": "coaction/Judge MTD Rate.csv",
+      "supporting_value": 66.67,
+      "county": "Bronx County"
+    },
+    "metadata": {}
+  },
+  {
+    "case_id": "case-0015",
+    "dataset": "coaction",
+    "query_type": "county_top_judge_dismissal_rate",
+    "metric_key": "DISMISSAL_RATE_PCT",
+    "prompt": "For Kings County, which judge has the highest dismissal rate in the coaction judge table overall rows?",
+    "gold_answer": [
+      "RIVERA, HON. FRANCOIS A."
+    ],
+    "evidence": {
+      "source_table": "coaction/Judge MTD Rate.csv",
+      "supporting_value": 94.12,
+      "county": "Kings County"
+    },
+    "metadata": {}
+  }
+]

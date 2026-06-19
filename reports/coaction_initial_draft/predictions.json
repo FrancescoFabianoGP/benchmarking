@@ -1,0 +1,187 @@
+[
+  {
+    "case_id": "case-0001",
+    "runner": "structured_lookup",
+    "answer": [
+      "Bronx County"
+    ],
+    "evidence": {
+      "source_table": "unicourt/Court Analysis Stats.csv",
+      "supporting_value": 576.0
+    },
+    "latency_ms": 0.011125000000000718
+  },
+  {
+    "case_id": "case-0002",
+    "runner": "structured_lookup",
+    "answer": [
+      "Los Angeles County"
+    ],
+    "evidence": {
+      "source_table": "unicourt/Court Analysis Stats.csv",
+      "supporting_value": 507.0
+    },
+    "latency_ms": 0.008667000000017744
+  },
+  {
+    "case_id": "case-0003",
+    "runner": "structured_lookup",
+    "answer": [
+      "Bronx County"
+    ],
+    "evidence": {
+      "source_table": "unicourt/Court Analysis Stats.csv",
+      "supporting_value": 33.77
+    },
+    "latency_ms": 0.008291999999993083
+  },
+  {
+    "case_id": "case-0004",
+    "runner": "structured_lookup",
+    "answer": [
+      "Los Angeles County"
+    ],
+    "evidence": {
+      "source_table": "unicourt/Court Analysis Stats.csv",
+      "supporting_value": 73.56
+    },
+    "latency_ms": 0.008291999999993083
+  },
+  {
+    "case_id": "case-0005",
+    "runner": "structured_lookup",
+    "answer": [
+      "Bronx County"
+    ],
+    "evidence": {
+      "source_table": "unicourt/Court Analysis Stats.csv",
+      "supporting_value": 50.0
+    },
+    "latency_ms": 0.008124999999997717
+  },
+  {
+    "case_id": "case-0006",
+    "runner": "structured_lookup",
+    "answer": [
+      "Bronx County"
+    ],
+    "evidence": {
+      "source_table": "coaction/Court Analysis Stats.csv",
+      "supporting_value": 615.0
+    },
+    "latency_ms": 0.007958000000002352
+  },
+  {
+    "case_id": "case-0007",
+    "runner": "structured_lookup",
+    "answer": [
+      "Bronx County"
+    ],
+    "evidence": {
+      "source_table": "coaction/Court Analysis Stats.csv",
+      "supporting_value": 682.0
+    },
+    "latency_ms": 0.007290999999992609
+  },
+  {
+    "case_id": "case-0008",
+    "runner": "structured_lookup",
+    "answer": [
+      "Bronx County"
+    ],
+    "evidence": {
+      "source_table": "coaction/Court Analysis Stats.csv",
+      "supporting_value": 100.0
+    },
+    "latency_ms": 0.006999999999979245
+  },
+  {
+    "case_id": "case-0009",
+    "runner": "structured_lookup",
+    "answer": [
+      "Los Angeles County"
+    ],
+    "evidence": {
+      "source_table": "coaction/Court Analysis Stats.csv",
+      "supporting_value": 100.0
+    },
+    "latency_ms": 0.006833000000011635
+  },
+  {
+    "case_id": "case-0010",
+    "runner": "structured_lookup",
+    "answer": [
+      "Kings County"
+    ],
+    "evidence": {
+      "source_table": "coaction/Court Analysis Stats.csv",
+      "supporting_value": 48.0
+    },
+    "latency_ms": 0.007041999999984894
+  },
+  {
+    "case_id": "case-0011",
+    "runner": "structured_lookup",
+    "answer": [
+      "MASS TORT JUDGE"
+    ],
+    "evidence": {
+      "source_table": "unicourt/Judge MTD Rate.csv",
+      "supporting_value": 71.43,
+      "county": "Bronx County"
+    },
+    "latency_ms": 0.021166000000016894
+  },
+  {
+    "case_id": "case-0012",
+    "runner": "structured_lookup",
+    "answer": [
+      "GARSON, HON. ROBIN S."
+    ],
+    "evidence": {
+      "source_table": "unicourt/Judge MTD Rate.csv",
+      "supporting_value": 60.0,
+      "county": "Kings County"
+    },
+    "latency_ms": 0.018249999999997435
+  },
+  {
+    "case_id": "case-0013",
+    "runner": "structured_lookup",
+    "answer": [
+      "RAUL A. SAHAGUN"
+    ],
+    "evidence": {
+      "source_table": "unicourt/Judge MTD Rate.csv",
+      "supporting_value": 58.82,
+      "county": "Los Angeles County"
+    },
+    "latency_ms": 0.017542000000009272
+  },
+  {
+    "case_id": "case-0014",
+    "runner": "structured_lookup",
+    "answer": [
+      "GUZMAN, HON. WILMA"
+    ],
+    "evidence": {
+      "source_table": "coaction/Judge MTD Rate.csv",
+      "supporting_value": 66.67,
+      "county": "Bronx County"
+    },
+    "latency_ms": 0.010583000000008447
+  },
+  {
+    "case_id": "case-0015",
+    "runner": "structured_lookup",
+    "answer": [
+      "RIVERA, HON. FRANCOIS A."
+    ],
+    "evidence": {
+      "source_table": "coaction/Judge MTD Rate.csv",
+      "supporting_value": 94.12,
+      "county": "Kings County"
+    },
+    "latency_ms": 0.011083999999994543
+  }
+]
