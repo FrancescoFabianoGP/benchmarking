@@ -16,14 +16,14 @@ The purpose of this repo is to give us one place to:
 
 This repo is not the home of the core workflow engine or the reasoning engine itself.
 
-- `submodules/zeus-service` remains the workflow/orchestration layer
-- `submodules/reasoning-engine` remains the deterministic reasoning layer
+- `GP_components/zeus-service` remains the workflow/orchestration layer
+- `GP_components/reasoning-engine` remains the deterministic reasoning layer
 - `benchmarking` is the harness and evaluation workspace around them
 
 ## Repo Contents
 
-- `submodules/reasoning-engine/`: Git submodule for deterministic reasoning and ontology-adjacent logic services
-- `submodules/zeus-service/`: Git submodule for workflows, orchestration, evaluation hooks, and execution metrics
+- `GP_components/reasoning-engine/`: Git submodule for deterministic reasoning and ontology-adjacent logic services
+- `GP_components/zeus-service/`: Git submodule for workflows, orchestration, evaluation hooks, and execution metrics
 - `documentation/`: benchmark design pack, comparison notes, API contract sketches, and planning materials
 
 ## Clone And Setup
@@ -63,7 +63,7 @@ That means environment setup is currently done per submodule.
 
 The reasoning engine submodule is a Python project managed with `uv`.
 
-From inside `submodules/reasoning-engine/`:
+From inside `GP_components/reasoning-engine/`:
 
 ```bash
 uv sync
@@ -71,13 +71,13 @@ uv sync
 
 Read the submodule README for project-specific details:
 
-- [`submodules/reasoning-engine/README.md`](submodules/reasoning-engine/README.md)
+- [`GP_components/reasoning-engine/README.md`](GP_components/reasoning-engine/README.md)
 
 ## Zeus Service Environment
 
 The Zeus submodule is also a Python project managed with `uv`, but it has a heavier runtime setup.
 
-From inside `submodules/zeus-service/`:
+From inside `GP_components/zeus-service/`:
 
 ```bash
 uv sync
@@ -93,14 +93,14 @@ Zeus also needs local and cloud configuration such as:
 
 Read the submodule README for the full setup:
 
-- [`submodules/zeus-service/README.md`](submodules/zeus-service/README.md)
+- [`GP_components/zeus-service/README.md`](GP_components/zeus-service/README.md)
 
 ## Recommended First-Time Setup
 
 1. Clone `benchmarking` with submodules.
 2. Run `git submodule update --init --recursive`.
-3. Set up `submodules/reasoning-engine` with `uv sync`.
-4. Set up `submodules/zeus-service` with `uv sync` and its required `.env`, database, and cloud credentials.
+3. Set up `GP_components/reasoning-engine` with `uv sync`.
+4. Set up `GP_components/zeus-service` with `uv sync` and its required `.env`, database, and cloud credentials.
 5. Read the materials in `documentation/` before building the harness.
 
 ## Daily Use
@@ -146,7 +146,7 @@ harness/
   scoring/
   reports/
 scripts/
-submodules/
+GP_components/
   reasoning-engine/
   zeus-service/
 ```
@@ -155,7 +155,7 @@ This keeps benchmark logic separate from the implementation repos while still ma
 
 ## Initial Working Draft
 
-There is now a first thin benchmark loop built on top of the existing Coaction venue-risk data already checked into `submodules/zeus-service`.
+There is now a first thin benchmark loop built on top of the existing Coaction venue-risk data already checked into `GP_components/zeus-service`.
 
 It currently:
 

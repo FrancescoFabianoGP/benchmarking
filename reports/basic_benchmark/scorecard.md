@@ -1,7 +1,7 @@
 # Coaction Initial Benchmark Draft
 
 This report is the first thin benchmark loop built from the existing local
-Coaction and UniCourt venue-risk tables already present in `submodules/zeus-service`.
+Coaction and UniCourt venue-risk tables already present in `GP_components/zeus-service`.
 
 ## Scorecard
 

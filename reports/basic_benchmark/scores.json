@@ -23,7 +23,7 @@
         "case_count": 5
       }
     },
-    "average_latency_ms": 0.03736386666666203
+    "average_latency_ms": 0.04015553333333218
   },
   "scores": [
     {
@@ -217,7 +217,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.03736386666666203
+      "average_latency_ms": 0.04015553333333218
     },
     "openai_raw_llm": {
       "runner": "openai_raw_llm",
@@ -243,7 +243,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.1855638666666659
+      "average_latency_ms": 0.21451946666666646
     },
     "anthropic_raw_llm": {
       "runner": "anthropic_raw_llm",
@@ -269,7 +269,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.1580306666666679
+      "average_latency_ms": 0.17418626666666862
     },
     "react_agent": {
       "runner": "react_agent",
@@ -295,7 +295,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.11858893333332639
+      "average_latency_ms": 0.148572066666669
     },
     "multi_agent_analyst_coder_critic": {
       "runner": "multi_agent_analyst_coder_critic",
@@ -321,7 +321,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.11306380000000171
+      "average_latency_ms": 0.12791393333333456
     },
     "autogen_multi_agent": {
       "runner": "autogen_multi_agent",
@@ -347,7 +347,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.1198944666666683
+      "average_latency_ms": 0.11379440000000389
     },
     "metagpt_sop_agent": {
       "runner": "metagpt_sop_agent",
@@ -373,7 +373,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.11106946666666524
+      "average_latency_ms": 0.11111653333334044
     },
     "single_agent_data_analyst": {
       "runner": "single_agent_data_analyst",
@@ -399,7 +399,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.11096933333333281
+      "average_latency_ms": 0.12036933333334036
     }
   }
 }

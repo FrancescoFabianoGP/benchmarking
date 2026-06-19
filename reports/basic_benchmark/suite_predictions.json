@@ -10,7 +10,7 @@
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 576.0
       },
-      "latency_ms": 0.04958399999999141
+      "latency_ms": 0.06733300000000275
     },
     {
       "case_id": "case-0002",
@@ -22,7 +22,7 @@
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 507.0
       },
-      "latency_ms": 0.03637500000000515
+      "latency_ms": 0.03725000000001644
     },
     {
       "case_id": "case-0003",
@@ -34,7 +34,7 @@
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 33.77
       },
-      "latency_ms": 0.03470799999999441
+      "latency_ms": 0.03508399999999079
     },
     {
       "case_id": "case-0004",
@@ -46,7 +46,7 @@
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 73.56
       },
-      "latency_ms": 0.03337500000000215
+      "latency_ms": 0.033874999999988775
     },
     {
       "case_id": "case-0005",
@@ -58,7 +58,7 @@
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 50.0
       },
-      "latency_ms": 0.033124999999994964
+      "latency_ms": 0.03345800000001398
     },
     {
       "case_id": "case-0006",
@@ -70,7 +70,7 @@
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 615.0
       },
-      "latency_ms": 0.034124999999995964
+      "latency_ms": 0.03829199999999533
     },
     {
       "case_id": "case-0007",
@@ -82,7 +82,7 @@
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 682.0
       },
-      "latency_ms": 0.03166599999998576
+      "latency_ms": 0.03258300000000269
     },
     {
       "case_id": "case-0008",
@@ -94,7 +94,7 @@
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 100.0
       },
-      "latency_ms": 0.03158300000000169
+      "latency_ms": 0.03266599999998676
     },
     {
       "case_id": "case-0009",
@@ -106,7 +106,7 @@
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 100.0
       },
-      "latency_ms": 0.031332999999994504
+      "latency_ms": 0.03149999999998987
     },
     {
       "case_id": "case-0010",
@@ -118,7 +118,7 @@
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 48.0
       },
-      "latency_ms": 0.03145799999998422
+      "latency_ms": 0.032124999999993964
     },
     {
       "case_id": "case-0011",
@@ -131,7 +131,7 @@
         "supporting_value": 71.43,
         "county": "Bronx County"
       },
-      "latency_ms": 0.04824999999999968
+      "latency_ms": 0.05816699999999786
     },
     {
       "case_id": "case-0012",
@@ -144,7 +144,7 @@
         "supporting_value": 60.0,
         "county": "Kings County"
       },
-      "latency_ms": 0.045666999999999236
+      "latency_ms": 0.047707999999979656
     },
     {
       "case_id": "case-0013",
@@ -157,7 +157,7 @@
         "supporting_value": 58.82,
         "county": "Los Angeles County"
       },
-      "latency_ms": 0.0453749999999864
+      "latency_ms": 0.046125000000007965
     },
     {
       "case_id": "case-0014",
@@ -170,7 +170,7 @@
         "supporting_value": 66.67,
         "county": "Bronx County"
       },
-      "latency_ms": 0.03675000000000206
+      "latency_ms": 0.03879200000000971
     },
     {
       "case_id": "case-0015",
@@ -183,7 +183,7 @@
         "supporting_value": 94.12,
         "county": "Kings County"
       },
-      "latency_ms": 0.03708399999999279
+      "latency_ms": 0.03737500000000615
     }
   ],
   "openai_raw_llm": [
@@ -205,7 +205,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.47816700000000156
+      "latency_ms": 0.5689160000000026
     },
     {
       "case_id": "case-0002",
@@ -225,7 +225,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.1681249999999912
+      "latency_ms": 0.19445800000000846
     },
     {
       "case_id": "case-0003",
@@ -245,7 +245,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.15875000000001305
+      "latency_ms": 0.18612499999998144
     },
     {
       "case_id": "case-0004",
@@ -265,7 +265,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.15537499999998539
+      "latency_ms": 0.1803340000000042
     },
     {
       "case_id": "case-0005",
@@ -285,7 +285,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.15500000000001624
+      "latency_ms": 0.17916700000000785
     },
     {
       "case_id": "case-0006",
@@ -305,7 +305,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.1621670000000186
+      "latency_ms": 0.17824999999999092
     },
     {
       "case_id": "case-0007",
@@ -325,7 +325,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.15216699999998085
+      "latency_ms": 0.17608299999999355
     },
     {
       "case_id": "case-0008",
@@ -345,7 +345,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.15324999999999367
+      "latency_ms": 0.1754580000000172
     },
     {
       "case_id": "case-0009",
@@ -365,7 +365,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.1537920000000137
+      "latency_ms": 0.17516700000000385
     },
     {
       "case_id": "case-0010",
@@ -385,7 +385,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.1524579999999942
+      "latency_ms": 0.17829199999999656
     },
     {
       "case_id": "case-0011",
@@ -410,7 +410,7 @@
           "MASS TORT JUDGE"
         ]
       },
-      "latency_ms": 0.18645800000000046
+      "latency_ms": 0.21620799999999551
     },
     {
       "case_id": "case-0012",
@@ -434,7 +434,7 @@
           "MATTHEW E MARKOFF"
         ]
       },
-      "latency_ms": 0.18374999999998254
+      "latency_ms": 0.20866699999999572
     },
     {
       "case_id": "case-0013",
@@ -457,7 +457,7 @@
           "RECK BELYNDA BRIDGELAND"
         ]
       },
-      "latency_ms": 0.18033300000000474
+      "latency_ms": 0.20475000000000354
     },
     {
       "case_id": "case-0014",
@@ -482,7 +482,7 @@
           "MASS TORT JUDGE"
         ]
       },
-      "latency_ms": 0.17341600000000956
+      "latency_ms": 0.19924999999998416
     },
     {
       "case_id": "case-0015",
@@ -506,7 +506,7 @@
           "MATTHEW E MARKOFF"
         ]
       },
-      "latency_ms": 0.17024999999998291
+      "latency_ms": 0.19666700000001147
     }
   ],
   "anthropic_raw_llm": [
@@ -528,7 +528,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.15729200000000332
+      "latency_ms": 0.1784999999999981
     },
     {
       "case_id": "case-0002",
@@ -548,7 +548,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.1544170000000178
+      "latency_ms": 0.1781250000000012
     },
     {
       "case_id": "case-0003",
@@ -568,7 +568,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.15579099999998847
+      "latency_ms": 0.17745899999999093
     },
     {
       "case_id": "case-0004",
@@ -588,7 +588,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.15404199999999313
+      "latency_ms": 0.1777500000000043
     },
     {
       "case_id": "case-0005",
@@ -608,7 +608,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.15337500000001114
+      "latency_ms": 0.17566699999999047
     },
     {
       "case_id": "case-0006",
@@ -628,7 +628,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.1517080000000004
+      "latency_ms": 0.1733750000000034
     },
     {
       "case_id": "case-0007",
@@ -648,7 +648,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.15254100000000603
+      "latency_ms": 0.17716600000000637
     },
     {
       "case_id": "case-0008",
@@ -668,7 +668,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.15041699999998603
+      "latency_ms": 0.1581670000000146
     },
     {
       "case_id": "case-0009",
@@ -688,7 +688,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.14958400000000815
+      "latency_ms": 0.15212500000000295
     },
     {
       "case_id": "case-0010",
@@ -708,7 +708,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.14608399999999078
+      "latency_ms": 0.15170899999999987
     },
     {
       "case_id": "case-0011",
@@ -733,7 +733,7 @@
           "MASS TORT JUDGE"
         ]
       },
-      "latency_ms": 0.17570899999999612
+      "latency_ms": 0.17670900000002487
     },
     {
       "case_id": "case-0012",
@@ -757,7 +757,7 @@
           "MATTHEW E MARKOFF"
         ]
       },
-      "latency_ms": 0.17104100000001066
+      "latency_ms": 0.17266699999998747
     },
     {
       "case_id": "case-0013",
@@ -780,7 +780,7 @@
           "RECK BELYNDA BRIDGELAND"
         ]
       },
-      "latency_ms": 0.17041700000000604
+      "latency_ms": 0.16987500000001376
     },
     {
       "case_id": "case-0014",
@@ -805,7 +805,7 @@
           "MASS TORT JUDGE"
         ]
       },
-      "latency_ms": 0.16441700000000004
+      "latency_ms": 0.16708299999998455
     },
     {
       "case_id": "case-0015",
@@ -829,7 +829,7 @@
           "MATTHEW E MARKOFF"
         ]
       },
-      "latency_ms": 0.16362500000000058
+      "latency_ms": 0.22641700000000653
     }
   ],
   "react_agent": [
@@ -863,7 +863,7 @@
         ],
         "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
       },
-      "latency_ms": 0.1221250000000007
+      "latency_ms": 0.1405000000000156
     },
     {
       "case_id": "case-0002",
@@ -895,7 +895,7 @@
         ],
         "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
       },
-      "latency_ms": 0.12174999999997604
+      "latency_ms": 0.12483300000001862
     },
     {
       "case_id": "case-0003",
@@ -927,7 +927,7 @@
         ],
         "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
       },
-      "latency_ms": 0.11974999999997404
+      "latency_ms": 0.26199999999998447
     },
     {
       "case_id": "case-0004",
@@ -959,7 +959,7 @@
         ],
         "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
       },
-      "latency_ms": 0.12029199999999407
+      "latency_ms": 0.1613330000000135
     },
     {
       "case_id": "case-0005",
@@ -991,7 +991,7 @@
         ],
         "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
       },
-      "latency_ms": 0.11979199999997969
+      "latency_ms": 0.1257500000000078
     },
     {
       "case_id": "case-0006",
@@ -1023,7 +1023,7 @@
         ],
         "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
       },
-      "latency_ms": 0.11900000000000799
+      "latency_ms": 0.1245419999999775
     },
     {
       "case_id": "case-0007",
@@ -1055,7 +1055,7 @@
         ],
         "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
       },
-      "latency_ms": 0.1192909999999936
+      "latency_ms": 0.11991700000002492
     },
     {
       "case_id": "case-0008",
@@ -1087,7 +1087,7 @@
         ],
         "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
       },
-      "latency_ms": 0.15162499999998857
+      "latency_ms": 0.1740420000000409
     },
     {
       "case_id": "case-0009",
@@ -1119,7 +1119,7 @@
         ],
         "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
       },
-      "latency_ms": 0.10741699999999854
+      "latency_ms": 0.12375000000003356
     },
     {
       "case_id": "case-0010",
@@ -1151,7 +1151,7 @@
         ],
         "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
       },
-      "latency_ms": 0.10616699999999035
+      "latency_ms": 0.12554099999995127
     },
     {
       "case_id": "case-0011",
@@ -1184,7 +1184,7 @@
         ],
         "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
       },
-      "latency_ms": 0.12058299999997968
+      "latency_ms": 0.14920799999995626
     },
     {
       "case_id": "case-0012",
@@ -1217,7 +1217,7 @@
         ],
         "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
       },
-      "latency_ms": 0.11729199999999107
+      "latency_ms": 0.1323329999999845
     },
     {
       "case_id": "case-0013",
@@ -1250,7 +1250,7 @@
         ],
         "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
       },
-      "latency_ms": 0.11562500000000808
+      "latency_ms": 0.13091600000003645
     },
     {
       "case_id": "case-0014",
@@ -1283,7 +1283,7 @@
         ],
         "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
       },
-      "latency_ms": 0.10875000000001855
+      "latency_ms": 0.206333000000003
     },
     {
       "case_id": "case-0015",
@@ -1316,7 +1316,7 @@
         ],
         "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
       },
-      "latency_ms": 0.10937499999999489
+      "latency_ms": 0.12758299999998668
     }
   ],
   "multi_agent_analyst_coder_critic": [
@@ -1350,7 +1350,7 @@
           }
         ]
       },
-      "latency_ms": 0.11458300000000143
+      "latency_ms": 0.1404170000000038
     },
     {
       "case_id": "case-0002",
@@ -1382,7 +1382,7 @@
           }
         ]
       },
-      "latency_ms": 0.10995799999999334
+      "latency_ms": 0.12483300000004638
     },
     {
       "case_id": "case-0003",
@@ -1414,7 +1414,7 @@
           }
         ]
       },
-      "latency_ms": 0.1103749999999959
+      "latency_ms": 0.12183399999998734
     },
     {
       "case_id": "case-0004",
@@ -1446,7 +1446,7 @@
           }
         ]
       },
-      "latency_ms": 0.1087080000000129
+      "latency_ms": 0.12008299999999306
     },
     {
       "case_id": "case-0005",
@@ -1478,7 +1478,7 @@
           }
         ]
       },
-      "latency_ms": 0.10837499999999389
+      "latency_ms": 0.12058400000003466
     },
     {
       "case_id": "case-0006",
@@ -1510,7 +1510,7 @@
           }
         ]
       },
-      "latency_ms": 0.11229200000001383
+      "latency_ms": 0.13887499999998276
     },
     {
       "case_id": "case-0007",
@@ -1542,7 +1542,7 @@
           }
         ]
       },
-      "latency_ms": 0.11008300000001081
+      "latency_ms": 0.1222909999999966
     },
     {
       "case_id": "case-0008",
@@ -1574,7 +1574,7 @@
           }
         ]
       },
-      "latency_ms": 0.10883300000000262
+      "latency_ms": 0.1214579999999632
     },
     {
       "case_id": "case-0009",
@@ -1606,7 +1606,7 @@
           }
         ]
       },
-      "latency_ms": 0.11358300000000043
+      "latency_ms": 0.1187500000000008
     },
     {
       "case_id": "case-0010",
@@ -1638,7 +1638,7 @@
           }
         ]
       },
-      "latency_ms": 0.1107499999999928
+      "latency_ms": 0.12208400000002229
     },
     {
       "case_id": "case-0011",
@@ -1671,7 +1671,7 @@
           }
         ]
       },
-      "latency_ms": 0.11929199999999307
+      "latency_ms": 0.14466699999998722
     },
     {
       "case_id": "case-0012",
@@ -1704,7 +1704,7 @@
           }
         ]
       },
-      "latency_ms": 0.11712500000002346
+      "latency_ms": 0.13462499999999933
     },
     {
       "case_id": "case-0013",
@@ -1737,7 +1737,7 @@
           }
         ]
       },
-      "latency_ms": 0.11833399999999772
+      "latency_ms": 0.13170800000000815
     },
     {
       "case_id": "case-0014",
@@ -1770,7 +1770,7 @@
           }
         ]
       },
-      "latency_ms": 0.12195800000000534
+      "latency_ms": 0.12379099999998422
     },
     {
       "case_id": "case-0015",
@@ -1803,7 +1803,7 @@
           }
         ]
       },
-      "latency_ms": 0.11170799999998815
+      "latency_ms": 0.13270900000000863
     }
   ],
   "autogen_multi_agent": [
@@ -1837,7 +1837,7 @@
           }
         ]
       },
-      "latency_ms": 0.11029200000001183
+      "latency_ms": 0.12283300000004438
     },
     {
       "case_id": "case-0002",
@@ -1869,7 +1869,7 @@
           }
         ]
       },
-      "latency_ms": 0.10912500000001546
+      "latency_ms": 0.11962500000001208
     },
     {
       "case_id": "case-0003",
@@ -1901,7 +1901,7 @@
           }
         ]
       },
-      "latency_ms": 0.10833400000001547
+      "latency_ms": 0.1187920000000342
     },
     {
       "case_id": "case-0004",
@@ -1933,7 +1933,7 @@
           }
         ]
       },
-      "latency_ms": 0.11449999999998961
+      "latency_ms": 0.12004099999995965
     },
     {
       "case_id": "case-0005",
@@ -1965,7 +1965,7 @@
           }
         ]
       },
-      "latency_ms": 0.10762500000000008
+      "latency_ms": 0.11104200000000564
     },
     {
       "case_id": "case-0006",
@@ -1997,7 +1997,7 @@
           }
         ]
       },
-      "latency_ms": 0.10712500000001346
+      "latency_ms": 0.10645799999997596
     },
     {
       "case_id": "case-0007",
@@ -2029,7 +2029,7 @@
           }
         ]
       },
-      "latency_ms": 0.10949999999998461
+      "latency_ms": 0.10716700000001911
     },
     {
       "case_id": "case-0008",
@@ -2061,7 +2061,7 @@
           }
         ]
       },
-      "latency_ms": 0.16216699999999085
+      "latency_ms": 0.10716599999999188
     },
     {
       "case_id": "case-0009",
@@ -2093,7 +2093,7 @@
           }
         ]
       },
-      "latency_ms": 0.14070900000001663
+      "latency_ms": 0.11025000000003393
     },
     {
       "case_id": "case-0010",
@@ -2125,7 +2125,7 @@
           }
         ]
       },
-      "latency_ms": 0.12016600000000488
+      "latency_ms": 0.10699999999996823
     },
     {
       "case_id": "case-0011",
@@ -2158,7 +2158,7 @@
           }
         ]
       },
-      "latency_ms": 0.14037499999999814
+      "latency_ms": 0.11891699999999616
     },
     {
       "case_id": "case-0012",
@@ -2191,7 +2191,7 @@
           }
         ]
       },
-      "latency_ms": 0.12145799999999096
+      "latency_ms": 0.11775000000002755
     },
     {
       "case_id": "case-0013",
@@ -2224,7 +2224,7 @@
           }
         ]
       },
-      "latency_ms": 0.12004100000001516
+      "latency_ms": 0.12033399999999972
     },
     {
       "case_id": "case-0014",
@@ -2257,7 +2257,7 @@
           }
         ]
       },
-      "latency_ms": 0.11462499999997933
+      "latency_ms": 0.1091249999999877
     },
     {
       "case_id": "case-0015",
@@ -2290,7 +2290,7 @@
           }
         ]
       },
-      "latency_ms": 0.1123749999999979
+      "latency_ms": 0.11041600000000207
     }
   ],
   "metagpt_sop_agent": [
@@ -2328,7 +2328,7 @@
           }
         ]
       },
-      "latency_ms": 0.1103749999999959
+      "latency_ms": 0.11616600000002864
     },
     {
       "case_id": "case-0002",
@@ -2364,7 +2364,7 @@
           }
         ]
       },
-      "latency_ms": 0.10899999999999799
+      "latency_ms": 0.11308400000004104
     },
     {
       "case_id": "case-0003",
@@ -2400,7 +2400,7 @@
           }
         ]
       },
-      "latency_ms": 0.10904200000000364
+      "latency_ms": 0.10991599999998769
     },
     {
       "case_id": "case-0004",
@@ -2436,7 +2436,7 @@
           }
         ]
       },
-      "latency_ms": 0.10895899999999181
+      "latency_ms": 0.10645799999997596
     },
     {
       "case_id": "case-0005",
@@ -2472,7 +2472,7 @@
           }
         ]
       },
-      "latency_ms": 0.1081249999999867
+      "latency_ms": 0.10537500000001865
     },
     {
       "case_id": "case-0006",
@@ -2508,7 +2508,7 @@
           }
         ]
       },
-      "latency_ms": 0.10825000000000418
+      "latency_ms": 0.10579100000002173
     },
     {
       "case_id": "case-0007",
@@ -2544,7 +2544,7 @@
           }
         ]
       },
-      "latency_ms": 0.11058299999999743
+      "latency_ms": 0.11900000000003574
     },
     {
       "case_id": "case-0008",
@@ -2580,7 +2580,7 @@
           }
         ]
       },
-      "latency_ms": 0.10683300000000062
+      "latency_ms": 0.10604100000000116
     },
     {
       "case_id": "case-0009",
@@ -2616,7 +2616,7 @@
           }
         ]
       },
-      "latency_ms": 0.10616599999999088
+      "latency_ms": 0.10533400000001247
     },
     {
       "case_id": "case-0010",
@@ -2652,7 +2652,7 @@
           }
         ]
       },
-      "latency_ms": 0.10616699999999035
+      "latency_ms": 0.10562499999999808
     },
     {
       "case_id": "case-0011",
@@ -2689,7 +2689,7 @@
           }
         ]
       },
-      "latency_ms": 0.11962500000001208
+      "latency_ms": 0.1188340000000121
     },
     {
       "case_id": "case-0012",
@@ -2726,7 +2726,7 @@
           }
         ]
       },
-      "latency_ms": 0.12116700000000535
+      "latency_ms": 0.12020800000001053
     },
     {
       "case_id": "case-0013",
@@ -2763,7 +2763,7 @@
           }
         ]
       },
-      "latency_ms": 0.1187500000000008
+      "latency_ms": 0.11654100000002554
     },
     {
       "case_id": "case-0014",
@@ -2800,7 +2800,7 @@
           }
         ]
       },
-      "latency_ms": 0.11191599999998969
+      "latency_ms": 0.10824999999997642
     },
     {
       "case_id": "case-0015",
@@ -2837,7 +2837,7 @@
           }
         ]
       },
-      "latency_ms": 0.11108400000001128
+      "latency_ms": 0.11012499999996095
     }
   ],
   "single_agent_data_analyst": [
@@ -2869,7 +2869,7 @@
           }
         ]
       },
-      "latency_ms": 0.10983300000000362
+      "latency_ms": 0.11383300000000762
     },
     {
       "case_id": "case-0002",
@@ -2899,7 +2899,7 @@
           }
         ]
       },
-      "latency_ms": 0.10829199999998207
+      "latency_ms": 0.10733299999998724
     },
     {
       "case_id": "case-0003",
@@ -2929,7 +2929,7 @@
           }
         ]
       },
-      "latency_ms": 0.10716599999999188
+      "latency_ms": 0.10741699999999854
     },
     {
       "case_id": "case-0004",
@@ -2959,7 +2959,7 @@
           }
         ]
       },
-      "latency_ms": 0.10645800000000372
+      "latency_ms": 0.11329199999998707
     },
     {
       "case_id": "case-0005",
@@ -2989,7 +2989,7 @@
           }
         ]
       },
-      "latency_ms": 0.10608300000000681
+      "latency_ms": 0.11145800000000872
     },
     {
       "case_id": "case-0006",
@@ -3019,7 +3019,7 @@
           }
         ]
       },
-      "latency_ms": 0.11091599999998869
+      "latency_ms": 0.18100000000004224
     },
     {
       "case_id": "case-0007",
@@ -3049,7 +3049,7 @@
           }
         ]
       },
-      "latency_ms": 0.12045899999998944
+      "latency_ms": 0.12187499999999352
     },
     {
       "case_id": "case-0008",
@@ -3079,7 +3079,7 @@
           }
         ]
       },
-      "latency_ms": 0.10899999999999799
+      "latency_ms": 0.11841600000001007
     },
     {
       "case_id": "case-0009",
@@ -3109,7 +3109,7 @@
           }
         ]
       },
-      "latency_ms": 0.10612500000001246
+      "latency_ms": 0.11499999999997623
     },
     {
       "case_id": "case-0010",
@@ -3139,7 +3139,7 @@
           }
         ]
       },
-      "latency_ms": 0.10608300000000681
+      "latency_ms": 0.11608299999998906
     },
     {
       "case_id": "case-0011",
@@ -3170,7 +3170,7 @@
           }
         ]
       },
-      "latency_ms": 0.1207500000000028
+      "latency_ms": 0.12741599999999131
     },
     {
       "case_id": "case-0012",
@@ -3201,7 +3201,7 @@
           }
         ]
       },
-      "latency_ms": 0.11829199999999207
+      "latency_ms": 0.12270899999999862
     },
     {
       "case_id": "case-0013",
@@ -3232,7 +3232,7 @@
           }
         ]
       },
-      "latency_ms": 0.11658300000000343
+      "latency_ms": 0.12029100000005011
     },
     {
       "case_id": "case-0014",
@@ -3263,7 +3263,7 @@
           }
         ]
       },
-      "latency_ms": 0.10858299999999543
+      "latency_ms": 0.11408300000004257
     },
     {
       "case_id": "case-0015",
@@ -3294,7 +3294,7 @@
           }
         ]
       },
-      "latency_ms": 0.10991700000001492
+      "latency_ms": 0.11533400000002247
     }
   ]
 }

@@ -3,7 +3,7 @@
 This is the simplest benchmark pass across all currently registered approaches.
 
 - Cases: `15`
-- Data root: `/Users/fraano/Desktop/Repos/GP/benchmarking/submodules/zeus-service/app/workflow/local_db/coaction`
+- Data root: `/Users/fraano/Desktop/Repos/GP/benchmarking/GP_components/zeus-service/app/workflow/local_db/coaction`
 
 ## Approaches
 
@@ -23,13 +23,13 @@ This is the simplest benchmark pass across all currently registered approaches.
 | Baseline | Accuracy | Avg Latency (ms) |
 |---|---:|---:|
 | structured_lookup | 100.0% | 0.04 |
-| openai_raw_llm | 100.0% | 0.19 |
-| anthropic_raw_llm | 100.0% | 0.16 |
-| react_agent | 100.0% | 0.12 |
-| multi_agent_analyst_coder_critic | 100.0% | 0.11 |
-| autogen_multi_agent | 100.0% | 0.12 |
+| openai_raw_llm | 100.0% | 0.21 |
+| anthropic_raw_llm | 100.0% | 0.17 |
+| react_agent | 100.0% | 0.15 |
+| multi_agent_analyst_coder_critic | 100.0% | 0.13 |
+| autogen_multi_agent | 100.0% | 0.11 |
 | metagpt_sop_agent | 100.0% | 0.11 |
-| single_agent_data_analyst | 100.0% | 0.11 |
+| single_agent_data_analyst | 100.0% | 0.12 |
 
 ## Notes
 

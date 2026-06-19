@@ -12,7 +12,7 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_ROOT = ROOT / "submodules" / "zeus-service" / "app" / "workflow" / "local_db" / "coaction"
+DATA_ROOT = ROOT / "GP_components" / "zeus-service" / "app" / "workflow" / "local_db" / "coaction"
 DEFAULT_CASE_PACK_PATH = ROOT / "cases" / "coaction_venue_risk" / "initial_case_pack.json"
 DEFAULT_REPORT_DIR = ROOT / "reports" / "coaction_initial_draft"
 DEFAULT_BASELINE_CATALOG_PATH = ROOT / "cases" / "coaction_venue_risk" / "baseline_catalog.json"
@@ -459,7 +459,7 @@ def write_outputs(
         "# Coaction Initial Benchmark Draft",
         "",
         "This report is the first thin benchmark loop built from the existing local",
-        "Coaction and UniCourt venue-risk tables already present in `submodules/zeus-service`.",
+        "Coaction and UniCourt venue-risk tables already present in `GP_components/zeus-service`.",
         "",
         "## Scorecard",
         "",
