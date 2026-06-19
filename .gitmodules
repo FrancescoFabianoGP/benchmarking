@@ -1,6 +1,15 @@
 [submodule "reasoning-engine"]
-	path = submodules/reasoning-engine
+	path = GP_components/reasoning-engine
 	url = git@github-gp:growth-protocol-ai/reasoning-engine.git
 [submodule "zeus-service"]
-	path = submodules/zeus-service
+	path = GP_components/zeus-service
 	url = git@github-gp:growth-protocol-ai/zeus-service.git
+[submodule "baselines/autogen"]
+	path = baselines/autogen
+	url = https://github.com/microsoft/autogen.git
+[submodule "baselines/metagpt"]
+	path = baselines/metagpt
+	url = https://github.com/FoundationAgents/MetaGPT.git
+[submodule "baselines/langgraph"]
+	path = baselines/langgraph
+	url = https://github.com/langchain-ai/langgraph.git
