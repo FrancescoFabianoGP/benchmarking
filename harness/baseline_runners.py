@@ -74,6 +74,7 @@ FRAMEWORK_RUNTIMES = {
     ),
 }
 _PERSISTENT_WRAPPERS: dict[tuple[str, str], subprocess.Popen[str]] = {}
+_PERSISTENT_WRAPPER_STDERRS: dict[tuple[str, str], tuple[Path, Any]] = {}
 
 
 @dataclass(frozen=True)
@@ -148,6 +149,47 @@ def _execution_context(baseline_id: str, mode: str) -> BaselineExecutionContext:
         repo_path=_repo_path_for_baseline(baseline_id),
         mode=mode,
     )
+
+
+def _persistent_wrapper_stderr_path(framework_id: str, baseline_id: str) -> Path:
+    return LOCAL_WORKFLOW_CACHE_ROOT / "wrapper_logs" / framework_id / f"{baseline_id}.stderr.log"
+
+
+def _tail_text(path: Path, max_chars: int = 4000) -> str:
+    if not path.exists():
+        return ""
+    try:
+        text = path.read_text(encoding="utf-8", errors="replace")
+    except OSError:
+        return ""
+    return text[-max_chars:].strip()
+
+
+def _first_nonempty_env(env: dict[str, str], *names: str, default: str) -> str:
+    for name in names:
+        value = env.get(name)
+        if value:
+            return value
+    return default
+
+
+def _metagpt_compatible_model(env: dict[str, str]) -> tuple[str, str | None]:
+    requested_model = _first_nonempty_env(
+        env,
+        "METAGPT_MODEL",
+        "BENCHMARK_FRAMEWORK_MODEL",
+        "OPENAI_MODEL",
+        default="gpt-4o-mini",
+    )
+    compatibility_fallback = _first_nonempty_env(
+        env,
+        "METAGPT_COMPAT_MODEL",
+        default="gpt-4o-mini",
+    )
+    normalized = requested_model.strip().lower()
+    if normalized.startswith("gpt-5"):
+        return compatibility_fallback, requested_model
+    return requested_model, None
 
 
 def _lookup_answer(case: BenchmarkCase, reference_data: dict[str, Any]) -> tuple[list[str], dict[str, Any]]:
@@ -262,6 +304,8 @@ def _run_real_wrapper(case: BenchmarkCase, baseline_id: str, wrapper_path: Path)
     payload = {"baseline_id": baseline_id, "case": asdict(case)}
     env = os.environ.copy()
     if runtime.framework_id == "metagpt":
+        metagpt_model, requested_metagpt_model = _metagpt_compatible_model(env)
+        openai_base_url = _first_nonempty_env(env, "OPENAI_BASE_URL", default="https://api.openai.com/v1")
         config_dir = METAGPT_HOME / ".metagpt"
         config_dir.mkdir(parents=True, exist_ok=True)
         config_path = config_dir / "config2.yaml"
@@ -270,14 +314,21 @@ def _run_real_wrapper(case: BenchmarkCase, baseline_id: str, wrapper_path: Path)
                 [
                     "llm:",
                     '  api_type: "openai"',
-                    f'  model: "{env.get("METAGPT_MODEL", env.get("BENCHMARK_FRAMEWORK_MODEL", env.get("OPENAI_MODEL", "gpt-4o-mini")))}"',
-                    f'  base_url: "{env.get("OPENAI_BASE_URL", "https://api.openai.com/v1")}"',
+                    f'  model: "{metagpt_model}"',
+                    f'  base_url: "{openai_base_url}"',
                     f'  api_key: "{env["OPENAI_API_KEY"]}"',
                 ]
         )
             + "\n",
             encoding="utf-8",
         )
+        env["METAGPT_MODEL"] = metagpt_model
+        env["OPENAI_MODEL"] = metagpt_model
+        env["OPENAI_BASE_URL"] = openai_base_url
+        env["OPENAI_API_KEY"] = env["OPENAI_API_KEY"]
+        if requested_metagpt_model is not None:
+            env["BENCHMARK_METAGPT_MODEL_REQUESTED"] = requested_metagpt_model
+            env["BENCHMARK_METAGPT_MODEL_ACTUAL"] = metagpt_model
         env["HOME"] = str(METAGPT_HOME)
     if runtime.framework_id == "zeus":
         _seed_zeus_workflow_cache()
@@ -287,31 +338,36 @@ def _run_real_wrapper(case: BenchmarkCase, baseline_id: str, wrapper_path: Path)
         if env.get("OPENAI_API_KEY"):
             env.setdefault("CLOUDFLARE_ZDR_AI_GATEWAY_API_KEY", env["OPENAI_API_KEY"])
         env.setdefault("CACHE_URI", f"local://{LOCAL_WORKFLOW_CACHE_ROOT}")
-        env.setdefault(
-            "GP_BENCHMARK_COACTION_DATA_ROOT",
-            str(ROOT / "cases" / "coaction_venue_risk" / "data"),
-        )
         env.setdefault("GCLOUD_LOCAL_CREDENTIALS", "true")
     if runtime.framework_id == "metagpt":
-        worker_key = (runtime.framework_id, str(wrapper_path))
+        worker_key = (runtime.framework_id, baseline_id)
         worker = _PERSISTENT_WRAPPERS.get(worker_key)
         if worker is None or worker.poll() is not None:
+            previous_stderr = _PERSISTENT_WRAPPER_STDERRS.pop(worker_key, None)
+            if previous_stderr is not None:
+                _, previous_handle = previous_stderr
+                previous_handle.close()
+            stderr_path = _persistent_wrapper_stderr_path(runtime.framework_id, baseline_id)
+            stderr_path.parent.mkdir(parents=True, exist_ok=True)
+            stderr_handle = stderr_path.open("w", encoding="utf-8")
             worker = subprocess.Popen(
                 [str(runtime.python_path), str(wrapper_path), "--server"],
                 stdin=subprocess.PIPE,
                 stdout=subprocess.PIPE,
-                stderr=subprocess.DEVNULL,
+                stderr=stderr_handle,
                 text=True,
                 cwd=ROOT,
                 env=env,
                 bufsize=1,
             )
             _PERSISTENT_WRAPPERS[worker_key] = worker
+            _PERSISTENT_WRAPPER_STDERRS[worker_key] = (stderr_path, stderr_handle)
         assert worker.stdin is not None
         assert worker.stdout is not None
         worker.stdin.write(json.dumps(payload) + "\n")
         worker.stdin.flush()
-        response = _read_persistent_wrapper_response(worker.stdout, baseline_id)
+        stderr_path = _PERSISTENT_WRAPPER_STDERRS[worker_key][0]
+        response = _read_persistent_wrapper_response(worker.stdout, baseline_id, stderr_path)
     else:
         try:
             completed = subprocess.run(
@@ -389,7 +445,7 @@ def _parse_wrapper_response(raw_text: str, baseline_id: str) -> dict[str, Any]:
     )
 
 
-def _read_persistent_wrapper_response(stdout: Any, baseline_id: str) -> dict[str, Any]:
+def _read_persistent_wrapper_response(stdout: Any, baseline_id: str, stderr_path: Path | None = None) -> dict[str, Any]:
     last_nonempty = ""
     for _ in range(200):
         raw_response = stdout.readline()
@@ -402,9 +458,11 @@ def _read_persistent_wrapper_response(stdout: Any, baseline_id: str) -> dict[str
             return _parse_wrapper_response(raw_response, baseline_id)
         except RuntimeError:
             continue
+    stderr_tail = _tail_text(stderr_path) if stderr_path is not None else ""
+    stderr_details = f" Stderr tail: {stderr_tail}" if stderr_tail else ""
     raise RuntimeError(
         f"{baseline_id} real execution failed: wrapper exited unexpectedly or did not return parseable JSON. "
-        f"Last output: {last_nonempty.strip() or 'empty output'}"
+        f"Last output: {last_nonempty.strip() or 'empty output'}.{stderr_details}"
     )
 
 

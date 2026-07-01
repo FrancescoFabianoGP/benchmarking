@@ -23,6 +23,9 @@ class Prediction:
     answer: list[str]
     evidence: dict[str, Any]
     latency_ms: float
+    wall_time_ms: float = 0.0
+    cpu_time_ms: float = 0.0
+    io_wait_ms: float = 0.0
 
 
 @dataclass

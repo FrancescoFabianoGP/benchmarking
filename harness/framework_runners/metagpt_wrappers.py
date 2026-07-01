@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import os
 import sys
 from pathlib import Path
 from time import perf_counter
@@ -14,6 +15,7 @@ if str(ROOT) not in sys.path:
 from metagpt.actions import Action
 from metagpt.actions.add_requirement import UserRequirement
 from metagpt.environment import Environment
+from metagpt.provider.openai_api import OpenAILLM
 from metagpt.roles import Role
 from metagpt.roles.di.data_interpreter import DataInterpreter
 from metagpt.schema import Message
@@ -33,6 +35,30 @@ from harness.framework_runners.common import (
 )
 
 _ACTIVE_CASE: BenchmarkCase | None = None
+
+
+def _patch_metagpt_openai_kwargs() -> None:
+    if getattr(OpenAILLM, "_benchmark_cloudflare_patch", False):
+        return
+
+    original_cons_kwargs = OpenAILLM._cons_kwargs
+
+    def _patched_cons_kwargs(self, messages: list[dict], timeout=None, **extra_kwargs) -> dict:
+        kwargs = original_cons_kwargs(self, messages, timeout=timeout, **extra_kwargs)
+        base_url = str(getattr(self.config, "base_url", "") or "").lower()
+        model = str(kwargs.get("model", getattr(self, "model", "")) or "").lower()
+        use_completion_tokens = "gateway.ai.cloudflare.com" in base_url or model.startswith(
+            ("gpt-4o", "gpt-5", "o1", "o3", "o4")
+        )
+        if use_completion_tokens and "max_tokens" in kwargs:
+            kwargs["max_completion_tokens"] = kwargs.pop("max_tokens")
+        return kwargs
+
+    OpenAILLM._cons_kwargs = _patched_cons_kwargs
+    OpenAILLM._benchmark_cloudflare_patch = True
+
+
+_patch_metagpt_openai_kwargs()
 
 
 def _require_active_case() -> BenchmarkCase:
@@ -145,41 +171,96 @@ class CriticFinalize(Action):
         return Message(content=response, sent_from="Critic")
 
 
+class SOPPlan(Action):
+    case_description: str
+    materials_json: str
+
+    async def run(self, *args, **kwargs) -> str:
+        del kwargs
+        history = "\n".join(str(arg) for arg in args if arg)
+        prompt = "\n\n".join(
+            [
+                self.case_description,
+                "You are executing a standard operating procedure for benchmark analysis.",
+                "Step 1: identify the exact table and metric needed for the answer.",
+                self.materials_json,
+                f"Prior notes:\n{history}" if history else "",
+                'Return JSON with keys "plan", "target_rows", and "candidate_answer".',
+            ]
+        )
+        return await self._aask(prompt)
+
+
+class SOPEvidence(Action):
+    case_description: str
+    materials_json: str
+
+    async def run(self, *args, **kwargs) -> str:
+        del kwargs
+        history = "\n".join(str(arg) for arg in args if arg)
+        prompt = "\n\n".join(
+            [
+                self.case_description,
+                "Continue the SOP.",
+                "Step 2: validate the candidate answer against the available benchmark materials and flag any ambiguity.",
+                self.materials_json,
+                f"Prior notes:\n{history}" if history else "",
+                'Return JSON with keys "validated_answer", "evidence", and "risks".',
+            ]
+        )
+        return await self._aask(prompt)
+
+
+class SOPFinalize(Action):
+    case_description: str
+    materials_json: str
+
+    async def run(self, *args, **kwargs) -> str:
+        del kwargs
+        history = "\n".join(str(arg) for arg in args if arg)
+        prompt = "\n\n".join(
+            [
+                self.case_description,
+                "Finish the SOP.",
+                "Step 3: produce the final benchmark answer using only validated evidence.",
+                self.materials_json,
+                f"Prior notes:\n{history}" if history else "",
+                'Return only JSON with the shape {"answer": ["..."]}.',
+            ]
+        )
+        return await self._aask(prompt)
+
+
 async def run_metagpt_sop(case: BenchmarkCase) -> dict[str, Any]:
     _set_active_case(case)
     materials = case_materials(case)
-    role = DataInterpreter(
-        react_mode="react",
-        use_reflection=True,
-        tools=[
-            "list_benchmark_sources",
-            "read_benchmark_court_stats",
-            "read_benchmark_judge_stats",
-            "read_benchmark_summaries",
-        ],
-    )
-
-    prompt = "\n\n".join(
-        [
-            tool_instructions(case),
-            "Use the benchmark tools to inspect the local data before answering.",
-            "If you need evidence, call the tools instead of guessing.",
-        ]
-    )
+    materials_json = json.dumps(materials, indent=2, sort_keys=True)
+    case_description = tool_instructions(case)
+    planner = SOPPlan(case_description=case_description, materials_json=materials_json)
+    verifier = SOPEvidence(case_description=case_description, materials_json=materials_json)
+    finalizer = SOPFinalize(case_description=case_description, materials_json=materials_json)
 
     started = perf_counter()
-    final_result = await role.run(prompt)
+    step_one = await planner.run()
+    step_two = await verifier.run(step_one)
+    final_result = await finalizer.run(step_one, step_two)
     latency_ms = (perf_counter() - started) * 1000
 
-    final_text = getattr(final_result, "content", str(final_result))
+    final_text = str(final_result)
     return {
         "answer": parse_answer_text(final_text),
         "evidence": {
             "framework": "metagpt",
-            "variant": "data_interpreter_live",
+            "variant": "sequential_sop_live",
             "model": framework_model_name("METAGPT_MODEL"),
+            "requested_model": os.getenv("BENCHMARK_METAGPT_MODEL_REQUESTED"),
+            "actual_model": os.getenv("BENCHMARK_METAGPT_MODEL_ACTUAL", framework_model_name("METAGPT_MODEL")),
             "materials": materials,
-            "message_trace": _message_trace(role.get_memories()),
+            "message_trace": [
+                {"step": "plan", "content": step_one},
+                {"step": "evidence", "content": step_two},
+                {"step": "final", "content": final_text},
+            ],
         },
         "latency_ms": latency_ms,
     }
@@ -231,6 +312,8 @@ async def run_metagpt_team(case: BenchmarkCase) -> dict[str, Any]:
             "framework": "metagpt",
             "variant": "analyst_coder_critic_team_live",
             "model": framework_model_name("METAGPT_MODEL"),
+            "requested_model": os.getenv("BENCHMARK_METAGPT_MODEL_REQUESTED"),
+            "actual_model": os.getenv("BENCHMARK_METAGPT_MODEL_ACTUAL", framework_model_name("METAGPT_MODEL")),
             "message_trace": _message_trace(history),
             "participants": ["Analyst", "Coder", "Critic"],
         },

@@ -19,15 +19,14 @@ from autogen_agentchat.teams import RoundRobinGroupChat
 from autogen_ext.models.openai import OpenAIChatCompletionClient
 
 from harness.framework_runners.common import (
+    autogen_openai_client_kwargs,
     framework_model_name,
     list_available_sources_tool,
-    openai_base_url,
     parse_answer_text,
     read_case_from_stdin,
     read_relevant_court_stats,
     read_relevant_judge_stats,
     read_relevant_summaries,
-    require_openai_api_key,
     serialize_message,
     tool_instructions,
 )
@@ -49,11 +48,10 @@ async def run_case() -> dict[str, Any]:
         return read_relevant_summaries(case)
 
     model_name = framework_model_name("AUTOGEN_MULTI_AGENT_MODEL")
-    api_key = require_openai_api_key()
-    base_url = openai_base_url()
-    analyst_client = OpenAIChatCompletionClient(model=model_name, api_key=api_key, base_url=base_url)
-    verifier_client = OpenAIChatCompletionClient(model=model_name, api_key=api_key, base_url=base_url)
-    summarizer_client = OpenAIChatCompletionClient(model=model_name, api_key=api_key, base_url=base_url)
+    client_kwargs = autogen_openai_client_kwargs("AUTOGEN_MULTI_AGENT_MODEL")
+    analyst_client = OpenAIChatCompletionClient(**client_kwargs)
+    verifier_client = OpenAIChatCompletionClient(**client_kwargs)
+    summarizer_client = OpenAIChatCompletionClient(**client_kwargs)
 
     analyst = AssistantAgent(
         name="analyst",

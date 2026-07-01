@@ -17,15 +17,14 @@ from autogen_agentchat.messages import TextMessage
 from autogen_ext.models.openai import OpenAIChatCompletionClient
 
 from harness.framework_runners.common import (
+    autogen_openai_client_kwargs,
     framework_model_name,
     list_available_sources_tool,
-    openai_base_url,
     parse_answer_text,
     read_case_from_stdin,
     read_relevant_court_stats,
     read_relevant_judge_stats,
     read_relevant_summaries,
-    require_openai_api_key,
     serialize_message,
     tool_instructions,
 )
@@ -46,11 +45,7 @@ async def run_case() -> dict[str, Any]:
     def read_summaries() -> dict[str, Any]:
         return read_relevant_summaries(case)
 
-    model_client = OpenAIChatCompletionClient(
-        model=framework_model_name("AUTOGEN_REACT_MODEL"),
-        api_key=require_openai_api_key(),
-        base_url=openai_base_url(),
-    )
+    model_client = OpenAIChatCompletionClient(**autogen_openai_client_kwargs("AUTOGEN_REACT_MODEL"))
 
     agent = AssistantAgent(
         name="react_agent",

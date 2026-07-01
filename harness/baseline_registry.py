@@ -4,7 +4,11 @@ import json
 import os
 import re
 import urllib.request
+import zipfile
+import xml.etree.ElementTree as ET
 from dataclasses import asdict, dataclass, field
+from functools import lru_cache
+from pathlib import Path
 from typing import Any
 
 from harness.benchmark_types import BenchmarkCase, Prediction
@@ -31,8 +35,85 @@ class BaselineSpec:
     spreadsheet_basis: str
     description: str
     implementation_status: str
+    paper_title: str | None = None
+    paper_url: str | None = None
     required_env_vars: list[str] = field(default_factory=list)
     notes: list[str] = field(default_factory=list)
+
+
+@lru_cache(maxsize=1)
+def _paper_links_from_spreadsheet() -> dict[str, tuple[str, str]]:
+    workbook_path = Path(__file__).resolve().parents[1] / "documentation" / "GP_relevant_res.xlsx"
+    if not workbook_path.exists():
+        return {}
+
+    namespace = {"a": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
+    relationships_ns = "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id"
+    results: dict[str, tuple[str, str]] = {}
+
+    with zipfile.ZipFile(workbook_path) as workbook:
+        shared_strings: list[str] = []
+        if "xl/sharedStrings.xml" in workbook.namelist():
+            shared_root = ET.fromstring(workbook.read("xl/sharedStrings.xml"))
+            for string_item in shared_root.findall("a:si", namespace):
+                parts = [node.text or "" for node in string_item.findall(".//a:t", namespace)]
+                shared_strings.append("".join(parts))
+
+        workbook_root = ET.fromstring(workbook.read("xl/workbook.xml"))
+        rels_root = ET.fromstring(workbook.read("xl/_rels/workbook.xml.rels"))
+        rel_targets = {rel.attrib["Id"]: rel.attrib["Target"] for rel in rels_root}
+        papers_sheet = None
+        for sheet in workbook_root.find("a:sheets", namespace) or []:
+            if sheet.attrib.get("name") == "Papers":
+                papers_sheet = sheet
+                break
+        if papers_sheet is None:
+            return {}
+
+        target = "xl/" + rel_targets[papers_sheet.attrib[relationships_ns]]
+        sheet_root = ET.fromstring(workbook.read(target))
+        rows: list[list[str]] = []
+        for row in sheet_root.findall(".//a:sheetData/a:row", namespace):
+            values: list[str] = []
+            for cell in row.findall("a:c", namespace):
+                value = ""
+                inline = cell.find("a:is", namespace)
+                if inline is not None:
+                    value = "".join(node.text or "" for node in inline.findall(".//a:t", namespace))
+                else:
+                    node = cell.find("a:v", namespace)
+                    if node is not None and node.text is not None:
+                        value = node.text
+                        if cell.attrib.get("t") == "s":
+                            value = shared_strings[int(value)]
+                values.append(value.strip())
+            if values:
+                rows.append(values)
+
+    for row in rows[1:]:
+        if len(row) < 7:
+            continue
+        category, name, *_rest, link = row[:7]
+        if category != "Paper to read" or not name or not link:
+            continue
+        results[name] = (name, link)
+    return results
+
+
+def _paper_metadata(spreadsheet_basis: str) -> tuple[str | None, str | None]:
+    links = _paper_links_from_spreadsheet()
+    aliases = {
+        "Paper to read: ReAct": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "Paper to read: AutoGen": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+        "Paper to read: MetaGPT": "MetaGPT: Meta Programming for a Multi-Agent Collaborative Framework",
+    }
+    for alias, canonical_title in aliases.items():
+        if alias in spreadsheet_basis and canonical_title in links:
+            return links[canonical_title]
+    for title, metadata in links.items():
+        if title in spreadsheet_basis:
+            return metadata
+    return None, None
 
 
 def build_prompt(case: BenchmarkCase) -> str:
@@ -70,6 +151,13 @@ def build_contextual_prompt(case: BenchmarkCase) -> str:
 
 
 def get_baseline_catalog() -> list[BaselineSpec]:
+    react_paper = _paper_metadata("Approach / baseline: ReAct agent; Paper to read: ReAct")
+    autogen_paper = _paper_metadata(
+        "Paper to read: AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation"
+    )
+    metagpt_paper = _paper_metadata(
+        "Paper to read: MetaGPT: Meta Programming for a Multi-Agent Collaborative Framework"
+    )
     return [
         BaselineSpec(
             baseline_id="structured_lookup",
@@ -166,6 +254,8 @@ def get_baseline_catalog() -> list[BaselineSpec]:
             spreadsheet_basis="Approach / baseline: ReAct agent; Paper to read: ReAct",
             description="Open agent baseline with thought-action-observation loops and tool calls.",
             implementation_status="framework_wrapper_requires_runtime",
+            paper_title=react_paper[0],
+            paper_url=react_paper[1],
             required_env_vars=["OPENAI_API_KEY"],
             notes=[
                 "Good open baseline for agentic tool-use.",
@@ -183,6 +273,8 @@ def get_baseline_catalog() -> list[BaselineSpec]:
             spreadsheet_basis="Approach / baseline: Multi-agent analyst/coder/critic workflow; Paper to read: AutoGen",
             description="Specialized multi-agent workflow baseline for analysis and self-critique.",
             implementation_status="framework_wrapper_requires_runtime",
+            paper_title=autogen_paper[0],
+            paper_url=autogen_paper[1],
             required_env_vars=["OPENAI_API_KEY"],
             notes=[
                 "Good comparator for orchestration-heavy open tooling.",
@@ -200,6 +292,8 @@ def get_baseline_catalog() -> list[BaselineSpec]:
             spreadsheet_basis="Paper to read: AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
             description="Conversational multi-agent architecture baseline for collaborative data-analysis workflows.",
             implementation_status="framework_wrapper_requires_runtime",
+            paper_title=autogen_paper[0],
+            paper_url=autogen_paper[1],
             required_env_vars=["OPENAI_API_KEY"],
             notes=[
                 "Strong agentic architecture comparator for orchestration-heavy tasks.",
@@ -217,6 +311,8 @@ def get_baseline_catalog() -> list[BaselineSpec]:
             spreadsheet_basis="Paper to read: MetaGPT: Meta Programming for a Multi-Agent Collaborative Framework",
             description="Multi-agent SOP-style architecture baseline emphasizing role separation and staged execution.",
             implementation_status="framework_wrapper_requires_runtime",
+            paper_title=metagpt_paper[0],
+            paper_url=metagpt_paper[1],
             required_env_vars=["OPENAI_API_KEY"],
             notes=[
                 "Interesting comparator if we want to benchmark GP as an orchestrator.",
@@ -256,6 +352,7 @@ def get_baseline_catalog() -> list[BaselineSpec]:
                 "Install the repo-local Zeus runtime with `python3 scripts/install_baseline_runtimes.py --baseline gp_zeus_venue_risk`.",
                 "This baseline uses the in-repo `GP_components/zeus-service` workflow rather than a simplified wrapper architecture.",
                 "The harness auto-configures a local workflow cache and maps OPENAI-style Cloudflare gateway settings into the Zeus Cloudflare ZDR env vars.",
+                "The Zeus workflow itself still reads its standard checked-in local Coaction tables from the submodule.",
                 "For this Coaction benchmark path, the main live dependency is LLM access plus the repo-local Zeus runtime.",
             ],
         ),

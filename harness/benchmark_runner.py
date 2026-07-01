@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import resource
 from pathlib import Path
 from time import perf_counter
 from typing import Any
@@ -15,6 +16,30 @@ def _progress_enabled() -> bool:
     return os.getenv("BENCHMARK_PROGRESS", "").strip().lower() in {"1", "true", "yes", "on"}
 
 
+def _progress_bar(completed: int, total: int, width: int = 18) -> str:
+    if total <= 0:
+        return "[" + ("-" * width) + "]"
+    filled = int(width * completed / total)
+    if filled > width:
+        filled = width
+    return "[" + ("#" * filled) + ("-" * (width - filled)) + "]"
+
+
+def _format_seconds(seconds: float) -> str:
+    return f"{seconds:.1f}s"
+
+
+def _cpu_snapshot_ms() -> float:
+    self_usage = resource.getrusage(resource.RUSAGE_SELF)
+    child_usage = resource.getrusage(resource.RUSAGE_CHILDREN)
+    return (
+        self_usage.ru_utime
+        + self_usage.ru_stime
+        + child_usage.ru_utime
+        + child_usage.ru_stime
+    ) * 1000.0
+
+
 def _run_cases_with_progress(
     case_pack: list[Any],
     reference_data: dict[str, Any],
@@ -22,11 +47,13 @@ def _run_cases_with_progress(
 ) -> list[Any]:
     predictions = []
     total_cases = len(case_pack)
+    baseline_started = perf_counter()
     for index, case in enumerate(case_pack, start=1):
         if _progress_enabled():
             print(
-                "[benchmark] baseline={baseline} case={index}/{total} case_id={case_id} dataset={dataset} query_type={query_type}".format(
+                "[benchmark] baseline={baseline} {bar} case={index}/{total} case_id={case_id} dataset={dataset} query_type={query_type}".format(
                     baseline=baseline_id,
+                    bar=_progress_bar(index - 1, total_cases),
                     index=index,
                     total=total_cases,
                     case_id=case.case_id,
@@ -35,7 +62,27 @@ def _run_cases_with_progress(
                 ),
                 flush=True,
             )
-        predictions.append(_run_timed_baseline(case, reference_data, baseline_id))
+        prediction = _run_timed_baseline(case, reference_data, baseline_id)
+        predictions.append(prediction)
+        if _progress_enabled():
+            elapsed_seconds = perf_counter() - baseline_started
+            average_case_seconds = elapsed_seconds / index
+            remaining_cases = total_cases - index
+            eta_seconds = average_case_seconds * remaining_cases
+            print(
+                "[benchmark-progress] baseline={baseline} {bar} completed={completed}/{total} wall={wall:.1f}ms cpu={cpu:.1f}ms io_wait={io:.1f}ms elapsed={elapsed} eta={eta}".format(
+                    baseline=baseline_id,
+                    bar=_progress_bar(index, total_cases),
+                    completed=index,
+                    total=total_cases,
+                    wall=prediction.wall_time_ms,
+                    cpu=prediction.cpu_time_ms,
+                    io=prediction.io_wait_ms,
+                    elapsed=_format_seconds(elapsed_seconds),
+                    eta=_format_seconds(eta_seconds),
+                ),
+                flush=True,
+            )
     return predictions
 
 
@@ -101,8 +148,14 @@ def run_benchmark(
 
 
 def _run_timed_baseline(case: Any, reference_data: dict[str, Any], baseline_id: str) -> Any:
+    cpu_started_ms = _cpu_snapshot_ms()
     started = perf_counter()
     prediction = run_baseline_prediction(case, reference_data, baseline_id)
+    wall_time_ms = (perf_counter() - started) * 1000
+    cpu_time_ms = max(0.0, _cpu_snapshot_ms() - cpu_started_ms)
+    prediction.wall_time_ms = wall_time_ms
+    prediction.cpu_time_ms = cpu_time_ms
+    prediction.io_wait_ms = max(0.0, wall_time_ms - cpu_time_ms)
     if prediction.latency_ms == 0.0:
-        prediction.latency_ms = (perf_counter() - started) * 1000
+        prediction.latency_ms = wall_time_ms
     return prediction

@@ -322,6 +322,12 @@ def write_outputs(
         f"- Cases: `{summary['case_count']}`",
         f"- Overall accuracy: `{summary['overall_accuracy']:.1%}`",
         f"- Average latency: `{summary['average_latency_ms']:.2f} ms`",
+        f"- Average wall time: `{summary['average_wall_time_ms']:.2f} ms`",
+        f"- Average CPU time: `{summary['average_cpu_time_ms']:.2f} ms`",
+        f"- Average I/O wait: `{summary['average_io_wait_ms']:.2f} ms`",
+        f"- Total wall time: `{summary['total_wall_time_ms']:.2f} ms`",
+        f"- Total CPU time: `{summary['total_cpu_time_ms']:.2f} ms`",
+        f"- Total I/O wait: `{summary['total_io_wait_ms']:.2f} ms`",
         f"- Total input tokens: `{summary['total_input_tokens']}`",
         f"- Total output tokens: `{summary['total_output_tokens']}`",
         f"- Total tokens: `{summary['total_tokens']}`",
@@ -356,8 +362,8 @@ def write_outputs(
             "",
             "## Case Results",
             "",
-            "| Case | Dataset | Prompt | Expected | Predicted | Correct |",
-            "|---|---|---|---|---|---|",
+            "| Case | Dataset | Prompt | Expected | Predicted | Correct | Wall (ms) | CPU (ms) | I/O Wait (ms) |",
+            "|---|---|---|---|---|---|---:|---:|---:|",
         ]
     )
     prediction_by_case = {prediction.case_id: prediction for prediction in predictions}
@@ -366,13 +372,16 @@ def write_outputs(
         prediction = prediction_by_case[case.case_id]
         score = score_by_case[case.case_id]
         lines.append(
-            "| {case_id} | {dataset} | {prompt} | {expected} | {predicted} | {correct} |".format(
+            "| {case_id} | {dataset} | {prompt} | {expected} | {predicted} | {correct} | {wall:.2f} | {cpu:.2f} | {io:.2f} |".format(
                 case_id=case.case_id,
                 dataset=case.dataset,
                 prompt=case.prompt.replace("|", "/"),
                 expected=", ".join(case.gold_answer),
                 predicted=", ".join(prediction.answer),
                 correct="yes" if score.is_correct else "no",
+                wall=prediction.wall_time_ms,
+                cpu=prediction.cpu_time_ms,
+                io=prediction.io_wait_ms,
             )
         )
 
@@ -383,12 +392,12 @@ def write_outputs(
         suite_lines = [
             "# Coaction Baseline Suite",
             "",
-            "| Baseline | Accuracy | Cases | Avg Latency (ms) | Tokens | Est. Cost (USD) |",
-            "|---|---:|---:|---:|---:|---:|",
+            "| Baseline | Accuracy | Cases | Avg Latency (ms) | Avg Wall (ms) | Avg CPU (ms) | Avg I/O Wait (ms) | Tokens | Est. Cost (USD) |",
+            "|---|---:|---:|---:|---:|---:|---:|---:|---:|",
         ]
         for baseline_id, baseline_summary in suite_summary.items():
             suite_lines.append(
-                f"| {baseline_id} | {baseline_summary['overall_accuracy']:.1%} | {baseline_summary['case_count']} | {baseline_summary['average_latency_ms']:.2f} | {_format_optional_int(baseline_summary.get('total_tokens'))} | {_format_cost(baseline_summary.get('total_estimated_cost_usd'))} |"
+                f"| {baseline_id} | {baseline_summary['overall_accuracy']:.1%} | {baseline_summary['case_count']} | {baseline_summary['average_latency_ms']:.2f} | {baseline_summary['average_wall_time_ms']:.2f} | {baseline_summary['average_cpu_time_ms']:.2f} | {baseline_summary['average_io_wait_ms']:.2f} | {_format_optional_int(baseline_summary.get('total_tokens'))} | {_format_cost(baseline_summary.get('total_estimated_cost_usd'))} |"
             )
         with (report_dir / "suite_scorecard.md").open("w", encoding="utf-8") as handle:
             handle.write("\n".join(suite_lines) + "\n")
@@ -422,13 +431,13 @@ def write_outputs(
                 "",
                 "## Results",
                 "",
-                "| Baseline | Accuracy | Avg Latency (ms) | Tokens | Est. Cost (USD) |",
-                "|---|---:|---:|---:|---:|",
+                "| Baseline | Accuracy | Avg Latency (ms) | Avg Wall (ms) | Avg CPU (ms) | Avg I/O Wait (ms) | Tokens | Est. Cost (USD) |",
+                "|---|---:|---:|---:|---:|---:|---:|---:|",
             ]
         )
         for baseline_id, baseline_summary in suite_summary.items():
             basic_lines.append(
-                f"| {baseline_id} | {baseline_summary['overall_accuracy']:.1%} | {baseline_summary['average_latency_ms']:.2f} | {_format_optional_int(baseline_summary.get('total_tokens'))} | {_format_cost(baseline_summary.get('total_estimated_cost_usd'))} |"
+                f"| {baseline_id} | {baseline_summary['overall_accuracy']:.1%} | {baseline_summary['average_latency_ms']:.2f} | {baseline_summary['average_wall_time_ms']:.2f} | {baseline_summary['average_cpu_time_ms']:.2f} | {baseline_summary['average_io_wait_ms']:.2f} | {_format_optional_int(baseline_summary.get('total_tokens'))} | {_format_cost(baseline_summary.get('total_estimated_cost_usd'))} |"
             )
 
         basic_lines.extend(

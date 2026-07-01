@@ -129,6 +129,55 @@ def framework_model_name(*env_names: str) -> str:
     return os.getenv("BENCHMARK_FRAMEWORK_MODEL", os.getenv("OPENAI_MODEL", DEFAULT_FRAMEWORK_MODEL))
 
 
+def _infer_autogen_model_family(model_name: str) -> str:
+    from autogen_core.models import ModelFamily
+
+    normalized = model_name.strip().lower()
+    if normalized.startswith("gpt-5"):
+        return ModelFamily.GPT_5
+    if normalized.startswith("gpt-4.5"):
+        return ModelFamily.GPT_45
+    if normalized.startswith("gpt-4.1"):
+        return ModelFamily.GPT_41
+    if normalized.startswith("gpt-4o"):
+        return ModelFamily.GPT_4O
+    if normalized.startswith("gpt-4"):
+        return ModelFamily.GPT_4
+    if normalized.startswith("gpt-3.5"):
+        return ModelFamily.GPT_35
+    if normalized.startswith("o4"):
+        return ModelFamily.O4
+    if normalized.startswith("o3"):
+        return ModelFamily.O3
+    if normalized.startswith("o1"):
+        return ModelFamily.O1
+    return ModelFamily.UNKNOWN
+
+
+def autogen_openai_client_kwargs(*env_names: str) -> dict[str, Any]:
+    model_name = framework_model_name(*env_names)
+    kwargs: dict[str, Any] = {
+        "model": model_name,
+        "api_key": require_openai_api_key(),
+        "base_url": openai_base_url(),
+    }
+
+    try:
+        from autogen_ext.models.openai._model_info import get_info
+
+        get_info(model_name)
+    except Exception:
+        kwargs["model_info"] = {
+            "vision": True,
+            "function_calling": True,
+            "json_output": True,
+            "family": _infer_autogen_model_family(model_name),
+            "structured_output": True,
+            "multiple_system_messages": True,
+        }
+    return kwargs
+
+
 def openai_text_completion(*, prompt: str, model: str, system_prompt: str) -> tuple[str, dict[str, Any]]:
     request = urllib.request.Request(
         openai_chat_completions_url(),

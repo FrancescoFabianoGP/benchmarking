@@ -68,6 +68,18 @@ def score_predictions(
         "average_latency_ms": mean(pred.latency_ms for pred in predictions)
         if predictions
         else 0.0,
+        "average_wall_time_ms": mean(pred.wall_time_ms for pred in predictions)
+        if predictions
+        else 0.0,
+        "average_cpu_time_ms": mean(pred.cpu_time_ms for pred in predictions)
+        if predictions
+        else 0.0,
+        "average_io_wait_ms": mean(pred.io_wait_ms for pred in predictions)
+        if predictions
+        else 0.0,
+        "total_wall_time_ms": sum(pred.wall_time_ms for pred in predictions),
+        "total_cpu_time_ms": sum(pred.cpu_time_ms for pred in predictions),
+        "total_io_wait_ms": sum(pred.io_wait_ms for pred in predictions),
         **usage_totals,
     }
 

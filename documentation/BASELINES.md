@@ -1,160 +1,102 @@
-# Baseline Plan
+# Baselines
 
-This repo now has a baseline registry wired into a benchmark registry, with the current thin Coaction benchmark as the first registered benchmark.
+This repo keeps a single baseline registry and uses it across benchmark execution, reporting, and method summaries.
 
-## Baselines Added
+The active registry lives in:
 
-The current baseline catalog follows the comparison ladder already sketched in the planning docs and the resources listed in `documentation/GP_relevant_res.xlsx`.
+- [harness/baseline_registry.py](/Users/fraano/Desktop/Repos/GP/benchmarking/harness/baseline_registry.py)
+- [cases/coaction_venue_risk/baseline_catalog.json](/Users/fraano/Desktop/Repos/GP/benchmarking/cases/coaction_venue_risk/baseline_catalog.json)
 
-We now also keep a small set of cloned external repositories under `baselines/` and describe their wrapper plans in [`documentation/EXTERNAL_BASELINE_REPOS.md`](EXTERNAL_BASELINE_REPOS.md).
+## Baseline Ladder
 
-Included now:
+The current Coaction suite includes:
 
-- `structured_lookup`: deterministic reference baseline over the local Coaction and UniCourt tables.
-- `openai_raw_llm`: plain GPT baseline with offline fallback until API credentials are configured.
-- `anthropic_raw_llm`: plain Claude baseline with offline fallback until API credentials are configured.
-- `gp_zeus_venue_risk`: real Zeus venue-risk workflow baseline over the current Coaction benchmark.
-- `react_agent`: live AutoGen ReAct-style baseline over benchmark-safe local data tools.
-- `multi_agent_analyst_coder_critic`: live MetaGPT multi-role baseline aligned with the spreadsheet's multi-agent baseline note.
-- `autogen_multi_agent`: live AutoGen collaboration baseline using a multi-agent team over local data tools.
-- `metagpt_sop_agent`: live MetaGPT Data Interpreter baseline over benchmark-safe local data tools.
-- `single_agent_data_analyst`: live LangGraph single-agent baseline inspired by DABStep, DAEval, and FDABench.
+- `structured_lookup`: deterministic reference over the benchmark-local tables
+- `openai_raw_llm`: prompt-only OpenAI baseline
+- `openai_with_context`: OpenAI baseline with relevant local tables and summaries in context
+- `anthropic_raw_llm`: prompt-only Anthropic baseline
+- `anthropic_with_context`: Anthropic baseline with relevant local tables and summaries in context
+- `react_agent`: ReAct-style tool-using baseline
+- `multi_agent_analyst_coder_critic`: multi-agent analyst/coder/critic baseline
+- `autogen_multi_agent`: AutoGen-style collaborative multi-agent baseline
+- `metagpt_sop_agent`: MetaGPT-style SOP baseline
+- `single_agent_data_analyst`: single-agent data-analysis baseline
+- `gp_zeus_venue_risk`: the real GP Zeus venue-risk workflow
 
-## Why These Baselines
+## Runtime Model
 
-The spreadsheet explicitly calls out three especially relevant comparison points:
+Raw API baselines:
 
-- `LLM-only analyst`
-- `ReAct agent`
-- `Multi-agent analyst/coder/critic workflow`
-
-It also points to agentic-architecture families that are worth tracking as named baselines:
-
-- `AutoGen`
-- `MetaGPT`
-- `DABStep / DAEval / FDABench` style data agents
-
-That maps well to the benchmark positioning docs:
-
-- raw LLM
-- LLM plus open agent tooling
-- GP governed stack
-
-## Current Status
-
-What runs today:
-
-- `structured_lookup`
 - `openai_raw_llm`
+- `openai_with_context`
 - `anthropic_raw_llm`
-- `gp_zeus_venue_risk`
+- `anthropic_with_context`
+
+Framework baselines that use repo-local runtimes under `.baseline_envs/`:
+
 - `react_agent`
 - `multi_agent_analyst_coder_critic`
 - `autogen_multi_agent`
 - `metagpt_sop_agent`
 - `single_agent_data_analyst`
+- `gp_zeus_venue_risk`
 
-All of the above are wired into the local benchmark loop.
-
-For `openai_raw_llm` and `anthropic_raw_llm`:
-
-- without API keys they run in offline fallback mode
-- once keys are added they can call the live provider APIs instead
-
-For `react_agent`, `autogen_multi_agent`, `metagpt_sop_agent`, `multi_agent_analyst_coder_critic`, and `single_agent_data_analyst`:
-
-- they now require `OPENAI_API_KEY`
-- they use live model-backed framework execution instead of replay/no-op/deterministic wrapper logic
-
-For `gp_zeus_venue_risk`:
-
-- it requires the repo-local Zeus runtime under `.baseline_envs/zeus`
-- it executes the real Zeus venue-risk workflow from `GP_components/zeus-service`
-- the benchmark harness auto-points Zeus at `cases/coaction_venue_risk/data`
-- the benchmark harness auto-configures a repo-local workflow cache for this benchmark path
-- it primarily needs live LLM credentials via either `OPENAI_API_KEY` plus `OPENAI_BASE_URL`, or the equivalent `CLOUDFLARE_ZDR_AI_GATEWAY_*` env vars
-
-## Environment Variables
-
-For OpenAI:
-
-- `OPENAI_API_KEY`
-- optional `OPENAI_MODEL`
-- optional `OPENAI_BASE_URL`
-- optional `BENCHMARK_FRAMEWORK_MODEL`
-- optional per-framework overrides such as `AUTOGEN_REACT_MODEL`, `AUTOGEN_MULTI_AGENT_MODEL`, `LANGGRAPH_MODEL`, `METAGPT_MODEL`
-
-For Anthropic:
-
-- `ANTHROPIC_API_KEY`
-- optional `ANTHROPIC_MODEL`
-
-For Zeus:
-
-- `OPENAI_API_KEY` or `CLOUDFLARE_ZDR_AI_GATEWAY_API_KEY`
-- `OPENAI_BASE_URL` or `CLOUDFLARE_ZDR_AI_GATEWAY_BASE_URL`
-- optional `CACHE_URI`
-- optional `GP_BENCHMARK_COACTION_DATA_ROOT`
-- optional `GCLOUD_LOCAL_CREDENTIALS`
-
-## Useful Commands
-
-List the baseline catalog:
+Install the local framework runtimes with:
 
 ```bash
-python3 scripts/run_initial_coaction_benchmark.py --list-baselines
+python3 scripts/install_baseline_runtimes.py --all
 ```
 
-Or through the generic entrypoint:
-
-```bash
-python3 scripts/run_benchmark.py --list-baselines
-```
-
-Run the deterministic reference baseline:
-
-```bash
-python3 scripts/run_initial_coaction_benchmark.py --baseline structured_lookup
-```
-
-Or:
-
-```bash
-python3 scripts/run_benchmark.py --benchmark coaction_venue_risk --baseline structured_lookup
-```
-
-Run the whole suite:
-
-```bash
-python3 scripts/run_initial_coaction_benchmark.py --baseline all
-```
-
-Or:
-
-```bash
-python3 scripts/run_benchmark.py --benchmark coaction_venue_risk --baseline all
-```
-
-Install the Zeus runtime:
+Install only the Zeus runtime with:
 
 ```bash
 python3 scripts/install_baseline_runtimes.py --baseline gp_zeus_venue_risk
 ```
 
-Run only the Zeus baseline:
+## Environment Variables
+
+Common OpenAI-style settings:
+
+- `OPENAI_API_KEY`
+- `OPENAI_BASE_URL`
+- `OPENAI_MODEL`
+- `BENCHMARK_FRAMEWORK_MODEL`
+
+Framework-specific optional overrides:
+
+- `AUTOGEN_REACT_MODEL`
+- `AUTOGEN_MULTI_AGENT_MODEL`
+- `LANGGRAPH_MODEL`
+- `METAGPT_MODEL`
+- `METAGPT_COMPAT_MODEL`
+
+Anthropic settings:
+
+- `ANTHROPIC_API_KEY`
+- `ANTHROPIC_BASE_URL`
+- `ANTHROPIC_MODEL`
+
+Keep local secrets in `.env`:
 
 ```bash
-python3 scripts/run_benchmark.py --benchmark coaction_venue_risk --baseline gp_zeus_venue_risk
+cp .env.example .env
 ```
 
-Run the plain GPT baseline once credentials are configured:
+## Paper Links
 
-```bash
-OPENAI_API_KEY=... OPENAI_MODEL=... python3 scripts/run_initial_coaction_benchmark.py --baseline openai_raw_llm
-```
+The method-summary paper links shown in the suite report are derived from:
 
-Run the plain Claude baseline once credentials are configured:
+- [documentation/GP_relevant_res.xlsx](/Users/fraano/Desktop/Repos/GP/benchmarking/documentation/GP_relevant_res.xlsx)
 
-```bash
-ANTHROPIC_API_KEY=... ANTHROPIC_MODEL=... python3 scripts/run_initial_coaction_benchmark.py --baseline anthropic_raw_llm
-```
+Those links are surfaced into:
+
+- [reports/runs/coaction_all_baselines_gpt55/suite_status.md](/Users/fraano/Desktop/Repos/GP/benchmarking/reports/runs/coaction_all_baselines_gpt55/suite_status.md)
+
+## Report References
+
+Current aggregate outputs:
+
+- [reports/runs/coaction_all_baselines_gpt55/suite_status.md](/Users/fraano/Desktop/Repos/GP/benchmarking/reports/runs/coaction_all_baselines_gpt55/suite_status.md)
+- [reports/runs/coaction_all_baselines_gpt55/gp_workflow_analysis.md](/Users/fraano/Desktop/Repos/GP/benchmarking/reports/runs/coaction_all_baselines_gpt55/gp_workflow_analysis.md)
+
+The GP comparative report intentionally excludes `structured_lookup` from the GP-vs-others comparison, so GP is measured against live non-reference baselines rather than the deterministic oracle.
