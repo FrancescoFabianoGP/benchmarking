@@ -8,7 +8,7 @@ Coaction and UniCourt venue-risk tables already present in `GP_components/zeus-s
 - Runner: `structured_lookup`
 - Cases: `15`
 - Overall accuracy: `100.0%`
-- Average latency: `0.04 ms`
+- Average latency: `0.02 ms`
 
 ## Accuracy By Dataset
 

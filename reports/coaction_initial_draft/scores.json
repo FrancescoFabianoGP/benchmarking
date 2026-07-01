@@ -23,7 +23,14 @@
         "case_count": 5
       }
     },
-    "average_latency_ms": 0.017410933333333878
+    "average_latency_ms": 0.031389066666668665,
+    "cases_with_usage": 0,
+    "total_input_tokens": null,
+    "total_output_tokens": null,
+    "total_tokens": null,
+    "total_estimated_cost_usd": null,
+    "cases_with_estimated_cost": 0,
+    "average_estimated_cost_per_case_usd": null
   },
   "scores": [
     {
@@ -217,189 +224,14 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.017410933333333878
-    },
-    "openai_raw_llm": {
-      "runner": "openai_raw_llm",
-      "overall_accuracy": 1,
-      "case_count": 15,
-      "by_dataset": {
-        "coaction": {
-          "accuracy": 1,
-          "case_count": 7
-        },
-        "unicourt": {
-          "accuracy": 1,
-          "case_count": 8
-        }
-      },
-      "by_query_type": {
-        "county_metric_extreme": {
-          "accuracy": 1,
-          "case_count": 10
-        },
-        "county_top_judge_dismissal_rate": {
-          "accuracy": 1,
-          "case_count": 5
-        }
-      },
-      "average_latency_ms": 0.09611386666666573
-    },
-    "anthropic_raw_llm": {
-      "runner": "anthropic_raw_llm",
-      "overall_accuracy": 1,
-      "case_count": 15,
-      "by_dataset": {
-        "coaction": {
-          "accuracy": 1,
-          "case_count": 7
-        },
-        "unicourt": {
-          "accuracy": 1,
-          "case_count": 8
-        }
-      },
-      "by_query_type": {
-        "county_metric_extreme": {
-          "accuracy": 1,
-          "case_count": 10
-        },
-        "county_top_judge_dismissal_rate": {
-          "accuracy": 1,
-          "case_count": 5
-        }
-      },
-      "average_latency_ms": 0.09955280000000233
-    },
-    "react_agent": {
-      "runner": "react_agent",
-      "overall_accuracy": 1,
-      "case_count": 15,
-      "by_dataset": {
-        "coaction": {
-          "accuracy": 1,
-          "case_count": 7
-        },
-        "unicourt": {
-          "accuracy": 1,
-          "case_count": 8
-        }
-      },
-      "by_query_type": {
-        "county_metric_extreme": {
-          "accuracy": 1,
-          "case_count": 10
-        },
-        "county_top_judge_dismissal_rate": {
-          "accuracy": 1,
-          "case_count": 5
-        }
-      },
-      "average_latency_ms": 0.06340546666667168
-    },
-    "multi_agent_analyst_coder_critic": {
-      "runner": "multi_agent_analyst_coder_critic",
-      "overall_accuracy": 1,
-      "case_count": 15,
-      "by_dataset": {
-        "coaction": {
-          "accuracy": 1,
-          "case_count": 7
-        },
-        "unicourt": {
-          "accuracy": 1,
-          "case_count": 8
-        }
-      },
-      "by_query_type": {
-        "county_metric_extreme": {
-          "accuracy": 1,
-          "case_count": 10
-        },
-        "county_top_judge_dismissal_rate": {
-          "accuracy": 1,
-          "case_count": 5
-        }
-      },
-      "average_latency_ms": 0.06441393333333305
-    },
-    "autogen_multi_agent": {
-      "runner": "autogen_multi_agent",
-      "overall_accuracy": 1,
-      "case_count": 15,
-      "by_dataset": {
-        "coaction": {
-          "accuracy": 1,
-          "case_count": 7
-        },
-        "unicourt": {
-          "accuracy": 1,
-          "case_count": 8
-        }
-      },
-      "by_query_type": {
-        "county_metric_extreme": {
-          "accuracy": 1,
-          "case_count": 10
-        },
-        "county_top_judge_dismissal_rate": {
-          "accuracy": 1,
-          "case_count": 5
-        }
-      },
-      "average_latency_ms": 0.06507239999999544
-    },
-    "metagpt_sop_agent": {
-      "runner": "metagpt_sop_agent",
-      "overall_accuracy": 1,
-      "case_count": 15,
-      "by_dataset": {
-        "coaction": {
-          "accuracy": 1,
-          "case_count": 7
-        },
-        "unicourt": {
-          "accuracy": 1,
-          "case_count": 8
-        }
-      },
-      "by_query_type": {
-        "county_metric_extreme": {
-          "accuracy": 1,
-          "case_count": 10
-        },
-        "county_top_judge_dismissal_rate": {
-          "accuracy": 1,
-          "case_count": 5
-        }
-      },
-      "average_latency_ms": 0.06333886666666418
-    },
-    "single_agent_data_analyst": {
-      "runner": "single_agent_data_analyst",
-      "overall_accuracy": 1,
-      "case_count": 15,
-      "by_dataset": {
-        "coaction": {
-          "accuracy": 1,
-          "case_count": 7
-        },
-        "unicourt": {
-          "accuracy": 1,
-          "case_count": 8
-        }
-      },
-      "by_query_type": {
-        "county_metric_extreme": {
-          "accuracy": 1,
-          "case_count": 10
-        },
-        "county_top_judge_dismissal_rate": {
-          "accuracy": 1,
-          "case_count": 5
-        }
-      },
-      "average_latency_ms": 0.06411666666666926
+      "average_latency_ms": 0.031389066666668665,
+      "cases_with_usage": 0,
+      "total_input_tokens": null,
+      "total_output_tokens": null,
+      "total_tokens": null,
+      "total_estimated_cost_usd": null,
+      "cases_with_estimated_cost": 0,
+      "average_estimated_cost_per_case_usd": null
     }
   }
 }

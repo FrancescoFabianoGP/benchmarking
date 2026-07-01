@@ -36,13 +36,32 @@
     ]
   },
   {
+    "baseline_id": "openai_with_context",
+    "label": "OpenAI With Context",
+    "category": "llm_with_context",
+    "runner_kind": "openai_with_context",
+    "provider": "openai",
+    "model_env_var": "OPENAI_MODEL",
+    "default_model": "gpt-5",
+    "spreadsheet_basis": "Approach / baseline: LLM analyst with relevant benchmark tables in context",
+    "description": "OpenAI baseline with the relevant local benchmark table rows and summaries included in the request.",
+    "implementation_status": "live_if_configured",
+    "required_env_vars": [
+      "OPENAI_API_KEY"
+    ],
+    "notes": [
+      "Sends the case question plus the relevant local benchmark materials in the prompt.",
+      "Uses the same Cloudflare OpenAI gateway path as the raw baseline when OPENAI_BASE_URL is set."
+    ]
+  },
+  {
     "baseline_id": "anthropic_raw_llm",
     "label": "Anthropic Raw LLM",
     "category": "llm_only",
     "runner_kind": "anthropic_raw_llm",
     "provider": "anthropic",
     "model_env_var": "ANTHROPIC_MODEL",
-    "default_model": "claude-sonnet-4-0",
+    "default_model": "claude-sonnet-4-6",
     "spreadsheet_basis": "Approach / baseline: LLM-only analyst",
     "description": "Prompt-only Claude baseline over the same case question and output schema.",
     "implementation_status": "offline_ready_live_if_configured",
@@ -55,6 +74,25 @@
     ]
   },
   {
+    "baseline_id": "anthropic_with_context",
+    "label": "Anthropic With Context",
+    "category": "llm_with_context",
+    "runner_kind": "anthropic_with_context",
+    "provider": "anthropic",
+    "model_env_var": "ANTHROPIC_MODEL",
+    "default_model": "claude-sonnet-4-6",
+    "spreadsheet_basis": "Approach / baseline: Claude analyst with relevant benchmark tables in context",
+    "description": "Anthropic baseline with the relevant local benchmark table rows and summaries included in the request.",
+    "implementation_status": "live_if_configured",
+    "required_env_vars": [
+      "ANTHROPIC_API_KEY"
+    ],
+    "notes": [
+      "Sends the case question plus the relevant local benchmark materials in the prompt.",
+      "Uses the configured ANTHROPIC_BASE_URL when present."
+    ]
+  },
+  {
     "baseline_id": "react_agent",
     "label": "ReAct Agent",
     "category": "open_tooling",
@@ -64,11 +102,13 @@
     "default_model": null,
     "spreadsheet_basis": "Approach / baseline: ReAct agent; Paper to read: ReAct",
     "description": "Open agent baseline with thought-action-observation loops and tool calls.",
-    "implementation_status": "offline_ready",
-    "required_env_vars": [],
+    "implementation_status": "framework_wrapper_requires_runtime",
+    "required_env_vars": [
+      "OPENAI_API_KEY"
+    ],
     "notes": [
       "Good open baseline for agentic tool-use.",
-      "Runs today in a local offline wrapper mode; can later be replaced with a real framework-backed implementation."
+      "Runs through a live AutoGen assistant-agent wrapper once `python3 scripts/install_baseline_runtimes.py --all` has been run."
     ]
   },
   {
@@ -81,11 +121,13 @@
     "default_model": null,
     "spreadsheet_basis": "Approach / baseline: Multi-agent analyst/coder/critic workflow; Paper to read: AutoGen",
     "description": "Specialized multi-agent workflow baseline for analysis and self-critique.",
-    "implementation_status": "offline_ready",
-    "required_env_vars": [],
+    "implementation_status": "framework_wrapper_requires_runtime",
+    "required_env_vars": [
+      "OPENAI_API_KEY"
+    ],
     "notes": [
       "Good comparator for orchestration-heavy open tooling.",
-      "Runs today in a local offline wrapper mode and can later be swapped for a real multi-agent implementation."
+      "Runs through a live MetaGPT multi-role wrapper once `python3 scripts/install_baseline_runtimes.py --all` has been run."
     ]
   },
   {
@@ -98,11 +140,13 @@
     "default_model": null,
     "spreadsheet_basis": "Paper to read: AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
     "description": "Conversational multi-agent architecture baseline for collaborative data-analysis workflows.",
-    "implementation_status": "offline_ready",
-    "required_env_vars": [],
+    "implementation_status": "framework_wrapper_requires_runtime",
+    "required_env_vars": [
+      "OPENAI_API_KEY"
+    ],
     "notes": [
       "Strong agentic architecture comparator for orchestration-heavy tasks.",
-      "Good fit if we want a named open framework baseline rather than only a generic multi-agent pattern."
+      "Runs through a live AutoGen group-chat wrapper once `python3 scripts/install_baseline_runtimes.py --all` has been run."
     ]
   },
   {
@@ -115,11 +159,13 @@
     "default_model": null,
     "spreadsheet_basis": "Paper to read: MetaGPT: Meta Programming for a Multi-Agent Collaborative Framework",
     "description": "Multi-agent SOP-style architecture baseline emphasizing role separation and staged execution.",
-    "implementation_status": "offline_ready",
-    "required_env_vars": [],
+    "implementation_status": "framework_wrapper_requires_runtime",
+    "required_env_vars": [
+      "OPENAI_API_KEY"
+    ],
     "notes": [
       "Interesting comparator if we want to benchmark GP as an orchestrator.",
-      "Heavier than ReAct, but a useful architecture-level baseline."
+      "Runs through a live MetaGPT Data Interpreter wrapper once `python3 scripts/install_baseline_runtimes.py --all` has been run."
     ]
   },
   {
@@ -132,11 +178,48 @@
     "default_model": null,
     "spreadsheet_basis": "Benchmarks: DABStep / InfiAgent-DABench / FDABench",
     "description": "Single open data agent baseline over heterogeneous files and analytical questions.",
-    "implementation_status": "offline_ready",
-    "required_env_vars": [],
+    "implementation_status": "framework_wrapper_requires_runtime",
+    "required_env_vars": [
+      "OPENAI_API_KEY"
+    ],
     "notes": [
-      "Good basecase for realistic analytical querying without the full GP stack.",
+      "Runs through a live LangGraph wrapper once `python3 scripts/install_baseline_runtimes.py --all` has been run.",
       "Natural bridge between raw LLM baselines and multi-agent orchestration baselines."
+    ]
+  },
+  {
+    "baseline_id": "gp_zeus_venue_risk",
+    "label": "GP Zeus Venue Risk",
+    "category": "internal_gp_system",
+    "runner_kind": "gp_zeus_venue_risk",
+    "provider": null,
+    "model_env_var": null,
+    "default_model": null,
+    "spreadsheet_basis": "GP workflow baseline: Zeus venue-risk litigation trend workflow",
+    "description": "Runs the real Zeus venue-risk workflow and extracts benchmark answers from its structured output.",
+    "implementation_status": "framework_wrapper_requires_runtime_and_full_zeus_env",
+    "required_env_vars": [
+      "OPENAI_API_KEY",
+      "PPLX_API_KEY",
+      "POSTGRES_CHECKPOINTER_URI",
+      "ELASTIC_CLOUD_ID",
+      "ELASTIC_HTTP_AUTH",
+      "GEMINI_API_KEY",
+      "REASONING_ENGINE_SERVICE_URL",
+      "GOOGLE_APPLICATION_CREDENTIALS",
+      "GCLOUD_LOCAL_CREDENTIALS",
+      "INFORMATION_RETRIEVAL_SERVICE_URL",
+      "CONTEXT_RANKER_SERVICE_URL",
+      "GEOSPATIAL_SERVICE_URL",
+      "CONTEXT_SPACE_SERVICE_URL",
+      "TOPIC_MODEL_SERVICE_URL",
+      "ATHENA_SERVICE_URL",
+      "HELIO_SERVICE_URL"
+    ],
+    "notes": [
+      "Install the repo-local Zeus runtime with `python3 scripts/install_baseline_runtimes.py --baseline gp_zeus_venue_risk`.",
+      "This baseline uses the in-repo `GP_components/zeus-service` workflow rather than a simplified wrapper architecture.",
+      "It also requires the broader Zeus service environment to be configured locally, including PostgreSQL and cloud credentials."
     ]
   }
 ]

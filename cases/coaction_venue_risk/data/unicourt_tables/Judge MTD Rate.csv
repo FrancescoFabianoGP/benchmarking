@@ -1,0 +1,121 @@
+JUDGE_NAME,COURT_NAME,FILED_YEAR,MTD_GRANTED_COUNT,MTD_TOTAL_COUNT,DISMISSAL_RATE_PCT
+"HUMMEL, HON. VERONICA G.",Bronx County Supreme Court,2020,12,18,66.67
+"DOUGLAS, HON. LAURA G.",Bronx County Supreme Court,2020,20,32,62.50
+"SUAREZ, HON. LUCINDO",Bronx County Supreme Court,2020,9,16,56.25
+"ALPERT, HON. PAUL L.",Bronx County Supreme Court,2020,30,54,55.56
+"SILVER, HON. GEORGE J.",Bronx County Supreme Court,2020,8,16,50.00
+"CAPELLA, HON. JOSEPH E.",Bronx County Supreme Court,2021,50,76,65.79
+"GEREZ, HON. ALICIA",Bronx County Supreme Court,2021,52,84,61.90
+"TAYLOR, HON. ELIZABETH A.",Bronx County Supreme Court,2021,26,46,56.52
+"SEMAJ, HON. NAITA A.",Bronx County Supreme Court,2021,10,18,55.56
+"DANZIGER, HON. MITCHELL J.",Bronx County Supreme Court,2021,36,66,54.55
+"CAPELLA, HON. JOSEPH E.",Bronx County Supreme Court,2022,84,106,79.25
+"FERNANDEZ, HON. RAYMOND P.",Bronx County Supreme Court,2022,8,12,66.67
+MASS TORT JUDGE,Bronx County Supreme Court,2022,8,12,66.67
+"GUZMAN, HON. WILMA",Bronx County Supreme Court,2022,8,14,57.14
+"GEREZ, HON. ALICIA",Bronx County Supreme Court,2022,36,64,56.25
+"CAPELLA, HON. JOSEPH E.",Bronx County Supreme Court,2023,72,112,64.29
+"FRISHMAN, HON. MICHAEL A.",Bronx County Supreme Court,2023,46,84,54.76
+"GEREZ, HON. ALICIA",Bronx County Supreme Court,2023,30,60,50.00
+"WILSON, HON. KIM A.",Bronx County Supreme Court,2023,12,24,50.00
+"SEMAJ, HON. NAITA A.",Bronx County Supreme Court,2023,13,27,48.15
+"SEMAJ, HON. NAITA A.",Bronx County Supreme Court,2024,10,12,83.33
+"GEREZ, HON. ALICIA",Bronx County Supreme Court,2024,144,206,69.90
+"FRISHMAN, HON. MICHAEL A.",Bronx County Supreme Court,2024,68,102,66.67
+"PARKER-RASO, HON. MATTHEW",Bronx County Supreme Court,2024,8,14,57.14
+"CRAWFORD, HON. ASHLEE",Bronx County Supreme Court,2024,10,18,55.56
+MASS TORT JUDGE,Bronx County Supreme Court,Overall,10,14,71.43
+"NICOLAS-BREWSTER, HON. MARY LYNN",Bronx County Supreme Court,Overall,8,12,66.67
+"CAPELLA, HON. JOSEPH E.",Bronx County Supreme Court,Overall,232,371,62.53
+"SEMAJ, HON. NAITA A.",Bronx County Supreme Court,Overall,45,73,61.64
+"GEREZ, HON. ALICIA",Bronx County Supreme Court,Overall,288,500,57.60
+"TOUSSAINT, HON. WAVNY",Kings County Supreme Court,2020,10,12,83.33
+"SWERN, HON. ANNE J.",Kings County Supreme Court,2020,30,42,71.43
+"BARRY, HON. RUPERT V.",Kings County Supreme Court,2020,48,68,70.59
+"LEVINE, HON. KATHERINE A.",Kings County Supreme Court,2020,44,64,68.75
+"WADE, HON. CAROLYN E.",Kings County Supreme Court,2020,22,32,68.75
+NON-JURY TRIAL READINESS PART,Kings County Supreme Court,2021,10,12,83.33
+"GRAHAM, HON. BERNARD J.",Kings County Supreme Court,2021,18,30,60.00
+"SHEARES, HON. ROBIN K.",Kings County Supreme Court,2021,26,44,59.09
+PART 22 CITY,Kings County Supreme Court,2021,22,38,57.89
+"COHEN, HON. DEVIN P.",Kings County Supreme Court,2021,18,32,56.25
+"SWEENEY, HON. PETER PAUL",Kings County Supreme Court,2022,62,82,75.61
+SETTLEMENT 6 MED MAL EARLY,Kings County Supreme Court,2022,24,32,75.00
+"EDWARDS, HON. GENINE D.",Kings County Supreme Court,2022,90,150,60.00
+"WADE, HON. CAROLYN E.",Kings County Supreme Court,2022,20,34,58.82
+PART 7 CITY,Kings County Supreme Court,2022,10,18,55.56
+"MALLAFRE MELENDEZ, HON. CONSUELO",Kings County Supreme Court,2023,46,62,74.19
+"SWEENEY, HON. PETER PAUL",Kings County Supreme Court,2023,44,62,70.97
+PART 7 CITY,Kings County Supreme Court,2023,16,26,61.54
+EARLY SETTLEMENT 7 MED MAL,Kings County Supreme Court,2023,22,36,61.11
+"EDWARDS, HON. GENINE D.",Kings County Supreme Court,2023,112,192,58.33
+"WARD, HON. KERRY J.",Kings County Supreme Court,2024,31,43,72.09
+SETTLEMENT 6 MED MAL EARLY,Kings County Supreme Court,2024,40,56,71.43
+"PAUL, HON. DWEYNIE E.",Kings County Supreme Court,2024,18,27,66.67
+TRP MED MAL,Kings County Supreme Court,2024,10,16,62.50
+"COHEN, HON. CAROLINE PIELA",Kings County Supreme Court,2024,24,40,60.00
+"GARSON, HON. ROBIN S.",Kings County Supreme Court,Overall,18,30,60.00
+"SWEENEY, HON. PETER PAUL",Kings County Supreme Court,Overall,146,244,59.84
+"STEIN, HON. SAUL",Kings County Supreme Court,Overall,20,36,55.56
+"SILBER, HON. DEBRA",Kings County Supreme Court,Overall,24,44,54.55
+SETTLEMENT 6 MED MAL EARLY,Kings County Supreme Court,Overall,126,240,52.50
+GARY I. MICON,Los Angeles County Superior Court,2020,10,16,62.50
+ANDREW E. COOPER,Los Angeles County Superior Court,2020,10,16,62.50
+VALERIE SALKIN,Los Angeles County Superior Court,2020,27,58,46.55
+JARED D. MOSES,Los Angeles County Superior Court,2020,6,16,37.50
+CAROLYN B. KUHL,Los Angeles County Superior Court,2020,44,118,37.29
+RAUL A. SAHAGUN,Los Angeles County Superior Court,2021,10,16,62.50
+ANTY MOHR,Los Angeles County Superior Court,2021,6,12,50.00
+TONY L. RICHARDSON,Los Angeles County Superior Court,2021,7,15,46.67
+BARBARA A. MEIERS,Los Angeles County Superior Court,2021,32,72,44.44
+MARK A. YOUNG,Los Angeles County Superior Court,2021,24,57,42.11
+DAVID A. ROSEN,Los Angeles County Superior Court,2022,54,74,72.97
+STEPHEN I. GOORVITCH,Los Angeles County Superior Court,2022,36,69,52.17
+JOEL L. LOFTON,Los Angeles County Superior Court,2022,48,124,38.71
+GEORGE F. BIRD,Los Angeles County Superior Court,2022,20,62,32.26
+CHARLES C. LEE,Los Angeles County Superior Court,2022,9,31,29.03
+TONY L. RICHARDSON,Los Angeles County Superior Court,2023,5,15,33.33
+RONALD F. FRANK,Los Angeles County Superior Court,2023,10,33,30.30
+STEPHEN I. GOORVITCH,Los Angeles County Superior Court,2023,12,41,29.27
+JULIAN C. RECANA,Los Angeles County Superior Court,2023,4,14,28.57
+SARAH J. HEIDEL,Los Angeles County Superior Court,2023,4,14,28.57
+DANIEL M. CROWLEY,Los Angeles County Superior Court,2024,67,67,100.00
+LISA R. JASKOL,Los Angeles County Superior Court,2024,16,18,88.89
+DEAN J. KITCHENS,Los Angeles County Superior Court,2024,20,32,62.50
+BARBARA M. SCHEPER,Los Angeles County Superior Court,2024,38,61,62.30
+FRANK M. TAVELMAN,Los Angeles County Superior Court,2024,8,18,44.44
+RAUL A. SAHAGUN,Los Angeles County Superior Court,Overall,10,17,58.82
+DEAN J. KITCHENS,Los Angeles County Superior Court,Overall,20,36,55.56
+ANTY MOHR,Los Angeles County Superior Court,Overall,7,13,53.85
+DAVID A. ROSEN,Los Angeles County Superior Court,Overall,54,146,36.99
+FERNANDO L. AENLLE-ROCHA,Los Angeles County Superior Court,Overall,9,28,32.14
+"TOUSSAINT, HON. WAVNY",All Courts,2020,10,12,83.33
+"SWERN, HON. ANNE J.",All Courts,2020,30,42,71.43
+"BARRY, HON. RUPERT V.",All Courts,2020,48,68,70.59
+"LEVINE, HON. KATHERINE A.",All Courts,2020,44,64,68.75
+"WADE, HON. CAROLYN E.",All Courts,2020,22,32,68.75
+NON-JURY TRIAL READINESS PART,All Courts,2021,10,12,83.33
+"CAPELLA, HON. JOSEPH E.",All Courts,2021,50,76,65.79
+RAUL A. SAHAGUN,All Courts,2021,10,16,62.50
+"GEREZ, HON. ALICIA",All Courts,2021,52,84,61.90
+"GRAHAM, HON. BERNARD J.",All Courts,2021,18,30,60.00
+"CAPELLA, HON. JOSEPH E.",All Courts,2022,84,106,79.25
+"SWEENEY, HON. PETER PAUL",All Courts,2022,62,82,75.61
+SETTLEMENT 6 MED MAL EARLY,All Courts,2022,24,32,75.00
+DAVID A. ROSEN,All Courts,2022,54,74,72.97
+MASS TORT JUDGE,All Courts,2022,8,12,66.67
+"MALLAFRE MELENDEZ, HON. CONSUELO",All Courts,2023,46,62,74.19
+"SWEENEY, HON. PETER PAUL",All Courts,2023,44,62,70.97
+"CAPELLA, HON. JOSEPH E.",All Courts,2023,72,112,64.29
+PART 7 CITY,All Courts,2023,16,26,61.54
+EARLY SETTLEMENT 7 MED MAL,All Courts,2023,22,36,61.11
+DANIEL M. CROWLEY,All Courts,2024,67,67,100.00
+LISA R. JASKOL,All Courts,2024,16,18,88.89
+"SEMAJ, HON. NAITA A.",All Courts,2024,10,12,83.33
+"WARD, HON. KERRY J.",All Courts,2024,31,43,72.09
+SETTLEMENT 6 MED MAL EARLY,All Courts,2024,40,56,71.43
+MASS TORT JUDGE,All Courts,Overall,10,14,71.43
+"NICOLAS-BREWSTER, HON. MARY LYNN",All Courts,Overall,8,12,66.67
+"CAPELLA, HON. JOSEPH E.",All Courts,Overall,232,371,62.53
+"SEMAJ, HON. NAITA A.",All Courts,Overall,45,73,61.64
+"GARSON, HON. ROBIN S.",All Courts,Overall,18,30,60.00

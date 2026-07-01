@@ -1,0 +1,60 @@
+COURT_NAME,areaOfLaw,FILED_YEAR,AVG_CASE_DURATION,AVG_TIME_TO_RESOLUTION,FASTEST_DOCKET_CLOSURE,AVG_TIME_TO_DISMISSAL,AVG_DURATION_NO_TRIAL,MTD_GRANTED_COUNT,MTD_COUNT,MTD_SUCCESS_RATE,SJ_GRANTED_COUNT,SJ_DENIED_COUNT,SJ_TOTAL_COUNT,SJ_SUCCESS_RATE,CLOSED_CASE_COUNT,OPEN_CASES,TOTAL_CASES
+All Courts,All,2020,1107,1035,1079,596,,0,1,0.00,0,0,2,,6,5,10
+All Courts,All,2021,1054,1033,799,575,35,1,3,33.33,0,0,2,,9,21,31
+All Courts,All,2022,744,818,226,670,82,2,6,33.33,0,0,2,,23,47,67
+All Courts,All,2023,622,644,170,587,46,5,10,50.00,1,1,2,100.00,37,59,92
+All Courts,All,2024,394,306,118,,52,1,3,33.33,0,0,0,,8,40,47
+All Courts,All,Overall,685,731,118,615,60,9,23,39.13,1,1,8,100.00,83,172,247
+All Courts,Labor and Employment,2021,781,,,,,0,1,0.00,0,0,2,,0,7,7
+All Courts,Labor and Employment,2022,669,779,605,,70,0,1,0.00,0,0,1,,4,13,16
+All Courts,Labor and Employment,2023,651,650,391,665,60,3,7,42.86,0,0,0,,16,26,40
+All Courts,Labor and Employment,2024,371,186,118,,83,1,2,50.00,0,0,0,,3,17,20
+All Courts,Labor and Employment,Overall,598,612,118,665,70,4,11,36.36,0,0,3,,23,63,83
+All Courts,Personal Injury and Torts,2020,1107,1035,1079,596,,0,1,0.00,0,0,2,,6,5,10
+All Courts,Personal Injury and Torts,2021,1134,1033,799,575,35,1,2,50.00,0,0,0,,9,14,24
+All Courts,Personal Injury and Torts,2022,767,826,226,670,91,2,5,40.00,0,0,1,,19,34,51
+All Courts,Personal Injury and Torts,2023,599,639,170,433,36,2,3,66.67,1,1,2,100.00,21,33,52
+All Courts,Personal Injury and Torts,2024,411,377,300,,32,0,1,0.00,0,0,0,,5,23,27
+All Courts,Personal Injury and Torts,Overall,730,777,170,605,53,5,12,41.67,1,1,5,100.00,60,109,164
+Bronx County Supreme Court,All,2020,757,646,1079,429,,0,0,,0,0,1,,3,3,5
+Bronx County Supreme Court,All,2021,925,737,879,575,35,0,1,0.00,0,0,1,,4,11,16
+Bronx County Supreme Court,All,2022,555,756,226,65,82,1,1,100.00,0,0,0,,12,27,37
+Bronx County Supreme Court,All,2023,517,638,391,,45,0,0,,0,0,0,,14,29,40
+Bronx County Supreme Court,All,2024,348,291,118,,56,1,1,100.00,0,0,0,,6,20,25
+Bronx County Supreme Court,All,Overall,557,631,118,414,62,2,3,66.67,0,0,2,,39,90,123
+Bronx County Supreme Court,Labor and Employment,2021,539,,,,,0,1,0.00,0,0,1,,0,3,3
+Bronx County Supreme Court,Labor and Employment,2022,324,699,605,,70,0,0,,0,0,0,,3,6,9
+Bronx County Supreme Court,Labor and Employment,2023,526,598,391,,60,0,0,,0,0,0,,6,14,18
+Bronx County Supreme Court,Labor and Employment,2024,344,186,118,,116,1,1,100.00,0,0,0,,3,7,10
+Bronx County Supreme Court,Labor and Employment,Overall,436,521,118,,75,1,2,50.00,0,0,1,,12,30,40
+Bronx County Supreme Court,Personal Injury and Torts,2020,757,646,1079,429,,0,0,,0,0,1,,3,3,5
+Bronx County Supreme Court,Personal Injury and Torts,2021,1013,737,879,575,35,0,0,,0,0,0,,4,8,13
+Bronx County Supreme Court,Personal Injury and Torts,2022,629,775,226,65,91,1,1,100.00,0,0,0,,9,21,28
+Bronx County Supreme Court,Personal Injury and Torts,2023,509,671,456,,31,0,0,,0,0,0,,8,15,22
+Bronx County Supreme Court,Personal Injury and Torts,2024,351,396,300,,32,0,0,,0,0,0,,3,13,15
+Bronx County Supreme Court,Personal Injury and Torts,Overall,615,682,226,414,54,1,1,100.00,0,0,1,,27,60,83
+Kings County Supreme Court,All,2020,1456,1424,1433,930,,0,1,0.00,0,0,1,,3,2,5
+Kings County Supreme Court,All,2021,1192,1269,799,,,1,2,50.00,0,0,1,,5,10,15
+Kings County Supreme Court,All,2022,987,904,707,872,,1,5,20.00,0,0,1,,10,18,27
+Kings County Supreme Court,All,2023,712,648,170,587,48,5,10,50.00,0,0,0,,23,26,48
+Kings County Supreme Court,All,2024,380,350,349,,19,0,2,0.00,0,0,0,,2,16,18
+Kings County Supreme Court,All,Overall,822,820,170,758,38,7,20,35.00,0,0,3,,43,72,113
+Kings County Supreme Court,Labor and Employment,2021,963,,,,,0,0,,0,0,1,,0,4,4
+Kings County Supreme Court,Labor and Employment,2022,1113,1017,,,,0,1,0.00,0,0,1,,1,7,7
+Kings County Supreme Court,Labor and Employment,2023,753,681,409,665,,3,7,42.86,0,0,0,,10,12,22
+Kings County Supreme Court,Labor and Employment,2024,398,,,,19,0,1,0.00,0,0,0,,0,10,10
+Kings County Supreme Court,Labor and Employment,Overall,749,712,409,665,19,3,9,33.33,0,0,2,,11,33,43
+Kings County Supreme Court,Personal Injury and Torts,2020,1456,1424,1433,930,,0,1,0.00,0,0,1,,3,2,5
+Kings County Supreme Court,Personal Injury and Torts,2021,1275,1269,799,,,1,2,50.00,0,0,0,,5,6,11
+Kings County Supreme Court,Personal Injury and Torts,2022,943,892,707,872,,1,4,25.00,0,0,0,,9,11,20
+Kings County Supreme Court,Personal Injury and Torts,2023,678,622,170,433,48,2,3,66.67,0,0,0,,13,14,26
+Kings County Supreme Court,Personal Injury and Torts,2024,357,350,349,,,0,1,0.00,0,0,0,,2,6,8
+Kings County Supreme Court,Personal Injury and Torts,Overall,867,857,170,796,48,4,11,36.36,0,0,1,,32,39,70
+Los Angeles County Superior Court,All,2022,883,699,,,,0,0,,0,0,1,,1,2,3
+Los Angeles County Superior Court,All,2023,584,,,,,0,0,,1,1,2,100.00,0,4,4
+Los Angeles County Superior Court,All,2024,743,,,,,0,0,,0,0,0,,0,4,4
+Los Angeles County Superior Court,All,Overall,723,699,,,,0,0,,1,1,3,100.00,1,10,11
+Los Angeles County Superior Court,Personal Injury and Torts,2022,883,699,,,,0,0,,0,0,1,,1,2,3
+Los Angeles County Superior Court,Personal Injury and Torts,2023,584,,,,,0,0,,1,1,2,100.00,0,4,4
+Los Angeles County Superior Court,Personal Injury and Torts,2024,743,,,,,0,0,,0,0,0,,0,4,4
+Los Angeles County Superior Court,Personal Injury and Torts,Overall,723,699,,,,0,0,,1,1,3,100.00,1,10,11

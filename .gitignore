@@ -98,6 +98,11 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.venv-bench/
+.baseline_envs/
+.uv-cache/
+.pycache_tmp/
+.benchmark_cache/
 env/
 venv/
 ENV/

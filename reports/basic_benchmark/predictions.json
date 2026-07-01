@@ -9,7 +9,7 @@
       "source_table": "unicourt/Court Analysis Stats.csv",
       "supporting_value": 576.0
     },
-    "latency_ms": 0.06733300000000275
+    "latency_ms": 0.02949999999998787
   },
   {
     "case_id": "case-0002",
@@ -21,7 +21,7 @@
       "source_table": "unicourt/Court Analysis Stats.csv",
       "supporting_value": 507.0
     },
-    "latency_ms": 0.03725000000001644
+    "latency_ms": 0.016791000000015988
   },
   {
     "case_id": "case-0003",
@@ -33,7 +33,7 @@
       "source_table": "unicourt/Court Analysis Stats.csv",
       "supporting_value": 33.77
     },
-    "latency_ms": 0.03508399999999079
+    "latency_ms": 0.015791999999986706
   },
   {
     "case_id": "case-0004",
@@ -45,7 +45,7 @@
       "source_table": "unicourt/Court Analysis Stats.csv",
       "supporting_value": 73.56
     },
-    "latency_ms": 0.033874999999988775
+    "latency_ms": 0.015207999999988786
   },
   {
     "case_id": "case-0005",
@@ -57,7 +57,7 @@
       "source_table": "unicourt/Court Analysis Stats.csv",
       "supporting_value": 50.0
     },
-    "latency_ms": 0.03345800000001398
+    "latency_ms": 0.015124999999976962
   },
   {
     "case_id": "case-0006",
@@ -69,7 +69,7 @@
       "source_table": "coaction/Court Analysis Stats.csv",
       "supporting_value": 615.0
     },
-    "latency_ms": 0.03829199999999533
+    "latency_ms": 0.01708300000000107
   },
   {
     "case_id": "case-0007",
@@ -81,7 +81,7 @@
       "source_table": "coaction/Court Analysis Stats.csv",
       "supporting_value": 682.0
     },
-    "latency_ms": 0.03258300000000269
+    "latency_ms": 0.014667000000023744
   },
   {
     "case_id": "case-0008",
@@ -93,7 +93,7 @@
       "source_table": "coaction/Court Analysis Stats.csv",
       "supporting_value": 100.0
     },
-    "latency_ms": 0.03266599999998676
+    "latency_ms": 0.01483400000001911
   },
   {
     "case_id": "case-0009",
@@ -105,7 +105,7 @@
       "source_table": "coaction/Court Analysis Stats.csv",
       "supporting_value": 100.0
     },
-    "latency_ms": 0.03149999999998987
+    "latency_ms": 0.014292000000026839
   },
   {
     "case_id": "case-0010",
@@ -117,7 +117,7 @@
       "source_table": "coaction/Court Analysis Stats.csv",
       "supporting_value": 48.0
     },
-    "latency_ms": 0.032124999999993964
+    "latency_ms": 0.014500000000000624
   },
   {
     "case_id": "case-0011",
@@ -130,7 +130,7 @@
       "supporting_value": 71.43,
       "county": "Bronx County"
     },
-    "latency_ms": 0.05816699999999786
+    "latency_ms": 0.025250000000004436
   },
   {
     "case_id": "case-0012",
@@ -143,7 +143,7 @@
       "supporting_value": 60.0,
       "county": "Kings County"
     },
-    "latency_ms": 0.047707999999979656
+    "latency_ms": 0.021541999999985517
   },
   {
     "case_id": "case-0013",
@@ -156,7 +156,7 @@
       "supporting_value": 58.82,
       "county": "Los Angeles County"
     },
-    "latency_ms": 0.046125000000007965
+    "latency_ms": 0.02108300000000507
   },
   {
     "case_id": "case-0014",
@@ -169,7 +169,7 @@
       "supporting_value": 66.67,
       "county": "Bronx County"
     },
-    "latency_ms": 0.03879200000000971
+    "latency_ms": 0.016708000000004164
   },
   {
     "case_id": "case-0015",
@@ -182,6 +182,6 @@
       "supporting_value": 94.12,
       "county": "Kings County"
     },
-    "latency_ms": 0.03737500000000615
+    "latency_ms": 0.016916000000005704
   }
 ]

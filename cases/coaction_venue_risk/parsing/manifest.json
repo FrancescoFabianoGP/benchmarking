@@ -1,0 +1,34 @@
+{
+  "benchmark_id": "coaction_venue_risk",
+  "upstream_parser": {
+    "repo_path": "GP_components/zeus-service/app/workflow/atomic_actions/atomic_actions_for_court.py",
+    "entrypoint": "retrieve_court_analysis_for_litigation_and_claims_performance",
+    "reads": [
+      "workflow/local_db/coaction/unicourt_tables/Court Analysis Stats.csv",
+      "workflow/local_db/coaction/coaction_tables/Court Analysis Stats.csv",
+      "workflow/local_db/coaction/unicourt_tables/Attorney Duration.csv",
+      "workflow/local_db/coaction/coaction_tables/Attorney Duration.csv",
+      "workflow/local_db/coaction/unicourt_tables/Attorney Win.csv",
+      "workflow/local_db/coaction/coaction_tables/Attorney Win.csv",
+      "workflow/local_db/coaction/unicourt_tables/Judge MTD Rate.csv",
+      "workflow/local_db/coaction/coaction_tables/Judge MTD Rate.csv"
+    ],
+    "cache_keys": [
+      "coaction/cache/all_jurisdiction_summary",
+      "coaction/cache/county_specific_summary",
+      "coaction/cache/venue_risk_litigation_highlights"
+    ]
+  },
+  "benchmark_harness": {
+    "loader_module": "harness/benchmarks/coaction_venue_risk.py",
+    "load_reference_data_reads": [
+      "data/unicourt_tables/Court Analysis Stats.csv",
+      "data/coaction_tables/Court Analysis Stats.csv",
+      "data/unicourt_tables/Judge MTD Rate.csv",
+      "data/coaction_tables/Judge MTD Rate.csv",
+      "data/cache/all_jurisdiction_summary.json",
+      "data/cache/county_specific_summary.json"
+    ],
+    "case_builder": "build_case_pack"
+  }
+}

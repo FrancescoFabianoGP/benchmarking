@@ -20,12 +20,19 @@ They cover the agentic architecture families we agreed were acceptable compariso
 
 We are not trying to run the full upstream products as-is.
 
-Instead, the plan is to build narrow wrappers that:
+Instead, we run narrow framework-backed wrappers that:
 
 - take one benchmark case as input
 - expose a normalized output schema
 - limit tool/file access to benchmark assets
 - make latency and trace capture comparable across baselines
+
+Current working wrappers:
+
+- `harness/framework_runners/langgraph_single_agent.py`
+- `harness/framework_runners/autogen_react_agent.py`
+- `harness/framework_runners/autogen_multi_agent.py`
+- `harness/framework_runners/metagpt_wrappers.py`
 
 Generated manifests:
 
@@ -38,14 +45,27 @@ Generate or refresh them with:
 python3 scripts/generate_external_baseline_catalog.py
 ```
 
-## Recommended First Wrapper
+Install the repo-local framework runtimes with:
 
-Start with `single_agent_data_analyst` on top of `LangGraph`.
+```bash
+python3 scripts/install_baseline_runtimes.py --all
+```
 
-That is the lightest useful architecture baseline because it lets us build a very small graph around:
+## Runtime Setup
 
-- local file loading
-- analysis
-- answer formatting
+Install every repo-local baseline runtime with:
 
-without inheriting the full complexity of MetaGPT or AutoGen on day one.
+```bash
+python3 scripts/install_baseline_runtimes.py --all
+```
+
+That script creates reproducible virtual environments under `.baseline_envs/` from the vendored baseline repos, so a fresh checkout can enable all framework-backed baselines in one step.
+
+The live framework runs also require `OPENAI_API_KEY`, and optionally:
+
+- `OPENAI_BASE_URL`
+- `BENCHMARK_FRAMEWORK_MODEL`
+- `AUTOGEN_REACT_MODEL`
+- `AUTOGEN_MULTI_AGENT_MODEL`
+- `LANGGRAPH_MODEL`
+- `METAGPT_MODEL`

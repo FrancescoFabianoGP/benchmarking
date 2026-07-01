@@ -1,0 +1,121 @@
+ATTORNEY_NAME,COURT_NAME,FILED_YEAR,WINS
+"PRESSMAN, MICHAEL EDMUND",Bronx County Supreme Court,2020,17
+"MARTIN, STEVEN",Bronx County Supreme Court,2020,16
+"HOPWOOD, JOHN J",Bronx County Supreme Court,2020,14
+"LINTON, ARLOW MICHAEL",Bronx County Supreme Court,2020,14
+"COGAN, HOWARD L",Bronx County Supreme Court,2020,13
+"COUNSEL, CORPORATION",Bronx County Supreme Court,2021,80
+"BENARD, JODY CAROL",Bronx County Supreme Court,2021,8
+"GIRSH, LARISA",Bronx County Supreme Court,2021,8
+"PRESSMAN, MICHAEL EDMUND",Bronx County Supreme Court,2021,8
+"SCHNEIDER, MICHAEL R",Bronx County Supreme Court,2021,8
+"COGAN, HOWARD L",Bronx County Supreme Court,2022,11
+"COUNSEL, CORPORATION",Bronx County Supreme Court,2022,10
+"O'CONNOR, MAGGIE PATRICE",Bronx County Supreme Court,2022,5
+"DOWNEY, PATRICK F",Bronx County Supreme Court,2022,4
+"DUFFY, NICOLA ROSE",Bronx County Supreme Court,2022,4
+"COUNSEL, CORPORATION",Bronx County Supreme Court,2023,11
+"BENARD, JODY CAROL",Bronx County Supreme Court,2023,3
+"BROWNELL, RICHARD",Bronx County Supreme Court,2023,3
+"CAPOBIANCO, STEVEN CHARLES",Bronx County Supreme Court,2023,3
+"FERNANDES, BRANDON JOSEPH",Bronx County Supreme Court,2023,3
+"COUNSEL, CORPORATION",Bronx County Supreme Court,2024,4
+"ABRAMS GORELICK FRIEDMAN & JACOBSON, LLP",Bronx County Supreme Court,2024,2
+"BECKER, MICHAEL CARL",Bronx County Supreme Court,2024,2
+"GREEN, JOSEPH H",Bronx County Supreme Court,2024,2
+"IEMMA, JOSEPH ANGELO",Bronx County Supreme Court,2024,2
+"COGAN, HOWARD L",Bronx County Supreme Court,Overall,31
+"PRESSMAN, MICHAEL EDMUND",Bronx County Supreme Court,Overall,30
+"SPARLING, JOHN E",Bronx County Supreme Court,Overall,25
+"BROWNELL, RICHARD",Bronx County Supreme Court,Overall,22
+"CASCONE, LEONARD MICHAEL",Bronx County Supreme Court,Overall,21
+"TOOMEY, JAMES J",Kings County Supreme Court,2020,24
+"GOLD, JEFFREY B",Kings County Supreme Court,2020,23
+"SPARLING, JOHN E",Kings County Supreme Court,2020,20
+"KOEHLER, RICHARD C",Kings County Supreme Court,2020,19
+"DESANTIS, SALVATORE J.",Kings County Supreme Court,2020,18
+"TOOMEY, JAMES J",Kings County Supreme Court,2021,63
+"PRESSMAN, MICHAEL EDMUND",Kings County Supreme Court,2021,28
+"GOLD, JEFFREY B",Kings County Supreme Court,2021,25
+"MILLER, JEFFREY R",Kings County Supreme Court,2021,17
+"TORINO, BRUCE A",Kings County Supreme Court,2021,17
+"COUNSEL, CORPORATION",Kings County Supreme Court,2022,99
+"SHAPIRO, ADAM PHILIP",Kings County Supreme Court,2022,16
+"PRESSMAN, MICHAEL EDMUND",Kings County Supreme Court,2022,15
+"SCHNEIDER, MICHAEL R",Kings County Supreme Court,2022,14
+"WELLINGHORST, STEPHEN",Kings County Supreme Court,2022,13
+"COUNSEL, CORPORATION",Kings County Supreme Court,2023,93
+"SHAPIRO, ADAM PHILIP",Kings County Supreme Court,2023,18
+"WELLINGHORST, STEPHEN",Kings County Supreme Court,2023,15
+"FITZPATRICK, COLIN JAMES",Kings County Supreme Court,2023,11
+"MILLER, JEFFREY TODD",Kings County Supreme Court,2023,11
+"COUNSEL, CORPORATION",Kings County Supreme Court,2024,69
+"SIFF, DANIEL E",Kings County Supreme Court,2024,13
+"ROSENZWEIG, DOUGLAS R",Kings County Supreme Court,2024,11
+"SIFF, DANIEL EZRA",Kings County Supreme Court,2024,11
+"SHAPIRO, ADAM PHILIP",Kings County Supreme Court,2024,10
+"TOOMEY, JAMES J",Kings County Supreme Court,Overall,93
+"SHAPIRO, ADAM PHILIP",Kings County Supreme Court,Overall,78
+"PRESSMAN, MICHAEL EDMUND",Kings County Supreme Court,Overall,67
+"GOLD, JEFFREY B",Kings County Supreme Court,Overall,63
+"SCHNEIDER, MICHAEL R",Kings County Supreme Court,Overall,58
+DIXON DOUGLAS JAMES,Los Angeles County Superior Court,2020,4
+HUESTON JOHN CHARLES,Los Angeles County Superior Court,2020,4
+BASS LEON JR.,Los Angeles County Superior Court,2020,3
+RECK BELYNDA BRIDGELAND,Los Angeles County Superior Court,2020,3
+WALSH ANDREW KILEY,Los Angeles County Superior Court,2020,3
+ADLI DARIUSH G.,Los Angeles County Superior Court,2021,2
+LERMAN JEFFREY E.,Los Angeles County Superior Court,2021,2
+RECK BELYNDA BRIDGELAND,Los Angeles County Superior Court,2021,2
+ABBOTT KEVIN JAMES,Los Angeles County Superior Court,2021,1
+ALBERTS JEREMY JON,Los Angeles County Superior Court,2021,1
+BERKOWITZ PAUL,Los Angeles County Superior Court,2022,2
+ALDRICH JOHN THOMAS,Los Angeles County Superior Court,2022,1
+ALOIA NICHOLAS,Los Angeles County Superior Court,2022,1
+AMADOR RICHARD S.,Los Angeles County Superior Court,2022,1
+ASLANIAN ARPIE,Los Angeles County Superior Court,2022,1
+GONZALEZ MICHAEL D.,Los Angeles County Superior Court,2023,2
+SAFARIAN HARRY A,Los Angeles County Superior Court,2023,2
+TROTTER MATTHEW NORMANLY,Los Angeles County Superior Court,2023,2
+ARNETT ASHLEY NICOLE,Los Angeles County Superior Court,2023,1
+AZIZI DANIEL,Los Angeles County Superior Court,2023,1
+AINSLIE ADAM ANTHONY,Los Angeles County Superior Court,2024,1
+ARCHIBALD CHRISTOPHER J.,Los Angeles County Superior Court,2024,1
+ARIAS CARL BERNARD,Los Angeles County Superior Court,2024,1
+BENYAMINI PASCAL,Los Angeles County Superior Court,2024,1
+BONIADI ANDRE,Los Angeles County Superior Court,2024,1
+RECK BELYNDA BRIDGELAND,Los Angeles County Superior Court,Overall,5
+DIXON DOUGLAS JAMES,Los Angeles County Superior Court,Overall,4
+HUESTON JOHN CHARLES,Los Angeles County Superior Court,Overall,4
+BASS LEON JR.,Los Angeles County Superior Court,Overall,3
+BUCHHOLZ SCOTT D.,Los Angeles County Superior Court,Overall,3
+"GOLD, JEFFREY B",All Courts,2020,32
+"PRESSMAN, MICHAEL EDMUND",All Courts,2020,32
+"SPARLING, JOHN E",All Courts,2020,31
+"HOPWOOD, JOHN J",All Courts,2020,26
+"MILLER, JEFFREY TODD",All Courts,2020,26
+"TOOMEY, JAMES J",All Courts,2021,63
+"PRESSMAN, MICHAEL EDMUND",All Courts,2021,36
+"GOLD, JEFFREY B",All Courts,2021,27
+"SCHNEIDER, MICHAEL R",All Courts,2021,23
+"TORINO, BRUCE A",All Courts,2021,21
+"PRESSMAN, MICHAEL EDMUND",All Courts,2022,18
+"SCHNEIDER, MICHAEL R",All Courts,2022,16
+"SHAPIRO, ADAM PHILIP",All Courts,2022,16
+"GOLDENBERG, MICHAEL SCOTT",All Courts,2022,14
+"MARKOFF, MATTHEW E",All Courts,2022,14
+"SHAPIRO, ADAM PHILIP",All Courts,2023,18
+"WELLINGHORST, STEPHEN",All Courts,2023,15
+"SPARLING, JOHN E",All Courts,2023,12
+"CASCONE, LEONARD MICHAEL",All Courts,2023,11
+"DESANTIS, SALVATORE J.",All Courts,2023,11
+"COUNSEL, CORPORATION",All Courts,2024,73
+"SIFF, DANIEL E",All Courts,2024,15
+"ROSENZWEIG, DOUGLAS R",All Courts,2024,12
+"SIFF, DANIEL EZRA",All Courts,2024,12
+"SHAPIRO, ADAM PHILIP",All Courts,2024,10
+"PRESSMAN, MICHAEL EDMUND",All Courts,Overall,97
+"TOOMEY, JAMES J",All Courts,Overall,94
+"SPARLING, JOHN E",All Courts,Overall,82
+"SHAPIRO, ADAM PHILIP",All Courts,Overall,78
+"SCHNEIDER, MICHAEL R",All Courts,Overall,77

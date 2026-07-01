@@ -1,0 +1,64 @@
+ATTORNEY_NAME,COURT_NAME,FILED_YEAR,AVG_DURATION_DAYS,MIN_DURATION_DAYS,MAX_DURATION_DAYS,TOTAL_CASES
+"Counsel, Corporation",Bronx County Supreme Court,2020,677,396,1042,4
+"Counsel, Corporation",Bronx County Supreme Court,2023,324,35,939,4
+GORAYEB & ASSOCIATES,Bronx County Supreme Court,2023,685,225,966,4
+WILLIAM SCHWITZER & ASSOCIATES,Bronx County Supreme Court,2023,874,544,1192,7
+"SUBIN ASSOCIATES, LLP",Bronx County Supreme Court,2024,298,118,629,5
+"Rubin Paterniti Gonzalez Rizzo Kaufman, LLP",Bronx County Supreme Court,Overall,646,300,971,5
+"RAVEN & KOLBE, LLP",Bronx County Supreme Court,Overall,684,118,1281,4
+WILLIAM SCHWITZER & ASSOCIATES,Bronx County Supreme Court,Overall,849,544,1192,10
+GORAYEB & ASSOCIATES,Bronx County Supreme Court,Overall,947,225,1738,7
+New York City Corporation Counsel,Bronx County Supreme Court,Overall,1315,879,1817,5
+"MARKOFF, MATTHEW E",Kings County Supreme Court,2022,957,178,1401,4
+"Counsel, Corporation",Kings County Supreme Court,2023,489,17,790,4
+"RAVEN & KOLBE, LLP",Kings County Supreme Court,2023,554,170,1013,4
+"Kolbe, George Spencer",Kings County Supreme Court,2023,554,170,1013,4
+"Counsel, Corporation",Kings County Supreme Court,2024,328,130,529,5
+"MARKOFF, MATTHEW E",Kings County Supreme Court,Overall,970,178,1575,7
+"PRIOLO, GENNARO",Kings County Supreme Court,Overall,1140,993,1385,4
+"BROMFELD, JEFFREY BRIAN",Kings County Supreme Court,Overall,1140,993,1385,4
+"VANNELLA, BRIAN JAMES",Kings County Supreme Court,Overall,1227,993,1575,5
+"LEVINSON, ANDREW CRAIG",Kings County Supreme Court,Overall,1227,993,1575,5
+STANLEY JAMES G,Los Angeles County Superior Court,2022,1343,1343,1343,1
+SOMES RICHARD G,Los Angeles County Superior Court,2022,1343,1343,1343,1
+GIANNETTO ALEX MICHAEL,Los Angeles County Superior Court,2022,1343,1343,1343,1
+D'OYEN MARLON,Los Angeles County Superior Court,2022,1343,1343,1343,1
+JAMNESHAN SHIRLEY E.,Los Angeles County Superior Court,2022,1343,1343,1343,1
+LEE CHRISTOPHER D.,Los Angeles County Superior Court,2023,575,575,575,1
+GLASSMAN ROBERT,Los Angeles County Superior Court,2023,575,575,575,1
+MEYER JASON F.,Los Angeles County Superior Court,2023,887,887,887,1
+HAFFNER JOSHUA,Los Angeles County Superior Court,2023,887,887,887,1
+LYNCH ROBERT JAMES,Los Angeles County Superior Court,2023,887,887,887,1
+ROEB CRAIG ALAN,Los Angeles County Superior Court,2024,875,875,875,1
+EVERETT SEYMOUR B.,Los Angeles County Superior Court,2024,875,875,875,1
+POCRASS JAMES LOUIS,Los Angeles County Superior Court,2024,875,875,875,1
+KEMPSON MARSHA L,Los Angeles County Superior Court,2024,875,875,875,1
+LIRA DAVID RICHARD,Los Angeles County Superior Court,2024,875,875,875,1
+SOMES RICHARD G,Los Angeles County Superior Court,Overall,1343,1343,1343,1
+D'OYEN MARLON,Los Angeles County Superior Court,Overall,1343,1343,1343,1
+AREVALO ERIC,Los Angeles County Superior Court,Overall,1343,1343,1343,1
+DOLAN MICHAEL ANTHONY,Los Angeles County Superior Court,Overall,1343,1343,1343,1
+RYAN ANDREW TIMOTHY,Los Angeles County Superior Court,Overall,1343,1343,1343,1
+"Counsel, Corporation",All Courts,2020,953,396,1919,6
+"Counsel, Corporation",All Courts,2021,948,35,1518,6
+New York City Corporation Counsel,All Courts,2021,1415,879,1817,4
+AREVALO ERIC,All Courts,2022,1343,1343,1343,1
+D'OYEN MARLON,All Courts,2022,1343,1343,1343,1
+DOLAN MICHAEL ANTHONY,All Courts,2022,1343,1343,1343,1
+RYAN ANDREW TIMOTHY,All Courts,2022,1343,1343,1343,1
+JAMNESHAN SHIRLEY E.,All Courts,2022,1343,1343,1343,1
+WILLIAM SCHWITZER & ASSOCIATES,All Courts,2023,821,409,1192,9
+LYNCH ROBERT JAMES,All Courts,2023,887,887,887,1
+MEYER JASON F.,All Courts,2023,887,887,887,1
+HAFFNER JOSHUA,All Courts,2023,887,887,887,1
+"SMITH MAZURE DIRECTOR WILKINS, YOUNG & YAGERMAN, P.C.",All Courts,2023,923,704,1192,4
+KEMPSON MARSHA L,All Courts,2024,875,875,875,1
+LIRA DAVID RICHARD,All Courts,2024,875,875,875,1
+ROEB CRAIG ALAN,All Courts,2024,875,875,875,1
+EVERETT SEYMOUR B.,All Courts,2024,875,875,875,1
+POCRASS JAMES LOUIS,All Courts,2024,875,875,875,1
+RYAN ANDREW TIMOTHY,All Courts,Overall,1343,1343,1343,1
+SOMES RICHARD G,All Courts,Overall,1343,1343,1343,1
+AREVALO ERIC,All Courts,Overall,1343,1343,1343,1
+DOLAN MICHAEL ANTHONY,All Courts,Overall,1343,1343,1343,1
+STANLEY JAMES G,All Courts,Overall,1343,1343,1343,1

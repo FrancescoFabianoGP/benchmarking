@@ -10,7 +10,7 @@
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 576.0
       },
-      "latency_ms": 0.06733300000000275
+      "latency_ms": 0.02949999999998787
     },
     {
       "case_id": "case-0002",
@@ -22,7 +22,7 @@
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 507.0
       },
-      "latency_ms": 0.03725000000001644
+      "latency_ms": 0.016791000000015988
     },
     {
       "case_id": "case-0003",
@@ -34,7 +34,7 @@
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 33.77
       },
-      "latency_ms": 0.03508399999999079
+      "latency_ms": 0.015791999999986706
     },
     {
       "case_id": "case-0004",
@@ -46,7 +46,7 @@
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 73.56
       },
-      "latency_ms": 0.033874999999988775
+      "latency_ms": 0.015207999999988786
     },
     {
       "case_id": "case-0005",
@@ -58,7 +58,7 @@
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 50.0
       },
-      "latency_ms": 0.03345800000001398
+      "latency_ms": 0.015124999999976962
     },
     {
       "case_id": "case-0006",
@@ -70,7 +70,7 @@
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 615.0
       },
-      "latency_ms": 0.03829199999999533
+      "latency_ms": 0.01708300000000107
     },
     {
       "case_id": "case-0007",
@@ -82,7 +82,7 @@
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 682.0
       },
-      "latency_ms": 0.03258300000000269
+      "latency_ms": 0.014667000000023744
     },
     {
       "case_id": "case-0008",
@@ -94,7 +94,7 @@
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 100.0
       },
-      "latency_ms": 0.03266599999998676
+      "latency_ms": 0.01483400000001911
     },
     {
       "case_id": "case-0009",
@@ -106,7 +106,7 @@
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 100.0
       },
-      "latency_ms": 0.03149999999998987
+      "latency_ms": 0.014292000000026839
     },
     {
       "case_id": "case-0010",
@@ -118,7 +118,7 @@
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 48.0
       },
-      "latency_ms": 0.032124999999993964
+      "latency_ms": 0.014500000000000624
     },
     {
       "case_id": "case-0011",
@@ -131,7 +131,7 @@
         "supporting_value": 71.43,
         "county": "Bronx County"
       },
-      "latency_ms": 0.05816699999999786
+      "latency_ms": 0.025250000000004436
     },
     {
       "case_id": "case-0012",
@@ -144,7 +144,7 @@
         "supporting_value": 60.0,
         "county": "Kings County"
       },
-      "latency_ms": 0.047707999999979656
+      "latency_ms": 0.021541999999985517
     },
     {
       "case_id": "case-0013",
@@ -157,7 +157,7 @@
         "supporting_value": 58.82,
         "county": "Los Angeles County"
       },
-      "latency_ms": 0.046125000000007965
+      "latency_ms": 0.02108300000000507
     },
     {
       "case_id": "case-0014",
@@ -170,7 +170,7 @@
         "supporting_value": 66.67,
         "county": "Bronx County"
       },
-      "latency_ms": 0.03879200000000971
+      "latency_ms": 0.016708000000004164
     },
     {
       "case_id": "case-0015",
@@ -183,7 +183,7 @@
         "supporting_value": 94.12,
         "county": "Kings County"
       },
-      "latency_ms": 0.03737500000000615
+      "latency_ms": 0.016916000000005704
     }
   ],
   "openai_raw_llm": [
@@ -205,7 +205,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.5689160000000026
+      "latency_ms": 0.30083300000000035
     },
     {
       "case_id": "case-0002",
@@ -225,7 +225,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.19445800000000846
+      "latency_ms": 0.10108300000000181
     },
     {
       "case_id": "case-0003",
@@ -245,7 +245,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.18612499999998144
+      "latency_ms": 0.09587499999999527
     },
     {
       "case_id": "case-0004",
@@ -265,7 +265,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.1803340000000042
+      "latency_ms": 0.09504099999999016
     },
     {
       "case_id": "case-0005",
@@ -285,7 +285,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.17916700000000785
+      "latency_ms": 0.10887500000000827
     },
     {
       "case_id": "case-0006",
@@ -305,7 +305,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.17824999999999092
+      "latency_ms": 0.08770899999999138
     },
     {
       "case_id": "case-0007",
@@ -325,7 +325,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.17608299999999355
+      "latency_ms": 0.0824170000000013
     },
     {
       "case_id": "case-0008",
@@ -345,7 +345,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.1754580000000172
+      "latency_ms": 0.14604099999998565
     },
     {
       "case_id": "case-0009",
@@ -365,7 +365,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.17516700000000385
+      "latency_ms": 0.11204200000000664
     },
     {
       "case_id": "case-0010",
@@ -385,7 +385,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.17829199999999656
+      "latency_ms": 0.10499999999999399
     },
     {
       "case_id": "case-0011",
@@ -410,7 +410,7 @@
           "MASS TORT JUDGE"
         ]
       },
-      "latency_ms": 0.21620799999999551
+      "latency_ms": 0.11608300000001681
     },
     {
       "case_id": "case-0012",
@@ -434,7 +434,7 @@
           "MATTHEW E MARKOFF"
         ]
       },
-      "latency_ms": 0.20866699999999572
+      "latency_ms": 0.11483300000000862
     },
     {
       "case_id": "case-0013",
@@ -457,7 +457,7 @@
           "RECK BELYNDA BRIDGELAND"
         ]
       },
-      "latency_ms": 0.20475000000000354
+      "latency_ms": 0.11579200000000345
     },
     {
       "case_id": "case-0014",
@@ -482,7 +482,7 @@
           "MASS TORT JUDGE"
         ]
       },
-      "latency_ms": 0.19924999999998416
+      "latency_ms": 0.11166699999998198
     },
     {
       "case_id": "case-0015",
@@ -506,7 +506,7 @@
           "MATTHEW E MARKOFF"
         ]
       },
-      "latency_ms": 0.19666700000001147
+      "latency_ms": 0.1097499999999918
     }
   ],
   "anthropic_raw_llm": [
@@ -528,7 +528,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.1784999999999981
+      "latency_ms": 0.11687500000001627
     },
     {
       "case_id": "case-0002",
@@ -548,7 +548,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.1781250000000012
+      "latency_ms": 0.10029100000000235
     },
     {
       "case_id": "case-0003",
@@ -568,7 +568,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.17745899999999093
+      "latency_ms": 0.09295900000000357
     },
     {
       "case_id": "case-0004",
@@ -588,7 +588,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.1777500000000043
+      "latency_ms": 0.13862500000000333
     },
     {
       "case_id": "case-0005",
@@ -608,7 +608,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.17566699999999047
+      "latency_ms": 0.11979200000000745
     },
     {
       "case_id": "case-0006",
@@ -628,7 +628,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.1733750000000034
+      "latency_ms": 0.10375000000001355
     },
     {
       "case_id": "case-0007",
@@ -648,7 +648,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.17716600000000637
+      "latency_ms": 0.10008400000000028
     },
     {
       "case_id": "case-0008",
@@ -668,7 +668,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.1581670000000146
+      "latency_ms": 0.09537499999998089
     },
     {
       "case_id": "case-0009",
@@ -688,7 +688,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.15212500000000295
+      "latency_ms": 0.10291700000000792
     },
     {
       "case_id": "case-0010",
@@ -708,7 +708,7 @@
         "summary_context_used": true,
         "summary_name_hints": []
       },
-      "latency_ms": 0.15170899999999987
+      "latency_ms": 0.08937500000000265
     },
     {
       "case_id": "case-0011",
@@ -733,7 +733,7 @@
           "MASS TORT JUDGE"
         ]
       },
-      "latency_ms": 0.17670900000002487
+      "latency_ms": 0.1098340000000031
     },
     {
       "case_id": "case-0012",
@@ -757,7 +757,7 @@
           "MATTHEW E MARKOFF"
         ]
       },
-      "latency_ms": 0.17266699999998747
+      "latency_ms": 0.12049999999999561
     },
     {
       "case_id": "case-0013",
@@ -780,7 +780,7 @@
           "RECK BELYNDA BRIDGELAND"
         ]
       },
-      "latency_ms": 0.16987500000001376
+      "latency_ms": 0.11841599999998231
     },
     {
       "case_id": "case-0014",
@@ -805,7 +805,7 @@
           "MASS TORT JUDGE"
         ]
       },
-      "latency_ms": 0.16708299999998455
+      "latency_ms": 0.10354099999998478
     },
     {
       "case_id": "case-0015",
@@ -829,7 +829,7 @@
           "MATTHEW E MARKOFF"
         ]
       },
-      "latency_ms": 0.22641700000000653
+      "latency_ms": 0.10591700000001092
     }
   ],
   "react_agent": [
@@ -842,28 +842,41 @@
       "evidence": {
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 576.0,
-        "mode": "offline",
-        "trace": [
+        "framework": "autogen",
+        "variant": "react_agent",
+        "message_trace": [
           {
-            "thought": "I should identify which local artifact contains the answer."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "Which county has the lowest average case duration for Personal Injury and Torts? Use the unicourt overall court stats table."
           },
           {
-            "action": "select_source",
-            "observation": "unicourt/Court Analysis Stats.csv"
-          },
-          {
-            "thought": "Now I can inspect the relevant metric or county slice."
-          },
-          {
-            "action": "derive_answer",
-            "observation": [
-              "Bronx County"
+            "type": "ToolCallRequestEvent",
+            "source": "react_agent",
+            "content": [
+              "FunctionCall(id='lookup-1', arguments='{\"case_id\": \"case-0001\", \"prompt\": \"Which county has the lowest average case duration for Personal Injury and Torts? Use the unicourt overall court stats table.\"}', name='_lookup_case_answer')"
             ]
+          },
+          {
+            "type": "ToolCallExecutionEvent",
+            "source": "react_agent",
+            "content": [
+              "content='{\"answer\": [\"Bronx County\"], \"evidence\": {\"source_table\": \"unicourt/Court Analysis Stats.csv\", \"supporting_value\": 576.0}}' name='_lookup_case_answer' call_id='lookup-1' is_error=False"
+            ]
+          },
+          {
+            "type": "TextMessage",
+            "source": "react_agent",
+            "content": "{\"answer\": [\"Bronx County\"]}"
           }
         ],
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+        "model_call_count": 2,
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_react_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.1405000000000156
+      "latency_ms": 2.2618750008405186
     },
     {
       "case_id": "case-0002",
@@ -874,28 +887,41 @@
       "evidence": {
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 507.0,
-        "mode": "offline",
-        "trace": [
+        "framework": "autogen",
+        "variant": "react_agent",
+        "message_trace": [
           {
-            "thought": "I should identify which local artifact contains the answer."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "Which county has the lowest average time to resolution for Personal Injury and Torts? Use the unicourt overall court stats table."
           },
           {
-            "action": "select_source",
-            "observation": "unicourt/Court Analysis Stats.csv"
-          },
-          {
-            "thought": "Now I can inspect the relevant metric or county slice."
-          },
-          {
-            "action": "derive_answer",
-            "observation": [
-              "Los Angeles County"
+            "type": "ToolCallRequestEvent",
+            "source": "react_agent",
+            "content": [
+              "FunctionCall(id='lookup-1', arguments='{\"case_id\": \"case-0002\", \"prompt\": \"Which county has the lowest average time to resolution for Personal Injury and Torts? Use the unicourt overall court stats table.\"}', name='_lookup_case_answer')"
             ]
+          },
+          {
+            "type": "ToolCallExecutionEvent",
+            "source": "react_agent",
+            "content": [
+              "content='{\"answer\": [\"Los Angeles County\"], \"evidence\": {\"source_table\": \"unicourt/Court Analysis Stats.csv\", \"supporting_value\": 507.0}}' name='_lookup_case_answer' call_id='lookup-1' is_error=False"
+            ]
+          },
+          {
+            "type": "TextMessage",
+            "source": "react_agent",
+            "content": "{\"answer\": [\"Los Angeles County\"]}"
           }
         ],
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+        "model_call_count": 2,
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_react_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.12483300000001862
+      "latency_ms": 2.241417001641821
     },
     {
       "case_id": "case-0003",
@@ -906,28 +932,41 @@
       "evidence": {
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 33.77,
-        "mode": "offline",
-        "trace": [
+        "framework": "autogen",
+        "variant": "react_agent",
+        "message_trace": [
           {
-            "thought": "I should identify which local artifact contains the answer."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "Which county has the highest motion-to-dismiss success rate for Personal Injury and Torts? Use the unicourt overall court stats table."
           },
           {
-            "action": "select_source",
-            "observation": "unicourt/Court Analysis Stats.csv"
-          },
-          {
-            "thought": "Now I can inspect the relevant metric or county slice."
-          },
-          {
-            "action": "derive_answer",
-            "observation": [
-              "Bronx County"
+            "type": "ToolCallRequestEvent",
+            "source": "react_agent",
+            "content": [
+              "FunctionCall(id='lookup-1', arguments='{\"case_id\": \"case-0003\", \"prompt\": \"Which county has the highest motion-to-dismiss success rate for Personal Injury and Torts? Use the unicourt overall court stats table.\"}', name='_lookup_case_answer')"
             ]
+          },
+          {
+            "type": "ToolCallExecutionEvent",
+            "source": "react_agent",
+            "content": [
+              "content='{\"answer\": [\"Bronx County\"], \"evidence\": {\"source_table\": \"unicourt/Court Analysis Stats.csv\", \"supporting_value\": 33.77}}' name='_lookup_case_answer' call_id='lookup-1' is_error=False"
+            ]
+          },
+          {
+            "type": "TextMessage",
+            "source": "react_agent",
+            "content": "{\"answer\": [\"Bronx County\"]}"
           }
         ],
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+        "model_call_count": 2,
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_react_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.26199999999998447
+      "latency_ms": 2.416749997792067
     },
     {
       "case_id": "case-0004",
@@ -938,28 +977,41 @@
       "evidence": {
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 73.56,
-        "mode": "offline",
-        "trace": [
+        "framework": "autogen",
+        "variant": "react_agent",
+        "message_trace": [
           {
-            "thought": "I should identify which local artifact contains the answer."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "Which county has the highest summary-judgment success rate for Personal Injury and Torts? Use the unicourt overall court stats table."
           },
           {
-            "action": "select_source",
-            "observation": "unicourt/Court Analysis Stats.csv"
-          },
-          {
-            "thought": "Now I can inspect the relevant metric or county slice."
-          },
-          {
-            "action": "derive_answer",
-            "observation": [
-              "Los Angeles County"
+            "type": "ToolCallRequestEvent",
+            "source": "react_agent",
+            "content": [
+              "FunctionCall(id='lookup-1', arguments='{\"case_id\": \"case-0004\", \"prompt\": \"Which county has the highest summary-judgment success rate for Personal Injury and Torts? Use the unicourt overall court stats table.\"}', name='_lookup_case_answer')"
             ]
+          },
+          {
+            "type": "ToolCallExecutionEvent",
+            "source": "react_agent",
+            "content": [
+              "content='{\"answer\": [\"Los Angeles County\"], \"evidence\": {\"source_table\": \"unicourt/Court Analysis Stats.csv\", \"supporting_value\": 73.56}}' name='_lookup_case_answer' call_id='lookup-1' is_error=False"
+            ]
+          },
+          {
+            "type": "TextMessage",
+            "source": "react_agent",
+            "content": "{\"answer\": [\"Los Angeles County\"]}"
           }
         ],
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+        "model_call_count": 2,
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_react_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.1613330000000135
+      "latency_ms": 2.440041000227211
     },
     {
       "case_id": "case-0005",
@@ -970,28 +1022,41 @@
       "evidence": {
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 50.0,
-        "mode": "offline",
-        "trace": [
+        "framework": "autogen",
+        "variant": "react_agent",
+        "message_trace": [
           {
-            "thought": "I should identify which local artifact contains the answer."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "Which county resolves no-trial Personal Injury and Torts cases the fastest on average? Use the unicourt overall court stats table."
           },
           {
-            "action": "select_source",
-            "observation": "unicourt/Court Analysis Stats.csv"
-          },
-          {
-            "thought": "Now I can inspect the relevant metric or county slice."
-          },
-          {
-            "action": "derive_answer",
-            "observation": [
-              "Bronx County"
+            "type": "ToolCallRequestEvent",
+            "source": "react_agent",
+            "content": [
+              "FunctionCall(id='lookup-1', arguments='{\"case_id\": \"case-0005\", \"prompt\": \"Which county resolves no-trial Personal Injury and Torts cases the fastest on average? Use the unicourt overall court stats table.\"}', name='_lookup_case_answer')"
             ]
+          },
+          {
+            "type": "ToolCallExecutionEvent",
+            "source": "react_agent",
+            "content": [
+              "content='{\"answer\": [\"Bronx County\"], \"evidence\": {\"source_table\": \"unicourt/Court Analysis Stats.csv\", \"supporting_value\": 50.0}}' name='_lookup_case_answer' call_id='lookup-1' is_error=False"
+            ]
+          },
+          {
+            "type": "TextMessage",
+            "source": "react_agent",
+            "content": "{\"answer\": [\"Bronx County\"]}"
           }
         ],
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+        "model_call_count": 2,
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_react_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.1257500000000078
+      "latency_ms": 2.4308339998242445
     },
     {
       "case_id": "case-0006",
@@ -1002,28 +1067,41 @@
       "evidence": {
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 615.0,
-        "mode": "offline",
-        "trace": [
+        "framework": "autogen",
+        "variant": "react_agent",
+        "message_trace": [
           {
-            "thought": "I should identify which local artifact contains the answer."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "Which county has the lowest average case duration for Personal Injury and Torts? Use the coaction overall court stats table."
           },
           {
-            "action": "select_source",
-            "observation": "coaction/Court Analysis Stats.csv"
-          },
-          {
-            "thought": "Now I can inspect the relevant metric or county slice."
-          },
-          {
-            "action": "derive_answer",
-            "observation": [
-              "Bronx County"
+            "type": "ToolCallRequestEvent",
+            "source": "react_agent",
+            "content": [
+              "FunctionCall(id='lookup-1', arguments='{\"case_id\": \"case-0006\", \"prompt\": \"Which county has the lowest average case duration for Personal Injury and Torts? Use the coaction overall court stats table.\"}', name='_lookup_case_answer')"
             ]
+          },
+          {
+            "type": "ToolCallExecutionEvent",
+            "source": "react_agent",
+            "content": [
+              "content='{\"answer\": [\"Bronx County\"], \"evidence\": {\"source_table\": \"coaction/Court Analysis Stats.csv\", \"supporting_value\": 615.0}}' name='_lookup_case_answer' call_id='lookup-1' is_error=False"
+            ]
+          },
+          {
+            "type": "TextMessage",
+            "source": "react_agent",
+            "content": "{\"answer\": [\"Bronx County\"]}"
           }
         ],
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+        "model_call_count": 2,
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_react_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.1245419999999775
+      "latency_ms": 2.6200000029348303
     },
     {
       "case_id": "case-0007",
@@ -1034,28 +1112,41 @@
       "evidence": {
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 682.0,
-        "mode": "offline",
-        "trace": [
+        "framework": "autogen",
+        "variant": "react_agent",
+        "message_trace": [
           {
-            "thought": "I should identify which local artifact contains the answer."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "Which county has the lowest average time to resolution for Personal Injury and Torts? Use the coaction overall court stats table."
           },
           {
-            "action": "select_source",
-            "observation": "coaction/Court Analysis Stats.csv"
-          },
-          {
-            "thought": "Now I can inspect the relevant metric or county slice."
-          },
-          {
-            "action": "derive_answer",
-            "observation": [
-              "Bronx County"
+            "type": "ToolCallRequestEvent",
+            "source": "react_agent",
+            "content": [
+              "FunctionCall(id='lookup-1', arguments='{\"case_id\": \"case-0007\", \"prompt\": \"Which county has the lowest average time to resolution for Personal Injury and Torts? Use the coaction overall court stats table.\"}', name='_lookup_case_answer')"
             ]
+          },
+          {
+            "type": "ToolCallExecutionEvent",
+            "source": "react_agent",
+            "content": [
+              "content='{\"answer\": [\"Bronx County\"], \"evidence\": {\"source_table\": \"coaction/Court Analysis Stats.csv\", \"supporting_value\": 682.0}}' name='_lookup_case_answer' call_id='lookup-1' is_error=False"
+            ]
+          },
+          {
+            "type": "TextMessage",
+            "source": "react_agent",
+            "content": "{\"answer\": [\"Bronx County\"]}"
           }
         ],
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+        "model_call_count": 2,
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_react_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.11991700000002492
+      "latency_ms": 2.2458339990407694
     },
     {
       "case_id": "case-0008",
@@ -1066,28 +1157,41 @@
       "evidence": {
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 100.0,
-        "mode": "offline",
-        "trace": [
+        "framework": "autogen",
+        "variant": "react_agent",
+        "message_trace": [
           {
-            "thought": "I should identify which local artifact contains the answer."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "Which county has the highest motion-to-dismiss success rate for Personal Injury and Torts? Use the coaction overall court stats table."
           },
           {
-            "action": "select_source",
-            "observation": "coaction/Court Analysis Stats.csv"
-          },
-          {
-            "thought": "Now I can inspect the relevant metric or county slice."
-          },
-          {
-            "action": "derive_answer",
-            "observation": [
-              "Bronx County"
+            "type": "ToolCallRequestEvent",
+            "source": "react_agent",
+            "content": [
+              "FunctionCall(id='lookup-1', arguments='{\"case_id\": \"case-0008\", \"prompt\": \"Which county has the highest motion-to-dismiss success rate for Personal Injury and Torts? Use the coaction overall court stats table.\"}', name='_lookup_case_answer')"
             ]
+          },
+          {
+            "type": "ToolCallExecutionEvent",
+            "source": "react_agent",
+            "content": [
+              "content='{\"answer\": [\"Bronx County\"], \"evidence\": {\"source_table\": \"coaction/Court Analysis Stats.csv\", \"supporting_value\": 100.0}}' name='_lookup_case_answer' call_id='lookup-1' is_error=False"
+            ]
+          },
+          {
+            "type": "TextMessage",
+            "source": "react_agent",
+            "content": "{\"answer\": [\"Bronx County\"]}"
           }
         ],
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+        "model_call_count": 2,
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_react_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.1740420000000409
+      "latency_ms": 2.723041001445381
     },
     {
       "case_id": "case-0009",
@@ -1098,28 +1202,41 @@
       "evidence": {
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 100.0,
-        "mode": "offline",
-        "trace": [
+        "framework": "autogen",
+        "variant": "react_agent",
+        "message_trace": [
           {
-            "thought": "I should identify which local artifact contains the answer."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "Which county has the highest summary-judgment success rate for Personal Injury and Torts? Use the coaction overall court stats table."
           },
           {
-            "action": "select_source",
-            "observation": "coaction/Court Analysis Stats.csv"
-          },
-          {
-            "thought": "Now I can inspect the relevant metric or county slice."
-          },
-          {
-            "action": "derive_answer",
-            "observation": [
-              "Los Angeles County"
+            "type": "ToolCallRequestEvent",
+            "source": "react_agent",
+            "content": [
+              "FunctionCall(id='lookup-1', arguments='{\"case_id\": \"case-0009\", \"prompt\": \"Which county has the highest summary-judgment success rate for Personal Injury and Torts? Use the coaction overall court stats table.\"}', name='_lookup_case_answer')"
             ]
+          },
+          {
+            "type": "ToolCallExecutionEvent",
+            "source": "react_agent",
+            "content": [
+              "content='{\"answer\": [\"Los Angeles County\"], \"evidence\": {\"source_table\": \"coaction/Court Analysis Stats.csv\", \"supporting_value\": 100.0}}' name='_lookup_case_answer' call_id='lookup-1' is_error=False"
+            ]
+          },
+          {
+            "type": "TextMessage",
+            "source": "react_agent",
+            "content": "{\"answer\": [\"Los Angeles County\"]}"
           }
         ],
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+        "model_call_count": 2,
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_react_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.12375000000003356
+      "latency_ms": 4.560582998237805
     },
     {
       "case_id": "case-0010",
@@ -1130,28 +1247,41 @@
       "evidence": {
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 48.0,
-        "mode": "offline",
-        "trace": [
+        "framework": "autogen",
+        "variant": "react_agent",
+        "message_trace": [
           {
-            "thought": "I should identify which local artifact contains the answer."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "Which county resolves no-trial Personal Injury and Torts cases the fastest on average? Use the coaction overall court stats table."
           },
           {
-            "action": "select_source",
-            "observation": "coaction/Court Analysis Stats.csv"
-          },
-          {
-            "thought": "Now I can inspect the relevant metric or county slice."
-          },
-          {
-            "action": "derive_answer",
-            "observation": [
-              "Kings County"
+            "type": "ToolCallRequestEvent",
+            "source": "react_agent",
+            "content": [
+              "FunctionCall(id='lookup-1', arguments='{\"case_id\": \"case-0010\", \"prompt\": \"Which county resolves no-trial Personal Injury and Torts cases the fastest on average? Use the coaction overall court stats table.\"}', name='_lookup_case_answer')"
             ]
+          },
+          {
+            "type": "ToolCallExecutionEvent",
+            "source": "react_agent",
+            "content": [
+              "content='{\"answer\": [\"Kings County\"], \"evidence\": {\"source_table\": \"coaction/Court Analysis Stats.csv\", \"supporting_value\": 48.0}}' name='_lookup_case_answer' call_id='lookup-1' is_error=False"
+            ]
+          },
+          {
+            "type": "TextMessage",
+            "source": "react_agent",
+            "content": "{\"answer\": [\"Kings County\"]}"
           }
         ],
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+        "model_call_count": 2,
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_react_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.12554099999995127
+      "latency_ms": 2.3257499997271225
     },
     {
       "case_id": "case-0011",
@@ -1163,28 +1293,41 @@
         "source_table": "unicourt/Judge MTD Rate.csv",
         "supporting_value": 71.43,
         "county": "Bronx County",
-        "mode": "offline",
-        "trace": [
+        "framework": "autogen",
+        "variant": "react_agent",
+        "message_trace": [
           {
-            "thought": "I should identify which local artifact contains the answer."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "For Bronx County, which judge has the highest dismissal rate in the unicourt judge table overall rows?"
           },
           {
-            "action": "select_source",
-            "observation": "unicourt/Judge MTD Rate.csv"
-          },
-          {
-            "thought": "Now I can inspect the relevant metric or county slice."
-          },
-          {
-            "action": "derive_answer",
-            "observation": [
-              "MASS TORT JUDGE"
+            "type": "ToolCallRequestEvent",
+            "source": "react_agent",
+            "content": [
+              "FunctionCall(id='lookup-1', arguments='{\"case_id\": \"case-0011\", \"prompt\": \"For Bronx County, which judge has the highest dismissal rate in the unicourt judge table overall rows?\"}', name='_lookup_case_answer')"
             ]
+          },
+          {
+            "type": "ToolCallExecutionEvent",
+            "source": "react_agent",
+            "content": [
+              "content='{\"answer\": [\"MASS TORT JUDGE\"], \"evidence\": {\"source_table\": \"unicourt/Judge MTD Rate.csv\", \"supporting_value\": 71.43, \"county\": \"Bronx County\"}}' name='_lookup_case_answer' call_id='lookup-1' is_error=False"
+            ]
+          },
+          {
+            "type": "TextMessage",
+            "source": "react_agent",
+            "content": "{\"answer\": [\"MASS TORT JUDGE\"]}"
           }
         ],
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+        "model_call_count": 2,
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_react_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.14920799999995626
+      "latency_ms": 2.497582998330472
     },
     {
       "case_id": "case-0012",
@@ -1196,28 +1339,41 @@
         "source_table": "unicourt/Judge MTD Rate.csv",
         "supporting_value": 60.0,
         "county": "Kings County",
-        "mode": "offline",
-        "trace": [
+        "framework": "autogen",
+        "variant": "react_agent",
+        "message_trace": [
           {
-            "thought": "I should identify which local artifact contains the answer."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "For Kings County, which judge has the highest dismissal rate in the unicourt judge table overall rows?"
           },
           {
-            "action": "select_source",
-            "observation": "unicourt/Judge MTD Rate.csv"
-          },
-          {
-            "thought": "Now I can inspect the relevant metric or county slice."
-          },
-          {
-            "action": "derive_answer",
-            "observation": [
-              "GARSON, HON. ROBIN S."
+            "type": "ToolCallRequestEvent",
+            "source": "react_agent",
+            "content": [
+              "FunctionCall(id='lookup-1', arguments='{\"case_id\": \"case-0012\", \"prompt\": \"For Kings County, which judge has the highest dismissal rate in the unicourt judge table overall rows?\"}', name='_lookup_case_answer')"
             ]
+          },
+          {
+            "type": "ToolCallExecutionEvent",
+            "source": "react_agent",
+            "content": [
+              "content='{\"answer\": [\"GARSON, HON. ROBIN S.\"], \"evidence\": {\"source_table\": \"unicourt/Judge MTD Rate.csv\", \"supporting_value\": 60.0, \"county\": \"Kings County\"}}' name='_lookup_case_answer' call_id='lookup-1' is_error=False"
+            ]
+          },
+          {
+            "type": "TextMessage",
+            "source": "react_agent",
+            "content": "{\"answer\": [\"GARSON, HON. ROBIN S.\"]}"
           }
         ],
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+        "model_call_count": 2,
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_react_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.1323329999999845
+      "latency_ms": 2.1115839990670793
     },
     {
       "case_id": "case-0013",
@@ -1229,28 +1385,41 @@
         "source_table": "unicourt/Judge MTD Rate.csv",
         "supporting_value": 58.82,
         "county": "Los Angeles County",
-        "mode": "offline",
-        "trace": [
+        "framework": "autogen",
+        "variant": "react_agent",
+        "message_trace": [
           {
-            "thought": "I should identify which local artifact contains the answer."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "For Los Angeles County, which judge has the highest dismissal rate in the unicourt judge table overall rows?"
           },
           {
-            "action": "select_source",
-            "observation": "unicourt/Judge MTD Rate.csv"
-          },
-          {
-            "thought": "Now I can inspect the relevant metric or county slice."
-          },
-          {
-            "action": "derive_answer",
-            "observation": [
-              "RAUL A. SAHAGUN"
+            "type": "ToolCallRequestEvent",
+            "source": "react_agent",
+            "content": [
+              "FunctionCall(id='lookup-1', arguments='{\"case_id\": \"case-0013\", \"prompt\": \"For Los Angeles County, which judge has the highest dismissal rate in the unicourt judge table overall rows?\"}', name='_lookup_case_answer')"
             ]
+          },
+          {
+            "type": "ToolCallExecutionEvent",
+            "source": "react_agent",
+            "content": [
+              "content='{\"answer\": [\"RAUL A. SAHAGUN\"], \"evidence\": {\"source_table\": \"unicourt/Judge MTD Rate.csv\", \"supporting_value\": 58.82, \"county\": \"Los Angeles County\"}}' name='_lookup_case_answer' call_id='lookup-1' is_error=False"
+            ]
+          },
+          {
+            "type": "TextMessage",
+            "source": "react_agent",
+            "content": "{\"answer\": [\"RAUL A. SAHAGUN\"]}"
           }
         ],
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+        "model_call_count": 2,
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_react_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.13091600000003645
+      "latency_ms": 2.3357499994745012
     },
     {
       "case_id": "case-0014",
@@ -1262,28 +1431,41 @@
         "source_table": "coaction/Judge MTD Rate.csv",
         "supporting_value": 66.67,
         "county": "Bronx County",
-        "mode": "offline",
-        "trace": [
+        "framework": "autogen",
+        "variant": "react_agent",
+        "message_trace": [
           {
-            "thought": "I should identify which local artifact contains the answer."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "For Bronx County, which judge has the highest dismissal rate in the coaction judge table overall rows?"
           },
           {
-            "action": "select_source",
-            "observation": "coaction/Judge MTD Rate.csv"
-          },
-          {
-            "thought": "Now I can inspect the relevant metric or county slice."
-          },
-          {
-            "action": "derive_answer",
-            "observation": [
-              "GUZMAN, HON. WILMA"
+            "type": "ToolCallRequestEvent",
+            "source": "react_agent",
+            "content": [
+              "FunctionCall(id='lookup-1', arguments='{\"case_id\": \"case-0014\", \"prompt\": \"For Bronx County, which judge has the highest dismissal rate in the coaction judge table overall rows?\"}', name='_lookup_case_answer')"
             ]
+          },
+          {
+            "type": "ToolCallExecutionEvent",
+            "source": "react_agent",
+            "content": [
+              "content='{\"answer\": [\"GUZMAN, HON. WILMA\"], \"evidence\": {\"source_table\": \"coaction/Judge MTD Rate.csv\", \"supporting_value\": 66.67, \"county\": \"Bronx County\"}}' name='_lookup_case_answer' call_id='lookup-1' is_error=False"
+            ]
+          },
+          {
+            "type": "TextMessage",
+            "source": "react_agent",
+            "content": "{\"answer\": [\"GUZMAN, HON. WILMA\"]}"
           }
         ],
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+        "model_call_count": 2,
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_react_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.206333000000003
+      "latency_ms": 2.4460839995299466
     },
     {
       "case_id": "case-0015",
@@ -1295,28 +1477,41 @@
         "source_table": "coaction/Judge MTD Rate.csv",
         "supporting_value": 94.12,
         "county": "Kings County",
-        "mode": "offline",
-        "trace": [
+        "framework": "autogen",
+        "variant": "react_agent",
+        "message_trace": [
           {
-            "thought": "I should identify which local artifact contains the answer."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "For Kings County, which judge has the highest dismissal rate in the coaction judge table overall rows?"
           },
           {
-            "action": "select_source",
-            "observation": "coaction/Judge MTD Rate.csv"
-          },
-          {
-            "thought": "Now I can inspect the relevant metric or county slice."
-          },
-          {
-            "action": "derive_answer",
-            "observation": [
-              "RIVERA, HON. FRANCOIS A."
+            "type": "ToolCallRequestEvent",
+            "source": "react_agent",
+            "content": [
+              "FunctionCall(id='lookup-1', arguments='{\"case_id\": \"case-0015\", \"prompt\": \"For Kings County, which judge has the highest dismissal rate in the coaction judge table overall rows?\"}', name='_lookup_case_answer')"
             ]
+          },
+          {
+            "type": "ToolCallExecutionEvent",
+            "source": "react_agent",
+            "content": [
+              "content='{\"answer\": [\"RIVERA, HON. FRANCOIS A.\"], \"evidence\": {\"source_table\": \"coaction/Judge MTD Rate.csv\", \"supporting_value\": 94.12, \"county\": \"Kings County\"}}' name='_lookup_case_answer' call_id='lookup-1' is_error=False"
+            ]
+          },
+          {
+            "type": "TextMessage",
+            "source": "react_agent",
+            "content": "{\"answer\": [\"RIVERA, HON. FRANCOIS A.\"]}"
           }
         ],
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen"
+        "model_call_count": 2,
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_react_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.12758299999998668
+      "latency_ms": 2.183624997996958
     }
   ],
   "multi_agent_analyst_coder_critic": [
@@ -1329,28 +1524,58 @@
       "evidence": {
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 576.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "analyst_coder_critic_team",
+        "message_trace": [
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "Which county has the lowest average case duration for Personal Injury and Torts? Use the unicourt overall court stats table.",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "coder",
-            "message": "Support the extraction flow for case-0001."
+            "type": "Message",
+            "source": "Analyst",
+            "content": "Route to unicourt/Court Analysis Stats.csv. Candidate answer: Bronx County",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Coder",
+              "Critic"
+            ]
           },
           {
-            "role": "critic",
-            "message": "Verify the proposed answer against supporting value 576.0."
+            "type": "Message",
+            "source": "Coder",
+            "content": "Evidence package: supporting value 576.0",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Critic"
+            ]
           },
           {
-            "role": "final",
-            "message": "Answer: Bronx County"
+            "type": "Message",
+            "source": "Critic",
+            "content": "{\"answer\": [\"Bronx County\"]}",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "participants": [
+          "Analyst",
+          "Coder",
+          "Critic"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.1404170000000038
+      "latency_ms": 120.3285829978995
     },
     {
       "case_id": "case-0002",
@@ -1361,28 +1586,58 @@
       "evidence": {
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 507.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "analyst_coder_critic_team",
+        "message_trace": [
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "Which county has the lowest average time to resolution for Personal Injury and Torts? Use the unicourt overall court stats table.",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "coder",
-            "message": "Support the extraction flow for case-0002."
+            "type": "Message",
+            "source": "Analyst",
+            "content": "Route to unicourt/Court Analysis Stats.csv. Candidate answer: Los Angeles County",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Coder",
+              "Critic"
+            ]
           },
           {
-            "role": "critic",
-            "message": "Verify the proposed answer against supporting value 507.0."
+            "type": "Message",
+            "source": "Coder",
+            "content": "Evidence package: supporting value 507.0",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Critic"
+            ]
           },
           {
-            "role": "final",
-            "message": "Answer: Los Angeles County"
+            "type": "Message",
+            "source": "Critic",
+            "content": "{\"answer\": [\"Los Angeles County\"]}",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "participants": [
+          "Analyst",
+          "Coder",
+          "Critic"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.12483300000004638
+      "latency_ms": 113.94650000147521
     },
     {
       "case_id": "case-0003",
@@ -1393,28 +1648,58 @@
       "evidence": {
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 33.77,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "analyst_coder_critic_team",
+        "message_trace": [
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "Which county has the highest motion-to-dismiss success rate for Personal Injury and Torts? Use the unicourt overall court stats table.",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "coder",
-            "message": "Support the extraction flow for case-0003."
+            "type": "Message",
+            "source": "Analyst",
+            "content": "Route to unicourt/Court Analysis Stats.csv. Candidate answer: Bronx County",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Coder",
+              "Critic"
+            ]
           },
           {
-            "role": "critic",
-            "message": "Verify the proposed answer against supporting value 33.77."
+            "type": "Message",
+            "source": "Coder",
+            "content": "Evidence package: supporting value 33.77",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Critic"
+            ]
           },
           {
-            "role": "final",
-            "message": "Answer: Bronx County"
+            "type": "Message",
+            "source": "Critic",
+            "content": "{\"answer\": [\"Bronx County\"]}",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "participants": [
+          "Analyst",
+          "Coder",
+          "Critic"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.12183399999998734
+      "latency_ms": 117.05754200011143
     },
     {
       "case_id": "case-0004",
@@ -1425,28 +1710,58 @@
       "evidence": {
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 73.56,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "analyst_coder_critic_team",
+        "message_trace": [
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "Which county has the highest summary-judgment success rate for Personal Injury and Torts? Use the unicourt overall court stats table.",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "coder",
-            "message": "Support the extraction flow for case-0004."
+            "type": "Message",
+            "source": "Analyst",
+            "content": "Route to unicourt/Court Analysis Stats.csv. Candidate answer: Los Angeles County",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Coder",
+              "Critic"
+            ]
           },
           {
-            "role": "critic",
-            "message": "Verify the proposed answer against supporting value 73.56."
+            "type": "Message",
+            "source": "Coder",
+            "content": "Evidence package: supporting value 73.56",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Critic"
+            ]
           },
           {
-            "role": "final",
-            "message": "Answer: Los Angeles County"
+            "type": "Message",
+            "source": "Critic",
+            "content": "{\"answer\": [\"Los Angeles County\"]}",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "participants": [
+          "Analyst",
+          "Coder",
+          "Critic"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.12008299999999306
+      "latency_ms": 117.7027919984539
     },
     {
       "case_id": "case-0005",
@@ -1457,28 +1772,58 @@
       "evidence": {
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 50.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "analyst_coder_critic_team",
+        "message_trace": [
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "Which county resolves no-trial Personal Injury and Torts cases the fastest on average? Use the unicourt overall court stats table.",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "coder",
-            "message": "Support the extraction flow for case-0005."
+            "type": "Message",
+            "source": "Analyst",
+            "content": "Route to unicourt/Court Analysis Stats.csv. Candidate answer: Bronx County",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Coder",
+              "Critic"
+            ]
           },
           {
-            "role": "critic",
-            "message": "Verify the proposed answer against supporting value 50.0."
+            "type": "Message",
+            "source": "Coder",
+            "content": "Evidence package: supporting value 50.0",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Critic"
+            ]
           },
           {
-            "role": "final",
-            "message": "Answer: Bronx County"
+            "type": "Message",
+            "source": "Critic",
+            "content": "{\"answer\": [\"Bronx County\"]}",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "participants": [
+          "Analyst",
+          "Coder",
+          "Critic"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.12058400000003466
+      "latency_ms": 123.91241699879174
     },
     {
       "case_id": "case-0006",
@@ -1489,28 +1834,58 @@
       "evidence": {
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 615.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "analyst_coder_critic_team",
+        "message_trace": [
           {
-            "role": "analyst",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "Which county has the lowest average case duration for Personal Injury and Torts? Use the coaction overall court stats table.",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "coder",
-            "message": "Support the extraction flow for case-0006."
+            "type": "Message",
+            "source": "Analyst",
+            "content": "Route to coaction/Court Analysis Stats.csv. Candidate answer: Bronx County",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Coder",
+              "Critic"
+            ]
           },
           {
-            "role": "critic",
-            "message": "Verify the proposed answer against supporting value 615.0."
+            "type": "Message",
+            "source": "Coder",
+            "content": "Evidence package: supporting value 615.0",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Critic"
+            ]
           },
           {
-            "role": "final",
-            "message": "Answer: Bronx County"
+            "type": "Message",
+            "source": "Critic",
+            "content": "{\"answer\": [\"Bronx County\"]}",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "participants": [
+          "Analyst",
+          "Coder",
+          "Critic"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.13887499999998276
+      "latency_ms": 117.34283400073764
     },
     {
       "case_id": "case-0007",
@@ -1521,28 +1896,58 @@
       "evidence": {
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 682.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "analyst_coder_critic_team",
+        "message_trace": [
           {
-            "role": "analyst",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "Which county has the lowest average time to resolution for Personal Injury and Torts? Use the coaction overall court stats table.",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "coder",
-            "message": "Support the extraction flow for case-0007."
+            "type": "Message",
+            "source": "Analyst",
+            "content": "Route to coaction/Court Analysis Stats.csv. Candidate answer: Bronx County",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Coder",
+              "Critic"
+            ]
           },
           {
-            "role": "critic",
-            "message": "Verify the proposed answer against supporting value 682.0."
+            "type": "Message",
+            "source": "Coder",
+            "content": "Evidence package: supporting value 682.0",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Critic"
+            ]
           },
           {
-            "role": "final",
-            "message": "Answer: Bronx County"
+            "type": "Message",
+            "source": "Critic",
+            "content": "{\"answer\": [\"Bronx County\"]}",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "participants": [
+          "Analyst",
+          "Coder",
+          "Critic"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.1222909999999966
+      "latency_ms": 116.95987499842886
     },
     {
       "case_id": "case-0008",
@@ -1553,28 +1958,58 @@
       "evidence": {
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 100.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "analyst_coder_critic_team",
+        "message_trace": [
           {
-            "role": "analyst",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "Which county has the highest motion-to-dismiss success rate for Personal Injury and Torts? Use the coaction overall court stats table.",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "coder",
-            "message": "Support the extraction flow for case-0008."
+            "type": "Message",
+            "source": "Analyst",
+            "content": "Route to coaction/Court Analysis Stats.csv. Candidate answer: Bronx County",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Coder",
+              "Critic"
+            ]
           },
           {
-            "role": "critic",
-            "message": "Verify the proposed answer against supporting value 100.0."
+            "type": "Message",
+            "source": "Coder",
+            "content": "Evidence package: supporting value 100.0",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Critic"
+            ]
           },
           {
-            "role": "final",
-            "message": "Answer: Bronx County"
+            "type": "Message",
+            "source": "Critic",
+            "content": "{\"answer\": [\"Bronx County\"]}",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "participants": [
+          "Analyst",
+          "Coder",
+          "Critic"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.1214579999999632
+      "latency_ms": 116.83258400080376
     },
     {
       "case_id": "case-0009",
@@ -1585,28 +2020,58 @@
       "evidence": {
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 100.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "analyst_coder_critic_team",
+        "message_trace": [
           {
-            "role": "analyst",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "Which county has the highest summary-judgment success rate for Personal Injury and Torts? Use the coaction overall court stats table.",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "coder",
-            "message": "Support the extraction flow for case-0009."
+            "type": "Message",
+            "source": "Analyst",
+            "content": "Route to coaction/Court Analysis Stats.csv. Candidate answer: Los Angeles County",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Coder",
+              "Critic"
+            ]
           },
           {
-            "role": "critic",
-            "message": "Verify the proposed answer against supporting value 100.0."
+            "type": "Message",
+            "source": "Coder",
+            "content": "Evidence package: supporting value 100.0",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Critic"
+            ]
           },
           {
-            "role": "final",
-            "message": "Answer: Los Angeles County"
+            "type": "Message",
+            "source": "Critic",
+            "content": "{\"answer\": [\"Los Angeles County\"]}",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "participants": [
+          "Analyst",
+          "Coder",
+          "Critic"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.1187500000000008
+      "latency_ms": 116.15304099905188
     },
     {
       "case_id": "case-0010",
@@ -1617,28 +2082,58 @@
       "evidence": {
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 48.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "analyst_coder_critic_team",
+        "message_trace": [
           {
-            "role": "analyst",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "Which county resolves no-trial Personal Injury and Torts cases the fastest on average? Use the coaction overall court stats table.",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "coder",
-            "message": "Support the extraction flow for case-0010."
+            "type": "Message",
+            "source": "Analyst",
+            "content": "Route to coaction/Court Analysis Stats.csv. Candidate answer: Kings County",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Coder",
+              "Critic"
+            ]
           },
           {
-            "role": "critic",
-            "message": "Verify the proposed answer against supporting value 48.0."
+            "type": "Message",
+            "source": "Coder",
+            "content": "Evidence package: supporting value 48.0",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Critic"
+            ]
           },
           {
-            "role": "final",
-            "message": "Answer: Kings County"
+            "type": "Message",
+            "source": "Critic",
+            "content": "{\"answer\": [\"Kings County\"]}",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "participants": [
+          "Analyst",
+          "Coder",
+          "Critic"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.12208400000002229
+      "latency_ms": 115.81491700053448
     },
     {
       "case_id": "case-0011",
@@ -1650,28 +2145,58 @@
         "source_table": "unicourt/Judge MTD Rate.csv",
         "supporting_value": 71.43,
         "county": "Bronx County",
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "analyst_coder_critic_team",
+        "message_trace": [
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "For Bronx County, which judge has the highest dismissal rate in the unicourt judge table overall rows?",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "coder",
-            "message": "Support the extraction flow for case-0011."
+            "type": "Message",
+            "source": "Analyst",
+            "content": "Route to unicourt/Judge MTD Rate.csv. Candidate answer: MASS TORT JUDGE",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Coder",
+              "Critic"
+            ]
           },
           {
-            "role": "critic",
-            "message": "Verify the proposed answer against supporting value 71.43."
+            "type": "Message",
+            "source": "Coder",
+            "content": "Evidence package: supporting value 71.43 in Bronx County",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Critic"
+            ]
           },
           {
-            "role": "final",
-            "message": "Answer: MASS TORT JUDGE"
+            "type": "Message",
+            "source": "Critic",
+            "content": "{\"answer\": [\"MASS TORT JUDGE\"]}",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "participants": [
+          "Analyst",
+          "Coder",
+          "Critic"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.14466699999998722
+      "latency_ms": 125.80079200051841
     },
     {
       "case_id": "case-0012",
@@ -1683,28 +2208,58 @@
         "source_table": "unicourt/Judge MTD Rate.csv",
         "supporting_value": 60.0,
         "county": "Kings County",
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "analyst_coder_critic_team",
+        "message_trace": [
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "For Kings County, which judge has the highest dismissal rate in the unicourt judge table overall rows?",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "coder",
-            "message": "Support the extraction flow for case-0012."
+            "type": "Message",
+            "source": "Analyst",
+            "content": "Route to unicourt/Judge MTD Rate.csv. Candidate answer: GARSON, HON. ROBIN S.",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Coder",
+              "Critic"
+            ]
           },
           {
-            "role": "critic",
-            "message": "Verify the proposed answer against supporting value 60.0."
+            "type": "Message",
+            "source": "Coder",
+            "content": "Evidence package: supporting value 60.0 in Kings County",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Critic"
+            ]
           },
           {
-            "role": "final",
-            "message": "Answer: GARSON, HON. ROBIN S."
+            "type": "Message",
+            "source": "Critic",
+            "content": "{\"answer\": [\"GARSON, HON. ROBIN S.\"]}",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "participants": [
+          "Analyst",
+          "Coder",
+          "Critic"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.13462499999999933
+      "latency_ms": 117.08462500246242
     },
     {
       "case_id": "case-0013",
@@ -1716,28 +2271,58 @@
         "source_table": "unicourt/Judge MTD Rate.csv",
         "supporting_value": 58.82,
         "county": "Los Angeles County",
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "analyst_coder_critic_team",
+        "message_trace": [
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "For Los Angeles County, which judge has the highest dismissal rate in the unicourt judge table overall rows?",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "coder",
-            "message": "Support the extraction flow for case-0013."
+            "type": "Message",
+            "source": "Analyst",
+            "content": "Route to unicourt/Judge MTD Rate.csv. Candidate answer: RAUL A. SAHAGUN",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Coder",
+              "Critic"
+            ]
           },
           {
-            "role": "critic",
-            "message": "Verify the proposed answer against supporting value 58.82."
+            "type": "Message",
+            "source": "Coder",
+            "content": "Evidence package: supporting value 58.82 in Los Angeles County",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Critic"
+            ]
           },
           {
-            "role": "final",
-            "message": "Answer: RAUL A. SAHAGUN"
+            "type": "Message",
+            "source": "Critic",
+            "content": "{\"answer\": [\"RAUL A. SAHAGUN\"]}",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "participants": [
+          "Analyst",
+          "Coder",
+          "Critic"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.13170800000000815
+      "latency_ms": 116.84662500192644
     },
     {
       "case_id": "case-0014",
@@ -1749,28 +2334,58 @@
         "source_table": "coaction/Judge MTD Rate.csv",
         "supporting_value": 66.67,
         "county": "Bronx County",
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "analyst_coder_critic_team",
+        "message_trace": [
           {
-            "role": "analyst",
-            "message": "Route the task to coaction/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "For Bronx County, which judge has the highest dismissal rate in the coaction judge table overall rows?",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "coder",
-            "message": "Support the extraction flow for case-0014."
+            "type": "Message",
+            "source": "Analyst",
+            "content": "Route to coaction/Judge MTD Rate.csv. Candidate answer: GUZMAN, HON. WILMA",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Coder",
+              "Critic"
+            ]
           },
           {
-            "role": "critic",
-            "message": "Verify the proposed answer against supporting value 66.67."
+            "type": "Message",
+            "source": "Coder",
+            "content": "Evidence package: supporting value 66.67 in Bronx County",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Critic"
+            ]
           },
           {
-            "role": "final",
-            "message": "Answer: GUZMAN, HON. WILMA"
+            "type": "Message",
+            "source": "Critic",
+            "content": "{\"answer\": [\"GUZMAN, HON. WILMA\"]}",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "participants": [
+          "Analyst",
+          "Coder",
+          "Critic"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.12379099999998422
+      "latency_ms": 117.0929170002637
     },
     {
       "case_id": "case-0015",
@@ -1782,28 +2397,58 @@
         "source_table": "coaction/Judge MTD Rate.csv",
         "supporting_value": 94.12,
         "county": "Kings County",
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "analyst_coder_critic_team",
+        "message_trace": [
           {
-            "role": "analyst",
-            "message": "Route the task to coaction/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "For Kings County, which judge has the highest dismissal rate in the coaction judge table overall rows?",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "coder",
-            "message": "Support the extraction flow for case-0015."
+            "type": "Message",
+            "source": "Analyst",
+            "content": "Route to coaction/Judge MTD Rate.csv. Candidate answer: RIVERA, HON. FRANCOIS A.",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Coder",
+              "Critic"
+            ]
           },
           {
-            "role": "critic",
-            "message": "Verify the proposed answer against supporting value 94.12."
+            "type": "Message",
+            "source": "Coder",
+            "content": "Evidence package: supporting value 94.12 in Kings County",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "Critic"
+            ]
           },
           {
-            "role": "final",
-            "message": "Answer: RIVERA, HON. FRANCOIS A."
+            "type": "Message",
+            "source": "Critic",
+            "content": "{\"answer\": [\"RIVERA, HON. FRANCOIS A.\"]}",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "participants": [
+          "Analyst",
+          "Coder",
+          "Critic"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.13270900000000863
+      "latency_ms": 116.75691699929303
     }
   ],
   "autogen_multi_agent": [
@@ -1816,28 +2461,41 @@
       "evidence": {
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 576.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
-        "transcript": [
+        "framework": "autogen",
+        "variant": "multi_agent_team",
+        "message_trace": [
           {
-            "role": "planner",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "Which county has the lowest average case duration for Personal Injury and Torts? Use the unicourt overall court stats table."
           },
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "analyst",
+            "content": "I will use unicourt/Court Analysis Stats.csv and focus on AVG_CASE_DURATION. Candidate answer: Bronx County"
           },
           {
-            "role": "verifier",
-            "message": "Verify the proposed answer against supporting value 576.0."
+            "type": "TextMessage",
+            "source": "verifier",
+            "content": "Verified supporting value 576.0 for Bronx County."
           },
           {
-            "role": "final",
-            "message": "Answer: Bronx County"
+            "type": "TextMessage",
+            "source": "summarizer",
+            "content": "{\"answer\": [\"Bronx County\"]}"
           }
-        ]
+        ],
+        "participants": [
+          "analyst",
+          "verifier",
+          "summarizer"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_multi_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.12283300000004438
+      "latency_ms": 3.515374999551568
     },
     {
       "case_id": "case-0002",
@@ -1848,28 +2506,41 @@
       "evidence": {
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 507.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
-        "transcript": [
+        "framework": "autogen",
+        "variant": "multi_agent_team",
+        "message_trace": [
           {
-            "role": "planner",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "Which county has the lowest average time to resolution for Personal Injury and Torts? Use the unicourt overall court stats table."
           },
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "analyst",
+            "content": "I will use unicourt/Court Analysis Stats.csv and focus on AVG_TIME_TO_RESOLUTION. Candidate answer: Los Angeles County"
           },
           {
-            "role": "verifier",
-            "message": "Verify the proposed answer against supporting value 507.0."
+            "type": "TextMessage",
+            "source": "verifier",
+            "content": "Verified supporting value 507.0 for Los Angeles County."
           },
           {
-            "role": "final",
-            "message": "Answer: Los Angeles County"
+            "type": "TextMessage",
+            "source": "summarizer",
+            "content": "{\"answer\": [\"Los Angeles County\"]}"
           }
-        ]
+        ],
+        "participants": [
+          "analyst",
+          "verifier",
+          "summarizer"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_multi_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.11962500000001208
+      "latency_ms": 2.8809169998567086
     },
     {
       "case_id": "case-0003",
@@ -1880,28 +2551,41 @@
       "evidence": {
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 33.77,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
-        "transcript": [
+        "framework": "autogen",
+        "variant": "multi_agent_team",
+        "message_trace": [
           {
-            "role": "planner",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "Which county has the highest motion-to-dismiss success rate for Personal Injury and Torts? Use the unicourt overall court stats table."
           },
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "analyst",
+            "content": "I will use unicourt/Court Analysis Stats.csv and focus on MTD_SUCCESS_RATE. Candidate answer: Bronx County"
           },
           {
-            "role": "verifier",
-            "message": "Verify the proposed answer against supporting value 33.77."
+            "type": "TextMessage",
+            "source": "verifier",
+            "content": "Verified supporting value 33.77 for Bronx County."
           },
           {
-            "role": "final",
-            "message": "Answer: Bronx County"
+            "type": "TextMessage",
+            "source": "summarizer",
+            "content": "{\"answer\": [\"Bronx County\"]}"
           }
-        ]
+        ],
+        "participants": [
+          "analyst",
+          "verifier",
+          "summarizer"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_multi_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.1187920000000342
+      "latency_ms": 3.270583998528309
     },
     {
       "case_id": "case-0004",
@@ -1912,28 +2596,41 @@
       "evidence": {
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 73.56,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
-        "transcript": [
+        "framework": "autogen",
+        "variant": "multi_agent_team",
+        "message_trace": [
           {
-            "role": "planner",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "Which county has the highest summary-judgment success rate for Personal Injury and Torts? Use the unicourt overall court stats table."
           },
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "analyst",
+            "content": "I will use unicourt/Court Analysis Stats.csv and focus on SJ_SUCCESS_RATE. Candidate answer: Los Angeles County"
           },
           {
-            "role": "verifier",
-            "message": "Verify the proposed answer against supporting value 73.56."
+            "type": "TextMessage",
+            "source": "verifier",
+            "content": "Verified supporting value 73.56 for Los Angeles County."
           },
           {
-            "role": "final",
-            "message": "Answer: Los Angeles County"
+            "type": "TextMessage",
+            "source": "summarizer",
+            "content": "{\"answer\": [\"Los Angeles County\"]}"
           }
-        ]
+        ],
+        "participants": [
+          "analyst",
+          "verifier",
+          "summarizer"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_multi_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.12004099999995965
+      "latency_ms": 3.10837500001071
     },
     {
       "case_id": "case-0005",
@@ -1944,28 +2641,41 @@
       "evidence": {
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 50.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
-        "transcript": [
+        "framework": "autogen",
+        "variant": "multi_agent_team",
+        "message_trace": [
           {
-            "role": "planner",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "Which county resolves no-trial Personal Injury and Torts cases the fastest on average? Use the unicourt overall court stats table."
           },
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "analyst",
+            "content": "I will use unicourt/Court Analysis Stats.csv and focus on AVG_DURATION_NO_TRIAL. Candidate answer: Bronx County"
           },
           {
-            "role": "verifier",
-            "message": "Verify the proposed answer against supporting value 50.0."
+            "type": "TextMessage",
+            "source": "verifier",
+            "content": "Verified supporting value 50.0 for Bronx County."
           },
           {
-            "role": "final",
-            "message": "Answer: Bronx County"
+            "type": "TextMessage",
+            "source": "summarizer",
+            "content": "{\"answer\": [\"Bronx County\"]}"
           }
-        ]
+        ],
+        "participants": [
+          "analyst",
+          "verifier",
+          "summarizer"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_multi_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.11104200000000564
+      "latency_ms": 3.549207998730708
     },
     {
       "case_id": "case-0006",
@@ -1976,28 +2686,41 @@
       "evidence": {
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 615.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
-        "transcript": [
+        "framework": "autogen",
+        "variant": "multi_agent_team",
+        "message_trace": [
           {
-            "role": "planner",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "Which county has the lowest average case duration for Personal Injury and Torts? Use the coaction overall court stats table."
           },
           {
-            "role": "analyst",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "analyst",
+            "content": "I will use coaction/Court Analysis Stats.csv and focus on AVG_CASE_DURATION. Candidate answer: Bronx County"
           },
           {
-            "role": "verifier",
-            "message": "Verify the proposed answer against supporting value 615.0."
+            "type": "TextMessage",
+            "source": "verifier",
+            "content": "Verified supporting value 615.0 for Bronx County."
           },
           {
-            "role": "final",
-            "message": "Answer: Bronx County"
+            "type": "TextMessage",
+            "source": "summarizer",
+            "content": "{\"answer\": [\"Bronx County\"]}"
           }
-        ]
+        ],
+        "participants": [
+          "analyst",
+          "verifier",
+          "summarizer"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_multi_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.10645799999997596
+      "latency_ms": 4.050624997034902
     },
     {
       "case_id": "case-0007",
@@ -2008,28 +2731,41 @@
       "evidence": {
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 682.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
-        "transcript": [
+        "framework": "autogen",
+        "variant": "multi_agent_team",
+        "message_trace": [
           {
-            "role": "planner",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "Which county has the lowest average time to resolution for Personal Injury and Torts? Use the coaction overall court stats table."
           },
           {
-            "role": "analyst",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "analyst",
+            "content": "I will use coaction/Court Analysis Stats.csv and focus on AVG_TIME_TO_RESOLUTION. Candidate answer: Bronx County"
           },
           {
-            "role": "verifier",
-            "message": "Verify the proposed answer against supporting value 682.0."
+            "type": "TextMessage",
+            "source": "verifier",
+            "content": "Verified supporting value 682.0 for Bronx County."
           },
           {
-            "role": "final",
-            "message": "Answer: Bronx County"
+            "type": "TextMessage",
+            "source": "summarizer",
+            "content": "{\"answer\": [\"Bronx County\"]}"
           }
-        ]
+        ],
+        "participants": [
+          "analyst",
+          "verifier",
+          "summarizer"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_multi_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.10716700000001911
+      "latency_ms": 3.227166998840403
     },
     {
       "case_id": "case-0008",
@@ -2040,28 +2776,41 @@
       "evidence": {
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 100.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
-        "transcript": [
+        "framework": "autogen",
+        "variant": "multi_agent_team",
+        "message_trace": [
           {
-            "role": "planner",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "Which county has the highest motion-to-dismiss success rate for Personal Injury and Torts? Use the coaction overall court stats table."
           },
           {
-            "role": "analyst",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "analyst",
+            "content": "I will use coaction/Court Analysis Stats.csv and focus on MTD_SUCCESS_RATE. Candidate answer: Bronx County"
           },
           {
-            "role": "verifier",
-            "message": "Verify the proposed answer against supporting value 100.0."
+            "type": "TextMessage",
+            "source": "verifier",
+            "content": "Verified supporting value 100.0 for Bronx County."
           },
           {
-            "role": "final",
-            "message": "Answer: Bronx County"
+            "type": "TextMessage",
+            "source": "summarizer",
+            "content": "{\"answer\": [\"Bronx County\"]}"
           }
-        ]
+        ],
+        "participants": [
+          "analyst",
+          "verifier",
+          "summarizer"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_multi_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.10716599999999188
+      "latency_ms": 3.6486250028247014
     },
     {
       "case_id": "case-0009",
@@ -2072,28 +2821,41 @@
       "evidence": {
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 100.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
-        "transcript": [
+        "framework": "autogen",
+        "variant": "multi_agent_team",
+        "message_trace": [
           {
-            "role": "planner",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "Which county has the highest summary-judgment success rate for Personal Injury and Torts? Use the coaction overall court stats table."
           },
           {
-            "role": "analyst",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "analyst",
+            "content": "I will use coaction/Court Analysis Stats.csv and focus on SJ_SUCCESS_RATE. Candidate answer: Los Angeles County"
           },
           {
-            "role": "verifier",
-            "message": "Verify the proposed answer against supporting value 100.0."
+            "type": "TextMessage",
+            "source": "verifier",
+            "content": "Verified supporting value 100.0 for Los Angeles County."
           },
           {
-            "role": "final",
-            "message": "Answer: Los Angeles County"
+            "type": "TextMessage",
+            "source": "summarizer",
+            "content": "{\"answer\": [\"Los Angeles County\"]}"
           }
-        ]
+        ],
+        "participants": [
+          "analyst",
+          "verifier",
+          "summarizer"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_multi_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.11025000000003393
+      "latency_ms": 3.1373330020869616
     },
     {
       "case_id": "case-0010",
@@ -2104,28 +2866,41 @@
       "evidence": {
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 48.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
-        "transcript": [
+        "framework": "autogen",
+        "variant": "multi_agent_team",
+        "message_trace": [
           {
-            "role": "planner",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "Which county resolves no-trial Personal Injury and Torts cases the fastest on average? Use the coaction overall court stats table."
           },
           {
-            "role": "analyst",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "analyst",
+            "content": "I will use coaction/Court Analysis Stats.csv and focus on AVG_DURATION_NO_TRIAL. Candidate answer: Kings County"
           },
           {
-            "role": "verifier",
-            "message": "Verify the proposed answer against supporting value 48.0."
+            "type": "TextMessage",
+            "source": "verifier",
+            "content": "Verified supporting value 48.0 for Kings County."
           },
           {
-            "role": "final",
-            "message": "Answer: Kings County"
+            "type": "TextMessage",
+            "source": "summarizer",
+            "content": "{\"answer\": [\"Kings County\"]}"
           }
-        ]
+        ],
+        "participants": [
+          "analyst",
+          "verifier",
+          "summarizer"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_multi_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.10699999999996823
+      "latency_ms": 3.4097499992640223
     },
     {
       "case_id": "case-0011",
@@ -2137,28 +2912,41 @@
         "source_table": "unicourt/Judge MTD Rate.csv",
         "supporting_value": 71.43,
         "county": "Bronx County",
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
-        "transcript": [
+        "framework": "autogen",
+        "variant": "multi_agent_team",
+        "message_trace": [
           {
-            "role": "planner",
-            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "For Bronx County, which judge has the highest dismissal rate in the unicourt judge table overall rows?"
           },
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "analyst",
+            "content": "I will use unicourt/Judge MTD Rate.csv and focus on DISMISSAL_RATE_PCT. Candidate answer: MASS TORT JUDGE"
           },
           {
-            "role": "verifier",
-            "message": "Verify the proposed answer against supporting value 71.43."
+            "type": "TextMessage",
+            "source": "verifier",
+            "content": "Verified supporting value 71.43 for MASS TORT JUDGE."
           },
           {
-            "role": "final",
-            "message": "Answer: MASS TORT JUDGE"
+            "type": "TextMessage",
+            "source": "summarizer",
+            "content": "{\"answer\": [\"MASS TORT JUDGE\"]}"
           }
-        ]
+        ],
+        "participants": [
+          "analyst",
+          "verifier",
+          "summarizer"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_multi_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.11891699999999616
+      "latency_ms": 4.095541000424419
     },
     {
       "case_id": "case-0012",
@@ -2170,28 +2958,41 @@
         "source_table": "unicourt/Judge MTD Rate.csv",
         "supporting_value": 60.0,
         "county": "Kings County",
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
-        "transcript": [
+        "framework": "autogen",
+        "variant": "multi_agent_team",
+        "message_trace": [
           {
-            "role": "planner",
-            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "For Kings County, which judge has the highest dismissal rate in the unicourt judge table overall rows?"
           },
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "analyst",
+            "content": "I will use unicourt/Judge MTD Rate.csv and focus on DISMISSAL_RATE_PCT. Candidate answer: GARSON, HON. ROBIN S."
           },
           {
-            "role": "verifier",
-            "message": "Verify the proposed answer against supporting value 60.0."
+            "type": "TextMessage",
+            "source": "verifier",
+            "content": "Verified supporting value 60.0 for GARSON, HON. ROBIN S.."
           },
           {
-            "role": "final",
-            "message": "Answer: GARSON, HON. ROBIN S."
+            "type": "TextMessage",
+            "source": "summarizer",
+            "content": "{\"answer\": [\"GARSON, HON. ROBIN S.\"]}"
           }
-        ]
+        ],
+        "participants": [
+          "analyst",
+          "verifier",
+          "summarizer"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_multi_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.11775000000002755
+      "latency_ms": 3.5155840014340356
     },
     {
       "case_id": "case-0013",
@@ -2203,28 +3004,41 @@
         "source_table": "unicourt/Judge MTD Rate.csv",
         "supporting_value": 58.82,
         "county": "Los Angeles County",
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
-        "transcript": [
+        "framework": "autogen",
+        "variant": "multi_agent_team",
+        "message_trace": [
           {
-            "role": "planner",
-            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "For Los Angeles County, which judge has the highest dismissal rate in the unicourt judge table overall rows?"
           },
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "analyst",
+            "content": "I will use unicourt/Judge MTD Rate.csv and focus on DISMISSAL_RATE_PCT. Candidate answer: RAUL A. SAHAGUN"
           },
           {
-            "role": "verifier",
-            "message": "Verify the proposed answer against supporting value 58.82."
+            "type": "TextMessage",
+            "source": "verifier",
+            "content": "Verified supporting value 58.82 for RAUL A. SAHAGUN."
           },
           {
-            "role": "final",
-            "message": "Answer: RAUL A. SAHAGUN"
+            "type": "TextMessage",
+            "source": "summarizer",
+            "content": "{\"answer\": [\"RAUL A. SAHAGUN\"]}"
           }
-        ]
+        ],
+        "participants": [
+          "analyst",
+          "verifier",
+          "summarizer"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_multi_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.12033399999999972
+      "latency_ms": 3.359999998792773
     },
     {
       "case_id": "case-0014",
@@ -2236,28 +3050,41 @@
         "source_table": "coaction/Judge MTD Rate.csv",
         "supporting_value": 66.67,
         "county": "Bronx County",
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
-        "transcript": [
+        "framework": "autogen",
+        "variant": "multi_agent_team",
+        "message_trace": [
           {
-            "role": "planner",
-            "message": "Route the task to coaction/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "For Bronx County, which judge has the highest dismissal rate in the coaction judge table overall rows?"
           },
           {
-            "role": "analyst",
-            "message": "Route the task to coaction/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "analyst",
+            "content": "I will use coaction/Judge MTD Rate.csv and focus on DISMISSAL_RATE_PCT. Candidate answer: GUZMAN, HON. WILMA"
           },
           {
-            "role": "verifier",
-            "message": "Verify the proposed answer against supporting value 66.67."
+            "type": "TextMessage",
+            "source": "verifier",
+            "content": "Verified supporting value 66.67 for GUZMAN, HON. WILMA."
           },
           {
-            "role": "final",
-            "message": "Answer: GUZMAN, HON. WILMA"
+            "type": "TextMessage",
+            "source": "summarizer",
+            "content": "{\"answer\": [\"GUZMAN, HON. WILMA\"]}"
           }
-        ]
+        ],
+        "participants": [
+          "analyst",
+          "verifier",
+          "summarizer"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_multi_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.1091249999999877
+      "latency_ms": 3.9909169972816017
     },
     {
       "case_id": "case-0015",
@@ -2269,28 +3096,41 @@
         "source_table": "coaction/Judge MTD Rate.csv",
         "supporting_value": 94.12,
         "county": "Kings County",
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
-        "transcript": [
+        "framework": "autogen",
+        "variant": "multi_agent_team",
+        "message_trace": [
           {
-            "role": "planner",
-            "message": "Route the task to coaction/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "user",
+            "content": "For Kings County, which judge has the highest dismissal rate in the coaction judge table overall rows?"
           },
           {
-            "role": "analyst",
-            "message": "Route the task to coaction/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "TextMessage",
+            "source": "analyst",
+            "content": "I will use coaction/Judge MTD Rate.csv and focus on DISMISSAL_RATE_PCT. Candidate answer: RIVERA, HON. FRANCOIS A."
           },
           {
-            "role": "verifier",
-            "message": "Verify the proposed answer against supporting value 94.12."
+            "type": "TextMessage",
+            "source": "verifier",
+            "content": "Verified supporting value 94.12 for RIVERA, HON. FRANCOIS A.."
           },
           {
-            "role": "final",
-            "message": "Answer: RIVERA, HON. FRANCOIS A."
+            "type": "TextMessage",
+            "source": "summarizer",
+            "content": "{\"answer\": [\"RIVERA, HON. FRANCOIS A.\"]}"
           }
-        ]
+        ],
+        "participants": [
+          "analyst",
+          "verifier",
+          "summarizer"
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/autogen",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/autogen_multi_agent.py",
+        "framework_runtime": "autogen"
       },
-      "latency_ms": 0.11041600000000207
+      "latency_ms": 3.2286669993482064
     }
   ],
   "metagpt_sop_agent": [
@@ -2303,32 +3143,52 @@
       "evidence": {
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 576.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "sop_agent",
+        "message_trace": [
           {
-            "role": "lead",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "Which county has the lowest average case duration for Personal Injury and Torts? Use the unicourt overall court stats table.",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "architect",
-            "message": "Support the extraction flow for case-0001."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Requirement routed to unicourt/Court Analysis Stats.csv. Candidate answer is Bronx County for task: Which county has the lowest average case duration for Personal Injury and Torts? Use the unicourt overall court stats table.",
+            "cause_by": "__main__.AnalyzeRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Validated supporting value 576.0.",
+            "cause_by": "__main__.ValidateEvidence",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "reviewer",
-            "message": "Support the extraction flow for case-0001."
-          },
-          {
-            "role": "final",
-            "message": "Answer: Bronx County"
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "{\"answer\": [\"Bronx County\"]}",
+            "cause_by": "__main__.FinalizeAnswer",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.11616600000002864
+      "latency_ms": 70.6983330019284
     },
     {
       "case_id": "case-0002",
@@ -2339,32 +3199,52 @@
       "evidence": {
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 507.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "sop_agent",
+        "message_trace": [
           {
-            "role": "lead",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "Which county has the lowest average time to resolution for Personal Injury and Torts? Use the unicourt overall court stats table.",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "architect",
-            "message": "Support the extraction flow for case-0002."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Requirement routed to unicourt/Court Analysis Stats.csv. Candidate answer is Los Angeles County for task: Which county has the lowest average time to resolution for Personal Injury and Torts? Use the unicourt overall court stats table.",
+            "cause_by": "__main__.AnalyzeRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Validated supporting value 507.0.",
+            "cause_by": "__main__.ValidateEvidence",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "reviewer",
-            "message": "Support the extraction flow for case-0002."
-          },
-          {
-            "role": "final",
-            "message": "Answer: Los Angeles County"
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "{\"answer\": [\"Los Angeles County\"]}",
+            "cause_by": "__main__.FinalizeAnswer",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.11308400000004104
+      "latency_ms": 67.85441700048978
     },
     {
       "case_id": "case-0003",
@@ -2375,32 +3255,52 @@
       "evidence": {
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 33.77,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "sop_agent",
+        "message_trace": [
           {
-            "role": "lead",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "Which county has the highest motion-to-dismiss success rate for Personal Injury and Torts? Use the unicourt overall court stats table.",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "architect",
-            "message": "Support the extraction flow for case-0003."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Requirement routed to unicourt/Court Analysis Stats.csv. Candidate answer is Bronx County for task: Which county has the highest motion-to-dismiss success rate for Personal Injury and Torts? Use the unicourt overall court stats table.",
+            "cause_by": "__main__.AnalyzeRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Validated supporting value 33.77.",
+            "cause_by": "__main__.ValidateEvidence",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "reviewer",
-            "message": "Support the extraction flow for case-0003."
-          },
-          {
-            "role": "final",
-            "message": "Answer: Bronx County"
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "{\"answer\": [\"Bronx County\"]}",
+            "cause_by": "__main__.FinalizeAnswer",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.10991599999998769
+      "latency_ms": 69.22516700069536
     },
     {
       "case_id": "case-0004",
@@ -2411,32 +3311,52 @@
       "evidence": {
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 73.56,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "sop_agent",
+        "message_trace": [
           {
-            "role": "lead",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "Which county has the highest summary-judgment success rate for Personal Injury and Torts? Use the unicourt overall court stats table.",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "architect",
-            "message": "Support the extraction flow for case-0004."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Requirement routed to unicourt/Court Analysis Stats.csv. Candidate answer is Los Angeles County for task: Which county has the highest summary-judgment success rate for Personal Injury and Torts? Use the unicourt overall court stats table.",
+            "cause_by": "__main__.AnalyzeRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Validated supporting value 73.56.",
+            "cause_by": "__main__.ValidateEvidence",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "reviewer",
-            "message": "Support the extraction flow for case-0004."
-          },
-          {
-            "role": "final",
-            "message": "Answer: Los Angeles County"
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "{\"answer\": [\"Los Angeles County\"]}",
+            "cause_by": "__main__.FinalizeAnswer",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.10645799999997596
+      "latency_ms": 68.72966700029792
     },
     {
       "case_id": "case-0005",
@@ -2447,32 +3367,52 @@
       "evidence": {
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 50.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "sop_agent",
+        "message_trace": [
           {
-            "role": "lead",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "Which county resolves no-trial Personal Injury and Torts cases the fastest on average? Use the unicourt overall court stats table.",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "architect",
-            "message": "Support the extraction flow for case-0005."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Requirement routed to unicourt/Court Analysis Stats.csv. Candidate answer is Bronx County for task: Which county resolves no-trial Personal Injury and Torts cases the fastest on average? Use the unicourt overall court stats table.",
+            "cause_by": "__main__.AnalyzeRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Validated supporting value 50.0.",
+            "cause_by": "__main__.ValidateEvidence",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "reviewer",
-            "message": "Support the extraction flow for case-0005."
-          },
-          {
-            "role": "final",
-            "message": "Answer: Bronx County"
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "{\"answer\": [\"Bronx County\"]}",
+            "cause_by": "__main__.FinalizeAnswer",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.10537500000001865
+      "latency_ms": 68.7522500011255
     },
     {
       "case_id": "case-0006",
@@ -2483,32 +3423,52 @@
       "evidence": {
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 615.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "sop_agent",
+        "message_trace": [
           {
-            "role": "lead",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "Which county has the lowest average case duration for Personal Injury and Torts? Use the coaction overall court stats table.",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "architect",
-            "message": "Support the extraction flow for case-0006."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Requirement routed to coaction/Court Analysis Stats.csv. Candidate answer is Bronx County for task: Which county has the lowest average case duration for Personal Injury and Torts? Use the coaction overall court stats table.",
+            "cause_by": "__main__.AnalyzeRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "analyst",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Validated supporting value 615.0.",
+            "cause_by": "__main__.ValidateEvidence",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "reviewer",
-            "message": "Support the extraction flow for case-0006."
-          },
-          {
-            "role": "final",
-            "message": "Answer: Bronx County"
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "{\"answer\": [\"Bronx County\"]}",
+            "cause_by": "__main__.FinalizeAnswer",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.10579100000002173
+      "latency_ms": 67.268333001266
     },
     {
       "case_id": "case-0007",
@@ -2519,32 +3479,52 @@
       "evidence": {
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 682.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "sop_agent",
+        "message_trace": [
           {
-            "role": "lead",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "Which county has the lowest average time to resolution for Personal Injury and Torts? Use the coaction overall court stats table.",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "architect",
-            "message": "Support the extraction flow for case-0007."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Requirement routed to coaction/Court Analysis Stats.csv. Candidate answer is Bronx County for task: Which county has the lowest average time to resolution for Personal Injury and Torts? Use the coaction overall court stats table.",
+            "cause_by": "__main__.AnalyzeRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "analyst",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Validated supporting value 682.0.",
+            "cause_by": "__main__.ValidateEvidence",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "reviewer",
-            "message": "Support the extraction flow for case-0007."
-          },
-          {
-            "role": "final",
-            "message": "Answer: Bronx County"
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "{\"answer\": [\"Bronx County\"]}",
+            "cause_by": "__main__.FinalizeAnswer",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.11900000000003574
+      "latency_ms": 68.28270799815073
     },
     {
       "case_id": "case-0008",
@@ -2555,32 +3535,52 @@
       "evidence": {
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 100.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "sop_agent",
+        "message_trace": [
           {
-            "role": "lead",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "Which county has the highest motion-to-dismiss success rate for Personal Injury and Torts? Use the coaction overall court stats table.",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "architect",
-            "message": "Support the extraction flow for case-0008."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Requirement routed to coaction/Court Analysis Stats.csv. Candidate answer is Bronx County for task: Which county has the highest motion-to-dismiss success rate for Personal Injury and Torts? Use the coaction overall court stats table.",
+            "cause_by": "__main__.AnalyzeRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "analyst",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Validated supporting value 100.0.",
+            "cause_by": "__main__.ValidateEvidence",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "reviewer",
-            "message": "Support the extraction flow for case-0008."
-          },
-          {
-            "role": "final",
-            "message": "Answer: Bronx County"
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "{\"answer\": [\"Bronx County\"]}",
+            "cause_by": "__main__.FinalizeAnswer",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.10604100000000116
+      "latency_ms": 67.96616700012237
     },
     {
       "case_id": "case-0009",
@@ -2591,32 +3591,52 @@
       "evidence": {
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 100.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "sop_agent",
+        "message_trace": [
           {
-            "role": "lead",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "Which county has the highest summary-judgment success rate for Personal Injury and Torts? Use the coaction overall court stats table.",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "architect",
-            "message": "Support the extraction flow for case-0009."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Requirement routed to coaction/Court Analysis Stats.csv. Candidate answer is Los Angeles County for task: Which county has the highest summary-judgment success rate for Personal Injury and Torts? Use the coaction overall court stats table.",
+            "cause_by": "__main__.AnalyzeRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "analyst",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Validated supporting value 100.0.",
+            "cause_by": "__main__.ValidateEvidence",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "reviewer",
-            "message": "Support the extraction flow for case-0009."
-          },
-          {
-            "role": "final",
-            "message": "Answer: Los Angeles County"
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "{\"answer\": [\"Los Angeles County\"]}",
+            "cause_by": "__main__.FinalizeAnswer",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.10533400000001247
+      "latency_ms": 68.46416699772817
     },
     {
       "case_id": "case-0010",
@@ -2627,32 +3647,52 @@
       "evidence": {
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 48.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "sop_agent",
+        "message_trace": [
           {
-            "role": "lead",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "Which county resolves no-trial Personal Injury and Torts cases the fastest on average? Use the coaction overall court stats table.",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "architect",
-            "message": "Support the extraction flow for case-0010."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Requirement routed to coaction/Court Analysis Stats.csv. Candidate answer is Kings County for task: Which county resolves no-trial Personal Injury and Torts cases the fastest on average? Use the coaction overall court stats table.",
+            "cause_by": "__main__.AnalyzeRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "analyst",
-            "message": "Route the task to coaction/Court Analysis Stats.csv and identify the relevant metric."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Validated supporting value 48.0.",
+            "cause_by": "__main__.ValidateEvidence",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "reviewer",
-            "message": "Support the extraction flow for case-0010."
-          },
-          {
-            "role": "final",
-            "message": "Answer: Kings County"
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "{\"answer\": [\"Kings County\"]}",
+            "cause_by": "__main__.FinalizeAnswer",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.10562499999999808
+      "latency_ms": 67.80212499870686
     },
     {
       "case_id": "case-0011",
@@ -2664,32 +3704,52 @@
         "source_table": "unicourt/Judge MTD Rate.csv",
         "supporting_value": 71.43,
         "county": "Bronx County",
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "sop_agent",
+        "message_trace": [
           {
-            "role": "lead",
-            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "For Bronx County, which judge has the highest dismissal rate in the unicourt judge table overall rows?",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "architect",
-            "message": "Support the extraction flow for case-0011."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Requirement routed to unicourt/Judge MTD Rate.csv. Candidate answer is MASS TORT JUDGE for task: For Bronx County, which judge has the highest dismissal rate in the unicourt judge table overall rows?",
+            "cause_by": "__main__.AnalyzeRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Validated supporting value 71.43 for county Bronx County.",
+            "cause_by": "__main__.ValidateEvidence",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "reviewer",
-            "message": "Support the extraction flow for case-0011."
-          },
-          {
-            "role": "final",
-            "message": "Answer: MASS TORT JUDGE"
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "{\"answer\": [\"MASS TORT JUDGE\"]}",
+            "cause_by": "__main__.FinalizeAnswer",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.1188340000000121
+      "latency_ms": 67.86454199755099
     },
     {
       "case_id": "case-0012",
@@ -2701,32 +3761,52 @@
         "source_table": "unicourt/Judge MTD Rate.csv",
         "supporting_value": 60.0,
         "county": "Kings County",
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "sop_agent",
+        "message_trace": [
           {
-            "role": "lead",
-            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "For Kings County, which judge has the highest dismissal rate in the unicourt judge table overall rows?",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "architect",
-            "message": "Support the extraction flow for case-0012."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Requirement routed to unicourt/Judge MTD Rate.csv. Candidate answer is GARSON, HON. ROBIN S. for task: For Kings County, which judge has the highest dismissal rate in the unicourt judge table overall rows?",
+            "cause_by": "__main__.AnalyzeRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Validated supporting value 60.0 for county Kings County.",
+            "cause_by": "__main__.ValidateEvidence",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "reviewer",
-            "message": "Support the extraction flow for case-0012."
-          },
-          {
-            "role": "final",
-            "message": "Answer: GARSON, HON. ROBIN S."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "{\"answer\": [\"GARSON, HON. ROBIN S.\"]}",
+            "cause_by": "__main__.FinalizeAnswer",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.12020800000001053
+      "latency_ms": 68.7115000000631
     },
     {
       "case_id": "case-0013",
@@ -2738,32 +3818,52 @@
         "source_table": "unicourt/Judge MTD Rate.csv",
         "supporting_value": 58.82,
         "county": "Los Angeles County",
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "sop_agent",
+        "message_trace": [
           {
-            "role": "lead",
-            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "For Los Angeles County, which judge has the highest dismissal rate in the unicourt judge table overall rows?",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "architect",
-            "message": "Support the extraction flow for case-0013."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Requirement routed to unicourt/Judge MTD Rate.csv. Candidate answer is RAUL A. SAHAGUN for task: For Los Angeles County, which judge has the highest dismissal rate in the unicourt judge table overall rows?",
+            "cause_by": "__main__.AnalyzeRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "analyst",
-            "message": "Route the task to unicourt/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Validated supporting value 58.82 for county Los Angeles County.",
+            "cause_by": "__main__.ValidateEvidence",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "reviewer",
-            "message": "Support the extraction flow for case-0013."
-          },
-          {
-            "role": "final",
-            "message": "Answer: RAUL A. SAHAGUN"
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "{\"answer\": [\"RAUL A. SAHAGUN\"]}",
+            "cause_by": "__main__.FinalizeAnswer",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.11654100000002554
+      "latency_ms": 68.83987500259536
     },
     {
       "case_id": "case-0014",
@@ -2775,32 +3875,52 @@
         "source_table": "coaction/Judge MTD Rate.csv",
         "supporting_value": 66.67,
         "county": "Bronx County",
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "sop_agent",
+        "message_trace": [
           {
-            "role": "lead",
-            "message": "Route the task to coaction/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "For Bronx County, which judge has the highest dismissal rate in the coaction judge table overall rows?",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "architect",
-            "message": "Support the extraction flow for case-0014."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Requirement routed to coaction/Judge MTD Rate.csv. Candidate answer is GUZMAN, HON. WILMA for task: For Bronx County, which judge has the highest dismissal rate in the coaction judge table overall rows?",
+            "cause_by": "__main__.AnalyzeRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "analyst",
-            "message": "Route the task to coaction/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Validated supporting value 66.67 for county Bronx County.",
+            "cause_by": "__main__.ValidateEvidence",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "reviewer",
-            "message": "Support the extraction flow for case-0014."
-          },
-          {
-            "role": "final",
-            "message": "Answer: GUZMAN, HON. WILMA"
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "{\"answer\": [\"GUZMAN, HON. WILMA\"]}",
+            "cause_by": "__main__.FinalizeAnswer",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.10824999999997642
+      "latency_ms": 69.13699999859091
     },
     {
       "case_id": "case-0015",
@@ -2812,32 +3932,52 @@
         "source_table": "coaction/Judge MTD Rate.csv",
         "supporting_value": 94.12,
         "county": "Kings County",
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
-        "transcript": [
+        "framework": "metagpt",
+        "variant": "sop_agent",
+        "message_trace": [
           {
-            "role": "lead",
-            "message": "Route the task to coaction/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "Message",
+            "source": "",
+            "content": "For Kings County, which judge has the highest dismissal rate in the coaction judge table overall rows?",
+            "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "architect",
-            "message": "Support the extraction flow for case-0015."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Requirement routed to coaction/Judge MTD Rate.csv. Candidate answer is RIVERA, HON. FRANCOIS A. for task: For Kings County, which judge has the highest dismissal rate in the coaction judge table overall rows?",
+            "cause_by": "__main__.AnalyzeRequirement",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "analyst",
-            "message": "Route the task to coaction/Judge MTD Rate.csv and identify the relevant metric."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "Validated supporting value 94.12 for county Kings County.",
+            "cause_by": "__main__.ValidateEvidence",
+            "send_to": [
+              "<all>"
+            ]
           },
           {
-            "role": "reviewer",
-            "message": "Support the extraction flow for case-0015."
-          },
-          {
-            "role": "final",
-            "message": "Answer: RIVERA, HON. FRANCOIS A."
+            "type": "AIMessage",
+            "source": "metagpt.roles.role.Role",
+            "content": "{\"answer\": [\"RIVERA, HON. FRANCOIS A.\"]}",
+            "cause_by": "__main__.FinalizeAnswer",
+            "send_to": [
+              "<all>"
+            ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/metagpt",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/metagpt_wrappers.py",
+        "framework_runtime": "metagpt"
       },
-      "latency_ms": 0.11012499999996095
+      "latency_ms": 77.04220799860195
     }
   ],
   "single_agent_data_analyst": [
@@ -2848,18 +3988,22 @@
         "Bronx County"
       ],
       "evidence": {
+        "framework": "langgraph",
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 576.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
-        "graph_steps": [
+        "trace": [
           {
-            "node": "load_data",
-            "detail": "unicourt/Court Analysis Stats.csv"
+            "node": "load_source",
+            "detail": "unicourt court analysis stats"
           },
           {
-            "node": "analyze",
-            "detail": "metric=AVG_CASE_DURATION"
+            "node": "derive_answer",
+            "detail": {
+              "answer": [
+                "Bronx County"
+              ],
+              "value": 576.0
+            }
           },
           {
             "node": "format_output",
@@ -2867,9 +4011,13 @@
               "Bronx County"
             ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/langgraph_single_agent.py",
+        "framework_runtime": "langgraph"
       },
-      "latency_ms": 0.11383300000000762
+      "latency_ms": 5.45520800005761
     },
     {
       "case_id": "case-0002",
@@ -2878,18 +4026,22 @@
         "Los Angeles County"
       ],
       "evidence": {
+        "framework": "langgraph",
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 507.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
-        "graph_steps": [
+        "trace": [
           {
-            "node": "load_data",
-            "detail": "unicourt/Court Analysis Stats.csv"
+            "node": "load_source",
+            "detail": "unicourt court analysis stats"
           },
           {
-            "node": "analyze",
-            "detail": "metric=AVG_TIME_TO_RESOLUTION"
+            "node": "derive_answer",
+            "detail": {
+              "answer": [
+                "Los Angeles County"
+              ],
+              "value": 507.0
+            }
           },
           {
             "node": "format_output",
@@ -2897,9 +4049,13 @@
               "Los Angeles County"
             ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/langgraph_single_agent.py",
+        "framework_runtime": "langgraph"
       },
-      "latency_ms": 0.10733299999998724
+      "latency_ms": 5.5006660004437435
     },
     {
       "case_id": "case-0003",
@@ -2908,18 +4064,22 @@
         "Bronx County"
       ],
       "evidence": {
+        "framework": "langgraph",
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 33.77,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
-        "graph_steps": [
+        "trace": [
           {
-            "node": "load_data",
-            "detail": "unicourt/Court Analysis Stats.csv"
+            "node": "load_source",
+            "detail": "unicourt court analysis stats"
           },
           {
-            "node": "analyze",
-            "detail": "metric=MTD_SUCCESS_RATE"
+            "node": "derive_answer",
+            "detail": {
+              "answer": [
+                "Bronx County"
+              ],
+              "value": 33.77
+            }
           },
           {
             "node": "format_output",
@@ -2927,9 +4087,13 @@
               "Bronx County"
             ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/langgraph_single_agent.py",
+        "framework_runtime": "langgraph"
       },
-      "latency_ms": 0.10741699999999854
+      "latency_ms": 6.298124997556442
     },
     {
       "case_id": "case-0004",
@@ -2938,18 +4102,22 @@
         "Los Angeles County"
       ],
       "evidence": {
+        "framework": "langgraph",
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 73.56,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
-        "graph_steps": [
+        "trace": [
           {
-            "node": "load_data",
-            "detail": "unicourt/Court Analysis Stats.csv"
+            "node": "load_source",
+            "detail": "unicourt court analysis stats"
           },
           {
-            "node": "analyze",
-            "detail": "metric=SJ_SUCCESS_RATE"
+            "node": "derive_answer",
+            "detail": {
+              "answer": [
+                "Los Angeles County"
+              ],
+              "value": 73.56
+            }
           },
           {
             "node": "format_output",
@@ -2957,9 +4125,13 @@
               "Los Angeles County"
             ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/langgraph_single_agent.py",
+        "framework_runtime": "langgraph"
       },
-      "latency_ms": 0.11329199999998707
+      "latency_ms": 5.358834001526702
     },
     {
       "case_id": "case-0005",
@@ -2968,18 +4140,22 @@
         "Bronx County"
       ],
       "evidence": {
+        "framework": "langgraph",
         "source_table": "unicourt/Court Analysis Stats.csv",
         "supporting_value": 50.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
-        "graph_steps": [
+        "trace": [
           {
-            "node": "load_data",
-            "detail": "unicourt/Court Analysis Stats.csv"
+            "node": "load_source",
+            "detail": "unicourt court analysis stats"
           },
           {
-            "node": "analyze",
-            "detail": "metric=AVG_DURATION_NO_TRIAL"
+            "node": "derive_answer",
+            "detail": {
+              "answer": [
+                "Bronx County"
+              ],
+              "value": 50.0
+            }
           },
           {
             "node": "format_output",
@@ -2987,9 +4163,13 @@
               "Bronx County"
             ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/langgraph_single_agent.py",
+        "framework_runtime": "langgraph"
       },
-      "latency_ms": 0.11145800000000872
+      "latency_ms": 5.832541999552632
     },
     {
       "case_id": "case-0006",
@@ -2998,18 +4178,22 @@
         "Bronx County"
       ],
       "evidence": {
+        "framework": "langgraph",
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 615.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
-        "graph_steps": [
+        "trace": [
           {
-            "node": "load_data",
-            "detail": "coaction/Court Analysis Stats.csv"
+            "node": "load_source",
+            "detail": "coaction court analysis stats"
           },
           {
-            "node": "analyze",
-            "detail": "metric=AVG_CASE_DURATION"
+            "node": "derive_answer",
+            "detail": {
+              "answer": [
+                "Bronx County"
+              ],
+              "value": 615.0
+            }
           },
           {
             "node": "format_output",
@@ -3017,9 +4201,13 @@
               "Bronx County"
             ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/langgraph_single_agent.py",
+        "framework_runtime": "langgraph"
       },
-      "latency_ms": 0.18100000000004224
+      "latency_ms": 5.567415999394143
     },
     {
       "case_id": "case-0007",
@@ -3028,18 +4216,22 @@
         "Bronx County"
       ],
       "evidence": {
+        "framework": "langgraph",
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 682.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
-        "graph_steps": [
+        "trace": [
           {
-            "node": "load_data",
-            "detail": "coaction/Court Analysis Stats.csv"
+            "node": "load_source",
+            "detail": "coaction court analysis stats"
           },
           {
-            "node": "analyze",
-            "detail": "metric=AVG_TIME_TO_RESOLUTION"
+            "node": "derive_answer",
+            "detail": {
+              "answer": [
+                "Bronx County"
+              ],
+              "value": 682.0
+            }
           },
           {
             "node": "format_output",
@@ -3047,9 +4239,13 @@
               "Bronx County"
             ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/langgraph_single_agent.py",
+        "framework_runtime": "langgraph"
       },
-      "latency_ms": 0.12187499999999352
+      "latency_ms": 5.4427499999292195
     },
     {
       "case_id": "case-0008",
@@ -3058,18 +4254,22 @@
         "Bronx County"
       ],
       "evidence": {
+        "framework": "langgraph",
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 100.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
-        "graph_steps": [
+        "trace": [
           {
-            "node": "load_data",
-            "detail": "coaction/Court Analysis Stats.csv"
+            "node": "load_source",
+            "detail": "coaction court analysis stats"
           },
           {
-            "node": "analyze",
-            "detail": "metric=MTD_SUCCESS_RATE"
+            "node": "derive_answer",
+            "detail": {
+              "answer": [
+                "Bronx County"
+              ],
+              "value": 100.0
+            }
           },
           {
             "node": "format_output",
@@ -3077,9 +4277,13 @@
               "Bronx County"
             ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/langgraph_single_agent.py",
+        "framework_runtime": "langgraph"
       },
-      "latency_ms": 0.11841600000001007
+      "latency_ms": 5.339499999536201
     },
     {
       "case_id": "case-0009",
@@ -3088,18 +4292,22 @@
         "Los Angeles County"
       ],
       "evidence": {
+        "framework": "langgraph",
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 100.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
-        "graph_steps": [
+        "trace": [
           {
-            "node": "load_data",
-            "detail": "coaction/Court Analysis Stats.csv"
+            "node": "load_source",
+            "detail": "coaction court analysis stats"
           },
           {
-            "node": "analyze",
-            "detail": "metric=SJ_SUCCESS_RATE"
+            "node": "derive_answer",
+            "detail": {
+              "answer": [
+                "Los Angeles County"
+              ],
+              "value": 100.0
+            }
           },
           {
             "node": "format_output",
@@ -3107,9 +4315,13 @@
               "Los Angeles County"
             ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/langgraph_single_agent.py",
+        "framework_runtime": "langgraph"
       },
-      "latency_ms": 0.11499999999997623
+      "latency_ms": 6.529709000460571
     },
     {
       "case_id": "case-0010",
@@ -3118,18 +4330,22 @@
         "Kings County"
       ],
       "evidence": {
+        "framework": "langgraph",
         "source_table": "coaction/Court Analysis Stats.csv",
         "supporting_value": 48.0,
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
-        "graph_steps": [
+        "trace": [
           {
-            "node": "load_data",
-            "detail": "coaction/Court Analysis Stats.csv"
+            "node": "load_source",
+            "detail": "coaction court analysis stats"
           },
           {
-            "node": "analyze",
-            "detail": "metric=AVG_DURATION_NO_TRIAL"
+            "node": "derive_answer",
+            "detail": {
+              "answer": [
+                "Kings County"
+              ],
+              "value": 48.0
+            }
           },
           {
             "node": "format_output",
@@ -3137,9 +4353,13 @@
               "Kings County"
             ]
           }
-        ]
+        ],
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/langgraph_single_agent.py",
+        "framework_runtime": "langgraph"
       },
-      "latency_ms": 0.11608299999998906
+      "latency_ms": 5.319207997672493
     },
     {
       "case_id": "case-0011",
@@ -3148,19 +4368,22 @@
         "MASS TORT JUDGE"
       ],
       "evidence": {
+        "framework": "langgraph",
         "source_table": "unicourt/Judge MTD Rate.csv",
         "supporting_value": 71.43,
-        "county": "Bronx County",
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
-        "graph_steps": [
+        "trace": [
           {
-            "node": "load_data",
-            "detail": "unicourt/Judge MTD Rate.csv"
+            "node": "load_source",
+            "detail": "unicourt judge dismissal data"
           },
           {
-            "node": "analyze",
-            "detail": "metric=DISMISSAL_RATE_PCT"
+            "node": "derive_answer",
+            "detail": {
+              "answer": [
+                "MASS TORT JUDGE"
+              ],
+              "value": 71.43
+            }
           },
           {
             "node": "format_output",
@@ -3168,9 +4391,14 @@
               "MASS TORT JUDGE"
             ]
           }
-        ]
+        ],
+        "county": "Bronx County",
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/langgraph_single_agent.py",
+        "framework_runtime": "langgraph"
       },
-      "latency_ms": 0.12741599999999131
+      "latency_ms": 5.61754199952702
     },
     {
       "case_id": "case-0012",
@@ -3179,19 +4407,22 @@
         "GARSON, HON. ROBIN S."
       ],
       "evidence": {
+        "framework": "langgraph",
         "source_table": "unicourt/Judge MTD Rate.csv",
         "supporting_value": 60.0,
-        "county": "Kings County",
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
-        "graph_steps": [
+        "trace": [
           {
-            "node": "load_data",
-            "detail": "unicourt/Judge MTD Rate.csv"
+            "node": "load_source",
+            "detail": "unicourt judge dismissal data"
           },
           {
-            "node": "analyze",
-            "detail": "metric=DISMISSAL_RATE_PCT"
+            "node": "derive_answer",
+            "detail": {
+              "answer": [
+                "GARSON, HON. ROBIN S."
+              ],
+              "value": 60.0
+            }
           },
           {
             "node": "format_output",
@@ -3199,9 +4430,14 @@
               "GARSON, HON. ROBIN S."
             ]
           }
-        ]
+        ],
+        "county": "Kings County",
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/langgraph_single_agent.py",
+        "framework_runtime": "langgraph"
       },
-      "latency_ms": 0.12270899999999862
+      "latency_ms": 5.420916000730358
     },
     {
       "case_id": "case-0013",
@@ -3210,19 +4446,22 @@
         "RAUL A. SAHAGUN"
       ],
       "evidence": {
+        "framework": "langgraph",
         "source_table": "unicourt/Judge MTD Rate.csv",
         "supporting_value": 58.82,
-        "county": "Los Angeles County",
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
-        "graph_steps": [
+        "trace": [
           {
-            "node": "load_data",
-            "detail": "unicourt/Judge MTD Rate.csv"
+            "node": "load_source",
+            "detail": "unicourt judge dismissal data"
           },
           {
-            "node": "analyze",
-            "detail": "metric=DISMISSAL_RATE_PCT"
+            "node": "derive_answer",
+            "detail": {
+              "answer": [
+                "RAUL A. SAHAGUN"
+              ],
+              "value": 58.82
+            }
           },
           {
             "node": "format_output",
@@ -3230,9 +4469,14 @@
               "RAUL A. SAHAGUN"
             ]
           }
-        ]
+        ],
+        "county": "Los Angeles County",
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/langgraph_single_agent.py",
+        "framework_runtime": "langgraph"
       },
-      "latency_ms": 0.12029100000005011
+      "latency_ms": 5.159000000276137
     },
     {
       "case_id": "case-0014",
@@ -3241,19 +4485,22 @@
         "GUZMAN, HON. WILMA"
       ],
       "evidence": {
+        "framework": "langgraph",
         "source_table": "coaction/Judge MTD Rate.csv",
         "supporting_value": 66.67,
-        "county": "Bronx County",
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
-        "graph_steps": [
+        "trace": [
           {
-            "node": "load_data",
-            "detail": "coaction/Judge MTD Rate.csv"
+            "node": "load_source",
+            "detail": "coaction judge dismissal data"
           },
           {
-            "node": "analyze",
-            "detail": "metric=DISMISSAL_RATE_PCT"
+            "node": "derive_answer",
+            "detail": {
+              "answer": [
+                "GUZMAN, HON. WILMA"
+              ],
+              "value": 66.67
+            }
           },
           {
             "node": "format_output",
@@ -3261,9 +4508,14 @@
               "GUZMAN, HON. WILMA"
             ]
           }
-        ]
+        ],
+        "county": "Bronx County",
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/langgraph_single_agent.py",
+        "framework_runtime": "langgraph"
       },
-      "latency_ms": 0.11408300000004257
+      "latency_ms": 5.386875000112923
     },
     {
       "case_id": "case-0015",
@@ -3272,19 +4524,22 @@
         "RIVERA, HON. FRANCOIS A."
       ],
       "evidence": {
+        "framework": "langgraph",
         "source_table": "coaction/Judge MTD Rate.csv",
         "supporting_value": 94.12,
-        "county": "Kings County",
-        "mode": "offline",
-        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
-        "graph_steps": [
+        "trace": [
           {
-            "node": "load_data",
-            "detail": "coaction/Judge MTD Rate.csv"
+            "node": "load_source",
+            "detail": "coaction judge dismissal data"
           },
           {
-            "node": "analyze",
-            "detail": "metric=DISMISSAL_RATE_PCT"
+            "node": "derive_answer",
+            "detail": {
+              "answer": [
+                "RIVERA, HON. FRANCOIS A."
+              ],
+              "value": 94.12
+            }
           },
           {
             "node": "format_output",
@@ -3292,9 +4547,14 @@
               "RIVERA, HON. FRANCOIS A."
             ]
           }
-        ]
+        ],
+        "county": "Kings County",
+        "mode": "framework_wrapper",
+        "repo_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/baselines/langgraph",
+        "wrapper_path": "/Users/fraano/Desktop/Repos/GP/benchmarking/harness/framework_runners/langgraph_single_agent.py",
+        "framework_runtime": "langgraph"
       },
-      "latency_ms": 0.11533400000002247
+      "latency_ms": 5.56966700241901
     }
   ]
 }

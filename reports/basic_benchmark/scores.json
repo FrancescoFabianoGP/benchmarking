@@ -23,7 +23,7 @@
         "case_count": 5
       }
     },
-    "average_latency_ms": 0.04015553333333218
+    "average_latency_ms": 0.017952733333335507
   },
   "scores": [
     {
@@ -217,7 +217,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.04015553333333218
+      "average_latency_ms": 0.017952733333335507
     },
     "openai_raw_llm": {
       "runner": "openai_raw_llm",
@@ -243,7 +243,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.21451946666666646
+      "average_latency_ms": 0.12020273333333183
     },
     "anthropic_raw_llm": {
       "runner": "anthropic_raw_llm",
@@ -269,7 +269,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.17418626666666862
+      "average_latency_ms": 0.107883400000001
     },
     "react_agent": {
       "runner": "react_agent",
@@ -295,7 +295,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.148572066666669
+      "average_latency_ms": 2.5227167330740485
     },
     "multi_agent_analyst_coder_critic": {
       "runner": "multi_agent_analyst_coder_critic",
@@ -321,7 +321,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.12791393333333456
+      "average_latency_ms": 117.9755307333835
     },
     "autogen_multi_agent": {
       "runner": "autogen_multi_agent",
@@ -347,7 +347,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.11379440000000389
+      "average_latency_ms": 3.4659111996006686
     },
     "metagpt_sop_agent": {
       "runner": "metagpt_sop_agent",
@@ -373,7 +373,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.11111653333334044
+      "average_latency_ms": 69.1092305998609
     },
     "single_agent_data_analyst": {
       "runner": "single_agent_data_analyst",
@@ -399,7 +399,7 @@
           "case_count": 5
         }
       },
-      "average_latency_ms": 0.12036933333334036
+      "average_latency_ms": 5.586530533279681
     }
   }
 }

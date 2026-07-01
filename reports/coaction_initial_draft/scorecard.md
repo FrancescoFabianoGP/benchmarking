@@ -1,14 +1,18 @@
 # Coaction Initial Benchmark Draft
 
-This report is the first thin benchmark loop built from the existing local
-Coaction and UniCourt venue-risk tables already present in `submodules/zeus-service`.
+This report is the first thin benchmark loop built from the local
+Coaction and UniCourt venue-risk tables stored under `cases/coaction_venue_risk/data`.
 
 ## Scorecard
 
 - Runner: `structured_lookup`
 - Cases: `15`
 - Overall accuracy: `100.0%`
-- Average latency: `0.02 ms`
+- Average latency: `0.03 ms`
+- Total input tokens: `None`
+- Total output tokens: `None`
+- Total tokens: `None`
+- Estimated cost: `n/a`
 
 ## Accuracy By Dataset
 

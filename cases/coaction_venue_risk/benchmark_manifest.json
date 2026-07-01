@@ -1,0 +1,36 @@
+{
+  "benchmark_id": "coaction_venue_risk",
+  "label": "Coaction Venue Risk",
+  "data_root": "cases/coaction_venue_risk/data",
+  "legacy_source_root": "GP_components/zeus-service/app/workflow/local_db/coaction",
+  "sync_command": "python3 scripts/sync_benchmark_assets.py --benchmark coaction_venue_risk",
+  "datasets": [
+    {
+      "dataset_id": "unicourt",
+      "table_dir": "data/unicourt_tables",
+      "tables": [
+        "Attorney Duration.csv",
+        "Attorney Win.csv",
+        "Court Analysis Stats.csv",
+        "Judge MTD Rate.csv"
+      ]
+    },
+    {
+      "dataset_id": "coaction",
+      "table_dir": "data/coaction_tables",
+      "tables": [
+        "Attorney Duration.csv",
+        "Attorney Win.csv",
+        "Court Analysis Stats.csv",
+        "Judge MTD Rate.csv"
+      ]
+    }
+  ],
+  "cache_files": [
+    "data/cache/all_jurisdiction_summary.json",
+    "data/cache/county_specific_summary.json",
+    "data/cache/venue_risk_litigation_highlights.json"
+  ],
+  "harness_loader": "harness/benchmarks/coaction_venue_risk.py",
+  "parsing_manifest": "cases/coaction_venue_risk/parsing/manifest.json"
+}

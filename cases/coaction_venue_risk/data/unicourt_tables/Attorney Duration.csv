@@ -1,0 +1,121 @@
+ATTORNEY_NAME,COURT_NAME,FILED_YEAR,AVG_DURATION_DAYS,MIN_DURATION_DAYS,MAX_DURATION_DAYS,TOTAL_CASES
+"SCOTT J. ZLOTOLOW, ESQ.",Bronx County Supreme Court,2020,1750,989,2266,15
+"Fuchs Rosenzweig, PLLC",Bronx County Supreme Court,2020,1767,787,2205,18
+"LAW OFFICE OF RYAN S. GOLDSTEIN, PLLC",Bronx County Supreme Court,2020,1789,349,2245,16
+CORPORATION COUNSEL,Bronx County Supreme Court,2020,1813,895,2277,57
+"Rizzo, Ronald John",Bronx County Supreme Court,2020,1881,22,2418,29
+"LONDON FISCHER, LLP",Bronx County Supreme Court,2021,1512,826,1935,11
+"Harwood Lloyd, LLC",Bronx County Supreme Court,2021,1529,740,1915,21
+Connick McNamee PLLC,Bronx County Supreme Court,2021,1541,981,1988,13
+"Fuchs Rosenzweig, PLLC",Bronx County Supreme Court,2021,1553,423,1863,15
+"GORAYEB & ASSOCIATES, P.C.",Bronx County Supreme Court,2021,1591,69,1941,31
+"Elefterakis, Elefterakis & Panek",Bronx County Supreme Court,2022,1251,761,1529,16
+BARTLETT LLP,Bronx County Supreme Court,2022,1253,831,1497,12
+CONSOLIDATED EDISON COMPANY OF NEW YORK,Bronx County Supreme Court,2022,1264,232,1606,13
+MABSTOA LEGAL DEPT.,Bronx County Supreme Court,2022,1296,1168,1453,14
+"Brody Law Group, PLLC",Bronx County Supreme Court,2022,1362,1200,1558,11
+KENNEDYS,Bronx County Supreme Court,2023,894,661,1059,13
+"SHAPIRO LAW OFFICES, PLLC",Bronx County Supreme Court,2023,897,589,1123,11
+"QUINTAIROS, WOOD, PRIETO & BOYER, P.A.",Bronx County Supreme Court,2023,901,709,1126,13
+"NASS ROPER & LEVIN, P.C.",Bronx County Supreme Court,2023,911,3,1272,17
+"Brody Law Group, PLLC",Bronx County Supreme Court,2023,967,828,1093,11
+"Elefterakis, Elefterakis & Panek",Bronx County Supreme Court,2024,605,256,887,17
+LAW OFFICE OF ANDREW C LAUFER PLLC,Bronx County Supreme Court,2024,630,380,789,13
+"NEIL WOLLERSTEIN, ESQ.",Bronx County Supreme Court,2024,632,207,959,97
+LAW OFFICES OF DEVON M. RADLIN,Bronx County Supreme Court,2024,637,30,867,42
+"Flomenhaft Law Firm, PLLC",Bronx County Supreme Court,2024,639,246,778,11
+"Decorato, Sheehan, Merolesi & Federico, LLP",Bronx County Supreme Court,Overall,1567,1101,2195,12
+SONIN & GENIS LLC,Bronx County Supreme Court,Overall,1576,164,2115,13
+"Raskin & Kremins, LLP",Bronx County Supreme Court,Overall,1646,599,2209,11
+"Law Offices of Michael S. Lamonsoff, PLLC",Bronx County Supreme Court,Overall,1818,1297,2068,11
+"Rizzo, Ronald John",Bronx County Supreme Court,Overall,1834,22,2418,30
+Rawle & Henderson LLP,Kings County Supreme Court,2020,1861,1332,2253,15
+"GARCIA AVELAR, SANTOS DAVID",Kings County Supreme Court,2020,1871,1656,2144,14
+"DESOUZA FORTE, MICHELLE ROXANNE",Kings County Supreme Court,2020,1873,1244,2137,21
+"PRIOLO, GENNARO",Kings County Supreme Court,2020,1881,1700,2128,19
+"TAN, MICHELLE PEH YEE",Kings County Supreme Court,2020,1888,1536,2125,13
+"ALAN RIPKA & ASSOCIATES, LLP",Kings County Supreme Court,2021,1575,703,2014,21
+"Diamond, Beth Michelle",Kings County Supreme Court,2021,1593,1246,1798,19
+WILLIAM SCHWITZER & ASSOCIATES,Kings County Supreme Court,2021,1593,1246,1798,19
+"Kinneary, Tracy Ann",Kings County Supreme Court,2021,1632,1514,1761,13
+"Semel-Weinstein, Barry Aaron",Kings County Supreme Court,2021,1640,1072,2063,12
+GORAYEB & ASSOCIATES,Kings County Supreme Court,2022,1273,1091,1491,15
+"Decarlo, Paul Michael",Kings County Supreme Court,2022,1293,1044,1489,12
+"Campana, John Paul",Kings County Supreme Court,2022,1296,660,1459,11
+NEW YORK CITY TRANSIT AUTHORITY,Kings County Supreme Court,2022,1312,200,1597,23
+"Maltser, Yury",Kings County Supreme Court,2022,1365,885,1597,11
+"Chenn, June-Annette Fletcher",Kings County Supreme Court,2023,912,721,1127,13
+"Liakas, Stephen John",Kings County Supreme Court,2023,915,471,1191,24
+"RUSSO & GOULD, LLP",Kings County Supreme Court,2023,918,703,1134,11
+"Deliso, Anthony Michael",Kings County Supreme Court,2023,919,587,1118,20
+"Spellman, Kevin Michael",Kings County Supreme Court,2023,922,707,1092,18
+"SANDERS, SANDERS, BLOCK & WOYCIK, P.C.",Kings County Supreme Court,2024,656,399,869,11
+"Villeck, Michael Frederick",Kings County Supreme Court,2024,656,399,869,11
+AARONSON RAPPAPORT FEINSTEIN & DEUTSCH,Kings County Supreme Court,2024,700,427,972,11
+"AVANZINO & MORENO, P.C.",Kings County Supreme Court,2024,715,456,838,12
+"Avanzino, John K.",Kings County Supreme Court,2024,738,456,838,11
+"Parris, Brian Christopher",Kings County Supreme Court,Overall,1627,609,2243,20
+"Grossman, Michael Bruce",Kings County Supreme Court,Overall,1627,860,2136,13
+"CAPITANI, JOHN PERRY",Kings County Supreme Court,Overall,1666,776,2035,13
+"Robert J. Tolchin, Attorney and Counselor at Law, PC",Kings County Supreme Court,Overall,1677,828,2244,11
+"Newman, Mark T.",Kings County Supreme Court,Overall,1698,403,2239,12
+WALSH ANDREW KILEY,Los Angeles County Superior Court,2020,1413,1249,1701,36
+POTTS LEE W.,Los Angeles County Superior Court,2020,1466,1260,1912,26
+DILLMAN KIRK D.,Los Angeles County Superior Court,2020,1493,1272,2085,34
+DILLMAN KIRK D,Los Angeles County Superior Court,2020,1508,1158,2127,23
+HENNIGAN JAMES MICHAEL,Los Angeles County Superior Court,2020,1614,1167,2127,19
+FRADKIN IGOR,Los Angeles County Superior Court,2021,1133,877,1434,15
+KATTAN-WRIGHT SERI NICOLAS,Los Angeles County Superior Court,2021,1145,457,1630,12
+DILLMAN KIRK D,Los Angeles County Superior Court,2021,1178,856,1247,11
+DILLMAN KIRK D.,Los Angeles County Superior Court,2021,1197,836,1709,31
+POTTS LEE W.,Los Angeles County Superior Court,2021,1248,691,1739,22
+WOOTTON SAUNDRA KAYE,Los Angeles County Superior Court,2022,991,764,1377,29
+DHILLON NAVTEJ SINGH,Los Angeles County Superior Court,2022,991,764,1377,29
+GREEN ERIKA DANIELLE,Los Angeles County Superior Court,2022,995,764,1377,27
+RICHARD PATRICK JOSEPH,Los Angeles County Superior Court,2022,996,764,1377,28
+DEVRIES SCOTT PHILLIP,Los Angeles County Superior Court,2022,1065,787,1377,16
+LYNCH GREGORY G.,Los Angeles County Superior Court,2023,730,272,1232,18
+KAWAMOTO DEAN N.,Los Angeles County Superior Court,2023,850,437,1006,18
+SHINOFF WILLIAM BENJAMIN,Los Angeles County Superior Court,2023,925,566,1005,59
+KAWAMOTO DEAN NOBURU,Los Angeles County Superior Court,2023,938,594,1068,11
+SHINOFF WILLIAM B.,Los Angeles County Superior Court,2023,965,601,1019,172
+BLESSEY RAYMOND L,Los Angeles County Superior Court,2024,763,480,1041,19
+MARSDEN REBECCA,Los Angeles County Superior Court,2024,776,219,1207,13
+SHINOFF WILLIAM B.,Los Angeles County Superior Court,2024,776,672,809,51
+CUNNINGHAM ALLYSON E.,Los Angeles County Superior Court,2024,805,471,959,15
+VALENZUELA RONALD ANTHONY,Los Angeles County Superior Court,2024,829,788,959,14
+WOLF ELLEN KAUFMAN,Los Angeles County Superior Court,Overall,1322,1035,1487,14
+BURTON ANWAR DILLON,Los Angeles County Superior Court,Overall,1339,274,2193,11
+WALSH ANDREW KILEY,Los Angeles County Superior Court,Overall,1381,423,1701,38
+CABRASER ELIZABETH J.,Los Angeles County Superior Court,Overall,1382,1177,1512,11
+SAUNDERS JOSEPH H.,Los Angeles County Superior Court,Overall,1517,932,1912,18
+"DESOUZA FORTE, MICHELLE ROXANNE",All Courts,2020,1873,1244,2137,21
+"PRIOLO, GENNARO",All Courts,2020,1881,1700,2128,19
+"Rizzo, Ronald John",All Courts,2020,1881,22,2418,29
+"TAN, MICHELLE PEH YEE",All Courts,2020,1888,1536,2125,13
+"SCHIAVETTI CORGAN DIEDWARDS WEINBERG & NICHOLSON, LLP",All Courts,2020,1910,1344,2168,11
+"GORAYEB & ASSOCIATES, P.C.",All Courts,2021,1591,69,1941,31
+"LAW OFFICES OF GREGORY SPEKTOR, P.C.",All Courts,2021,1608,582,1991,15
+"Kinneary, Tracy Ann",All Courts,2021,1627,1475,1761,17
+"Federico, Schwartz, Merolesi & Lyddane, LLP",All Courts,2021,1628,1448,1902,11
+"Semel-Weinstein, Barry Aaron",All Courts,2021,1637,1072,2063,13
+"Decarlo, Paul Michael",All Courts,2022,1293,1044,1489,12
+"Campana, John Paul",All Courts,2022,1296,660,1459,11
+"NEWMAN MYERS KREINES HARRIS, P.C.",All Courts,2022,1308,938,1588,14
+NEW YORK CITY TRANSIT AUTHORITY,All Courts,2022,1308,200,1597,28
+"Maltser, Yury",All Courts,2022,1365,885,1597,11
+"Amabile & Erman, P.C.",All Courts,2023,925,783,1229,11
+KAWAMOTO DEAN NOBURU,All Courts,2023,938,594,1068,11
+"Brody Law Group, PLLC",All Courts,2023,946,795,1148,17
+"CARY LONDON LAW, PLLC",All Courts,2023,956,352,1330,16
+SHINOFF WILLIAM B.,All Courts,2023,965,601,1019,172
+BLESSEY RAYMOND L,All Courts,2024,763,480,1041,19
+SHINOFF WILLIAM B.,All Courts,2024,776,672,809,51
+MARSDEN REBECCA,All Courts,2024,776,219,1207,13
+CUNNINGHAM ALLYSON E.,All Courts,2024,805,471,959,15
+VALENZUELA RONALD ANTHONY,All Courts,2024,829,788,959,14
+"Law Offices of Michael S. Lamonsoff, PLLC",All Courts,Overall,1666,593,2290,28
+"WINGATE RUSSOTTI, SHAPIRO & HALPERIN",All Courts,Overall,1672,791,2208,11
+"Robert J. Tolchin, Attorney and Counselor at Law, PC",All Courts,Overall,1677,828,2244,11
+"Newman, Mark T.",All Courts,Overall,1705,403,2239,13
+"Rizzo, Ronald John",All Courts,Overall,1837,22,2418,31

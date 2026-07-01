@@ -2,7 +2,7 @@
 
 Benchmark harness workspace for GP workflow evaluation.
 
-This repo is the coordination layer for benchmarking GP workflows and decision systems. It is meant to hold benchmark assets, evaluation harness code, runners, scoring, reports, and comparison workflows while pulling the main implementation repos in as Git submodules.
+This repo is the coordination layer for benchmarking GP workflows and decision systems. It is meant to hold benchmark assets, benchmark-specific adapters, evaluation harness code, runners, scoring, reports, and comparison workflows while pulling the main implementation repos in as Git submodules.
 
 ## Aim
 
@@ -166,7 +166,13 @@ It currently:
 - scores exact-match accuracy
 - writes Markdown and JSON reports under `reports/`
 
-Run it from the repo root with:
+Run the generic benchmark entrypoint from the repo root with:
+
+```bash
+python3 scripts/run_benchmark.py --benchmark coaction_venue_risk --baseline structured_lookup
+```
+
+The older Coaction-specific entrypoint still works and now delegates to the generic runner:
 
 ```bash
 python3 scripts/run_initial_coaction_benchmark.py
@@ -175,19 +181,67 @@ python3 scripts/run_initial_coaction_benchmark.py
 Inspect the configured baseline ladder:
 
 ```bash
-python3 scripts/run_initial_coaction_benchmark.py --list-baselines
+python3 scripts/run_benchmark.py --list-baselines
+```
+
+Inspect the registered benchmarks:
+
+```bash
+python3 scripts/run_benchmark.py --list-benchmarks
 ```
 
 Run the whole local suite:
 
 ```bash
-python3 scripts/run_initial_coaction_benchmark.py --baseline all
+python3 scripts/run_benchmark.py --benchmark coaction_venue_risk --baseline all
 ```
 
 Run the very basic benchmark entrypoint:
 
 ```bash
 python3 scripts/run_basic_benchmark.py
+```
+
+Install the repo-local framework runtimes for the external baselines:
+
+```bash
+python3 scripts/install_baseline_runtimes.py --all
+```
+
+Install just the Zeus runtime:
+
+```bash
+python3 scripts/install_baseline_runtimes.py --baseline gp_zeus_venue_risk
+```
+
+Sync the benchmark-local Coaction data bundle into `cases/coaction_venue_risk/data`:
+
+```bash
+python3 scripts/sync_benchmark_assets.py --benchmark coaction_venue_risk
+```
+
+Create a local `.env` from the example file if you want to keep API keys in one uncommitted place:
+
+```bash
+cp .env.example .env
+```
+
+Run the full live suite once `OPENAI_API_KEY` is set for the framework baselines and any raw-provider keys are configured:
+
+```bash
+OPENAI_API_KEY=... python3 scripts/run_benchmark.py --benchmark coaction_venue_risk --baseline all
+```
+
+Run the Zeus venue-risk baseline once the broader Zeus environment is configured:
+
+```bash
+python3 scripts/run_benchmark.py --benchmark coaction_venue_risk --baseline gp_zeus_venue_risk
+```
+
+Install only the runtime for the LangGraph single-agent baseline:
+
+```bash
+python3 scripts/install_baseline_runtimes.py --baseline single_agent_data_analyst
 ```
 
 Default outputs:
@@ -203,4 +257,8 @@ Default outputs:
 - `reports/coaction_initial_draft/suite_predictions.json`
 - `reports/coaction_initial_draft/scores.json`
 
-This is intentionally still a thin slice on real local data. The next step is to replace offline wrappers and fallback modes with live provider APIs and real external-framework integrations where helpful.
+This is intentionally still a thin slice on real local data. The external agent baselines now run through live LangGraph, AutoGen, and MetaGPT wrappers after the repo-local runtimes are installed and `OPENAI_API_KEY` is configured. The remaining fallback behavior is limited to the raw-provider baselines when API keys are not configured.
+
+The `gp_zeus_venue_risk` baseline runs the real Zeus workflow from `GP_components/zeus-service`, but unlike the lighter framework wrappers it also needs the full Zeus local environment and service credentials configured.
+
+Framework runtimes are kept under `.baseline_envs/` and are created from vendored repos so the install step is reproducible across machines.

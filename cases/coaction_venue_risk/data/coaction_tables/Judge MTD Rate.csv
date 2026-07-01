@@ -1,0 +1,44 @@
+JUDGE_NAME,COURT_NAME,FILED_YEAR,MTD_GRANTED_COUNT,MTD_TOTAL_COUNT,DISMISSAL_RATE_PCT
+LUCINDO SUAREZ,Bronx County Supreme Court,2021,0,2,0.00
+"SOCORRO, HON. MYRNA",Bronx County Supreme Court,2022,4,7,57.14
+"GUZMAN, HON. WILMA",Bronx County Supreme Court,2024,2,3,66.67
+"GUZMAN, HON. WILMA",Bronx County Supreme Court,Overall,2,3,66.67
+"SOCORRO, HON. MYRNA",Bronx County Supreme Court,Overall,4,7,57.14
+LUCINDO SUAREZ,Bronx County Supreme Court,Overall,0,2,0.00
+KINGS CDP22,Kings County Supreme Court,2020,0,9,0.00
+"RIVERA, HON. FRANCOIS A.",Kings County Supreme Court,2021,16,17,94.12
+"COHEN, HON. DEVIN P.",Kings County Supreme Court,2021,0,3,0.00
+"COHEN, HON. DEVIN P.",Kings County Supreme Court,2022,4,8,50.00
+RICHARD VELASQUEZ,Kings County Supreme Court,2022,0,9,0.00
+JURY COORDINATING PART,Kings County Supreme Court,2022,0,2,0.00
+"WARD, HON. KERRY J.",Kings County Supreme Court,2023,2,3,66.67
+"SWEENEY, HON. PETER PAUL",Kings County Supreme Court,2023,2,3,66.67
+"COHEN, HON. DEVIN P.",Kings County Supreme Court,2023,5,10,50.00
+"ABADI, HON. GINA LEVY",Kings County Supreme Court,2023,1,2,50.00
+"VELASQUEZ, HON. RICHARD",Kings County Supreme Court,2023,1,2,50.00
+"SWERN, HON. ANNE J.",Kings County Supreme Court,2024,0,4,0.00
+"RIVERA, HON. FRANCOIS A.",Kings County Supreme Court,Overall,16,17,94.12
+"SWEENEY, HON. PETER PAUL",Kings County Supreme Court,Overall,2,3,66.67
+"WARD, HON. KERRY J.",Kings County Supreme Court,Overall,2,3,66.67
+"ABADI, HON. GINA LEVY",Kings County Supreme Court,Overall,1,2,50.00
+"VELASQUEZ, HON. RICHARD",Kings County Supreme Court,Overall,1,2,50.00
+KINGS CDP22,All Courts,2020,0,9,0.00
+"RIVERA, HON. FRANCOIS A.",All Courts,2021,16,17,94.12
+"COHEN, HON. DEVIN P.",All Courts,2021,0,3,0.00
+LUCINDO SUAREZ,All Courts,2021,0,2,0.00
+"SOCORRO, HON. MYRNA",All Courts,2022,4,7,57.14
+"COHEN, HON. DEVIN P.",All Courts,2022,4,8,50.00
+RICHARD VELASQUEZ,All Courts,2022,0,9,0.00
+JURY COORDINATING PART,All Courts,2022,0,2,0.00
+"WARD, HON. KERRY J.",All Courts,2023,2,3,66.67
+"SWEENEY, HON. PETER PAUL",All Courts,2023,2,3,66.67
+"COHEN, HON. DEVIN P.",All Courts,2023,5,10,50.00
+"ABADI, HON. GINA LEVY",All Courts,2023,1,2,50.00
+"VELASQUEZ, HON. RICHARD",All Courts,2023,1,2,50.00
+"GUZMAN, HON. WILMA",All Courts,2024,2,3,66.67
+"SWERN, HON. ANNE J.",All Courts,2024,0,4,0.00
+"RIVERA, HON. FRANCOIS A.",All Courts,Overall,16,17,94.12
+"SWEENEY, HON. PETER PAUL",All Courts,Overall,2,3,66.67
+"WARD, HON. KERRY J.",All Courts,Overall,2,3,66.67
+"GUZMAN, HON. WILMA",All Courts,Overall,2,3,66.67
+"SOCORRO, HON. MYRNA",All Courts,Overall,4,7,57.14
